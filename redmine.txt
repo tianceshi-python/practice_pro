@@ -1,3 +1,7 @@
 Git is a distributed version control system.
 Git is free software distributed under the GPL.
 
+
+git add file1.txt
+git add file2.txt file3.txt
+git commit -m "add 3 files."
