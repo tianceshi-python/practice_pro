@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94ce7423-1d1c-49bc-a71b-de8132fea33b" name="Default Changelist" comment="" />
+    <list default="true" id="94ce7423-1d1c-49bc-a71b-de8132fea33b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/common/HTMLTestRunner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/configEmail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/configHttp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/geturlParams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/signature.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getpathInfo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Decorator_hello_world.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Game_rollDice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/LISP_calculate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/MerseCode_covert.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Nstring_sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Profiler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/add7algorithm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/approx_num.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/count_subNum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decom_Prime.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decorator_fib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decorator_html2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/duplicate_removal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/file_operator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/find_maxstr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/hello.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/lastStr_cal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/list_cycle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/merge_table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/num_sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/number_line.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/ping.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/ping2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/python_re.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/set_f.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str16tran10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str_python.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str_spit8str.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str_zlib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/word_order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meeting_ptactice/test1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readConfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readExcel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/logs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/repore.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runAll.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,127 +58,143 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/practice_pro$requests_get3.coverage" NAME="requests_get3 Coverage Results" MODIFIED="1571139015931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$merge_table.coverage" NAME="merge_table Coverage Results" MODIFIED="1589248394765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_in_test_fixture_autos_py.coverage" NAME="pytest in test_fixture_autos.py Coverage Results" MODIFIED="1564740952254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$decorator_fib.coverage" NAME="decorator_fib Coverage Results" MODIFIED="1587875817739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
+    <SUITE FILE_PATH="coverage/practice_pro$readConfig.coverage" NAME="readConfig Coverage Results" MODIFIED="1584519986240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/practice_pro$read_excel_3.coverage" NAME="read_excel_3 Coverage Results" MODIFIED="1573637655113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/pandas_dic" />
+    <SUITE FILE_PATH="coverage/practice_pro$list_cycle.coverage" NAME="list_cycle Coverage Results" MODIFIED="1588747829700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_in_test_fixture_scopeFunc1_py.coverage" NAME="pytest in test_fixture_scopeFunc1.py Coverage Results" MODIFIED="1565145674441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$approx_num.coverage" NAME="approx_num Coverage Results" MODIFIED="1588920425543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_SetupTeardown_function_test_add.coverage" NAME="pytest for test_SetupTeardown_function.test_add Coverage Results" MODIFIED="1567073922558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$test_fixture.coverage" NAME="test_fixture Coverage Results" MODIFIED="1564730058114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$sys_argv.coverage" NAME="sys_argv Coverage Results" MODIFIED="1562393242773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_SetupTeardown_method_Testmethod_test_01.coverage" NAME="pytest for test_SetupTeardown_method.Testmethod.test_01 Coverage Results" MODIFIED="1565420419875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$Nstring_sort.coverage" NAME="Nstring_sort Coverage Results" MODIFIED="1589437730493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$test_class.coverage" NAME="test_class Coverage Results" MODIFIED="1564215926853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_fixture_scopeMoudle_test3.coverage" NAME="pytest for test_fixture_scopeMoudle.test3 Coverage Results" MODIFIED="1567069049651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$invite_call.coverage" NAME="invite_call Coverage Results" MODIFIED="1585820988457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCase" />
     <SUITE FILE_PATH="coverage/practice_pro$test_class1.coverage" NAME="test_class1 Coverage Results" MODIFIED="1564734521338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$requests_post1.coverage" NAME="requests_post1 Coverage Results" MODIFIED="1571301178904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$count_subNum.coverage" NAME="count_subNum Coverage Results" MODIFIED="1587976243761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_in_test_fixture_decorator_py.coverage" NAME="pytest in test_fixture_decorator.py Coverage Results" MODIFIED="1564740474096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_SetupTeardown_class_Testclass.coverage" NAME="pytest for test_SetupTeardown_class.Testclass Coverage Results" MODIFIED="1565419769245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$requests_cookie.coverage" NAME="requests_cookie Coverage Results" MODIFIED="1571304112059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/requests_dic" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_fiture_scopeClass_Testcase.coverage" NAME="pytest for test_fiture_scopeClass.Testcase Coverage Results" MODIFIED="1565147665152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$duplicate_removal.coverage" NAME="duplicate_removal Coverage Results" MODIFIED="1587894724791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$toapi_practice1.coverage" NAME="toapi_practice1 Coverage Results" MODIFIED="1570696569013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$read_column3_exportJson.coverage" NAME="read_column3_exportJson Coverage Results" MODIFIED="1574130586667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/xlrd_dic" />
     <SUITE FILE_PATH="coverage/practice_pro$read_excel_OpLine_2.coverage" NAME="read_excel_OpLine_2 Coverage Results" MODIFIED="1573641193082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/pandas_dic" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_in_test_fixture_param1_py.coverage" NAME="pytest in test_fixture_param1.py Coverage Results" MODIFIED="1564977260784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$set_f.coverage" NAME="set_f Coverage Results" MODIFIED="1588230070813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
+    <SUITE FILE_PATH="coverage/practice_pro$str_python.coverage" NAME="str_python Coverage Results" MODIFIED="1588733974471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_fiture_scopeClass_Testcase_test4.coverage" NAME="pytest for test_fiture_scopeClass.Testcase.test4 Coverage Results" MODIFIED="1565147337307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$python_re.coverage" NAME="python_re Coverage Results" MODIFIED="1588672354686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
+    <SUITE FILE_PATH="coverage/practice_pro$MerseCode_covert.coverage" NAME="MerseCode_covert Coverage Results" MODIFIED="1588130670813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_in_test_SetupTeardown_function_py.coverage" NAME="pytest in test_SetupTeardown_function.py Coverage Results" MODIFIED="1567073959475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1587373203612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice" />
+    <SUITE FILE_PATH="coverage/practice_pro$find_maxstr.coverage" NAME="find_maxstr Coverage Results" MODIFIED="1588736683573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$read_excel_OpLineRow.coverage" NAME="read_excel_OpLineRow Coverage Results" MODIFIED="1574074541828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/pandas_dic" />
     <SUITE FILE_PATH="coverage/practice_pro$read_excel_OpLine_1.coverage" NAME="read_excel_OpLine_1 Coverage Results" MODIFIED="1573638277352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/pandas_dic" />
     <SUITE FILE_PATH="coverage/practice_pro$test_fixtureSample.coverage" NAME="test_fixtureSample Coverage Results" MODIFIED="1564733092366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$readExcel.coverage" NAME="readExcel Coverage Results" MODIFIED="1585281647681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_fixture_param1_test2.coverage" NAME="pytest for test_fixture_param1.test2 Coverage Results" MODIFIED="1564977227044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_in_test_fixture_scopeMoudle_py.coverage" NAME="pytest in test_fixture_scopeMoudle.py Coverage Results" MODIFIED="1565148253247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_fixture_scopeFunc1_test2.coverage" NAME="pytest for test_fixture_scopeFunc1.test2 Coverage Results" MODIFIED="1565145340955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_in_test_fiture_scopeClass_py.coverage" NAME="pytest in test_fiture_scopeClass.py Coverage Results" MODIFIED="1565147523105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$number_line.coverage" NAME="number_line Coverage Results" MODIFIED="1588064048390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
+    <SUITE FILE_PATH="coverage/practice_pro$add7algorithm.coverage" NAME="add7algorithm Coverage Results" MODIFIED="1588720781654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$toapi_practice2.coverage" NAME="toapi_practice2 Coverage Results" MODIFIED="1571138311218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_report_testXFail.coverage" NAME="pytest for report.testXFail Coverage Results" MODIFIED="1574846712118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/report_dic" />
     <SUITE FILE_PATH="coverage/practice_pro$read_xlrd.coverage" NAME="read_xlrd Coverage Results" MODIFIED="1574135314824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/xlrd_dic" />
     <SUITE FILE_PATH="coverage/practice_pro$test_fixtureSam1.coverage" NAME="test_fixtureSam1 Coverage Results" MODIFIED="1564733340529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/practice_pro$word_order.coverage" NAME="word_order Coverage Results" MODIFIED="1588745896612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_report_testError.coverage" NAME="pytest for report.testError Coverage Results" MODIFIED="1574769584675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/report_dic" />
+    <SUITE FILE_PATH="coverage/practice_pro$str16tran10.coverage" NAME="str16tran10 Coverage Results" MODIFIED="1588758965804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
+    <SUITE FILE_PATH="coverage/practice_pro$ping.coverage" NAME="ping Coverage Results" MODIFIED="1589803886443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_fiture_scopeClass_Testclass.coverage" NAME="pytest for test_fiture_scopeClass.Testclass Coverage Results" MODIFIED="1565146101579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$Decorator_hello_world.coverage" NAME="Decorator_hello_world Coverage Results" MODIFIED="1587376219732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
+    <SUITE FILE_PATH="coverage/practice_pro$decorator_html2.coverage" NAME="decorator_html2 Coverage Results" MODIFIED="1587455372649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
+    <SUITE FILE_PATH="coverage/practice_pro$Game_rollDice.coverage" NAME="Game_rollDice Coverage Results" MODIFIED="1587972373650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$requests_up_file.coverage" NAME="requests_up_file Coverage Results" MODIFIED="1571303840892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/requests_dic" />
     <SUITE FILE_PATH="coverage/practice_pro$requests_get2.coverage" NAME="requests_get2 Coverage Results" MODIFIED="1571138555013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_fixture_scopeMoudle_Testcase_test4.coverage" NAME="pytest for test_fixture_scopeMoudle.Testcase.test4 Coverage Results" MODIFIED="1565148217314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$requests_get5.coverage" NAME="requests_get5 Coverage Results" MODIFIED="1571300242524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$getpathInfo.coverage" NAME="getpathInfo Coverage Results" MODIFIED="1587885597137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/practice_pro$test_api.coverage" NAME="test_api Coverage Results" MODIFIED="1584514447024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/practice_pro$test_fixtureSam2.coverage" NAME="test_fixtureSam2 Coverage Results" MODIFIED="1564734583776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_fixture_scopeFunc1_Testclass_test4.coverage" NAME="pytest for test_fixture_scopeFunc1.Testclass.test4 Coverage Results" MODIFIED="1565145623129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_fiture_scopeClass_Testclass_test3.coverage" NAME="pytest for test_fiture_scopeClass.Testclass.test3 Coverage Results" MODIFIED="1565146149960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_in_test_fixture_scopeFunc_py.coverage" NAME="pytest in test_fixture_scopeFunc.py Coverage Results" MODIFIED="1565145652001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$read_excel_2.coverage" NAME="read_excel_2 Coverage Results" MODIFIED="1573472661362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/pandas_dic" />
+    <SUITE FILE_PATH="coverage/practice_pro$geturlParams.coverage" NAME="geturlParams Coverage Results" MODIFIED="1585829062193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/practice_pro$Unittests_for_testcaseskip_SkipExample_test_case_three.coverage" NAME="Unittests for testcaseskip.SkipExample.test_case_three Coverage Results" MODIFIED="1562392971204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/practice_pro$requests_post1__1_.coverage" NAME="requests_post1 (1) Coverage Results" MODIFIED="1571301607064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/requests_dic" />
     <SUITE FILE_PATH="coverage/practice_pro$test_fixture_param.coverage" NAME="test_fixture_param Coverage Results" MODIFIED="1564976777680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$requests_post2.coverage" NAME="requests_post2 Coverage Results" MODIFIED="1571302003065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/requests_dic" />
+    <SUITE FILE_PATH="coverage/practice_pro$lastStr_cal.coverage" NAME="lastStr_cal Coverage Results" MODIFIED="1588750117881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$read_column1.coverage" NAME="read_column1 Coverage Results" MODIFIED="1574076809308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/xlrd_dic" />
     <SUITE FILE_PATH="coverage/practice_pro$request_get1.coverage" NAME="request_get1 Coverage Results" MODIFIED="1571138491471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/practice_pro$report.coverage" NAME="report Coverage Results" MODIFIED="1574846759723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/report_dic" />
+    <SUITE FILE_PATH="coverage/practice_pro$str_zlib.coverage" NAME="str_zlib Coverage Results" MODIFIED="1587891682099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$read_excel.coverage" NAME="read_excel Coverage Results" MODIFIED="1573472398999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/pandas_dic" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_in_report_py.coverage" NAME="pytest in report.py Coverage Results" MODIFIED="1574844307666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/report_dic" />
     <SUITE FILE_PATH="coverage/practice_pro$requests_get4.coverage" NAME="requests_get4 Coverage Results" MODIFIED="1571139281719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$Profiler.coverage" NAME="Profiler Coverage Results" MODIFIED="1587885235243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$Unittests_for_test_multiple_env_TestEvn.coverage" NAME="Unittests for test_multiple_env.TestEvn Coverage Results" MODIFIED="1562394670200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/practice_pro$read_excel_1.coverage" NAME="read_excel_1 Coverage Results" MODIFIED="1573472675105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/pandas_dic" />
+    <SUITE FILE_PATH="coverage/practice_pro$ping2.coverage" NAME="ping2 Coverage Results" MODIFIED="1589804507514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
+    <SUITE FILE_PATH="coverage/practice_pro$str_spit8str.coverage" NAME="str_spit8str Coverage Results" MODIFIED="1588757812739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
+    <SUITE FILE_PATH="coverage/practice_pro$decorator_html.coverage" NAME="decorator_html Coverage Results" MODIFIED="1587454692077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
+    <SUITE FILE_PATH="coverage/practice_pro$LISP_calculate.coverage" NAME="LISP_calculate Coverage Results" MODIFIED="1588673812530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_fixture_scopeFunc1_Testclass_test3.coverage" NAME="pytest for test_fixture_scopeFunc1.Testclass.test3 Coverage Results" MODIFIED="1565145315511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/practice_pro$decom_Prime.coverage" NAME="decom_Prime Coverage Results" MODIFIED="1588847720374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
+    <SUITE FILE_PATH="coverage/practice_pro$hello.coverage" NAME="hello Coverage Results" MODIFIED="1587872273353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
+    <SUITE FILE_PATH="coverage/practice_pro$configHttp.coverage" NAME="configHttp Coverage Results" MODIFIED="1585297680542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/practice_pro$file_operator.coverage" NAME="file_operator Coverage Results" MODIFIED="1587894598594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/pandas_dic/read_excel_2.py">
+        <entry file="file://$PROJECT_DIR$/testCase/meetingreminder/invite_call.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/configHttp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="48" selection-start-line="2" selection-end-line="10" selection-end-column="48" />
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/pandas_dic/read_excel_3.py">
+        <entry file="file://$PROJECT_DIR$/testCase/meetingreminder/inviteCase01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/xlrd_dic/read_column2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="57" selection-start-line="20" selection-end-line="20" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/xlrd_dic/read_column1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/xlrd_dic/read_column3_exportJson.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="88" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="88" />
+            <state relative-caret-position="238">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding>
-                <element signature="e#34#45#0" expanded="true" />
+                <element signature="e#17#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/xlrd_dic/read_xlrd.py">
+        <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/ping.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+            <state relative-caret-position="221">
+              <caret line="13" column="26" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/report_dic/report.py">
+        <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/ping2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="187">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -145,55 +209,63 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/testcaseskip.py" />
-        <option value="$PROJECT_DIR$/sys_argv.py" />
-        <option value="$PROJECT_DIR$/test_multiple_env.py" />
-        <option value="$PROJECT_DIR$/test_multiple_env_skip.py" />
-        <option value="$PROJECT_DIR$/venv/test_sample.py" />
-        <option value="$PROJECT_DIR$/test/test_class.py" />
-        <option value="$PROJECT_DIR$/test/test_fixture.py" />
-        <option value="$PROJECT_DIR$/test/test_fixtureSample.py" />
-        <option value="$PROJECT_DIR$/test_fixtureSam1.py" />
-        <option value="$PROJECT_DIR$/test/test_class1.py" />
-        <option value="$PROJECT_DIR$/test/test_fixtureSam2.py" />
-        <option value="$PROJECT_DIR$/test/test_fixture_decorator.py" />
-        <option value="$PROJECT_DIR$/test/test_fixture_param.py" />
-        <option value="$PROJECT_DIR$/test/test_fiture_param.py" />
-        <option value="$PROJECT_DIR$/test/test_fixture_param1.py" />
-        <option value="$PROJECT_DIR$/test/test_fixture_autos.py" />
-        <option value="$PROJECT_DIR$/test/test_fixture_scopeFunc1.py.ipynb" />
-        <option value="$PROJECT_DIR$/test/test_fixture_scopeFunc.py" />
-        <option value="$PROJECT_DIR$/test/test_fixture_scopeFunc1.py" />
-        <option value="$PROJECT_DIR$/test/test_fiture_scopeClass.py" />
-        <option value="$PROJECT_DIR$/test/test_fixture_scopeMoudle.py" />
-        <option value="$PROJECT_DIR$/test/test_EetupTeardown_function.py" />
-        <option value="$PROJECT_DIR$/test/test_SetupTeardown_function.py" />
-        <option value="$PROJECT_DIR$/test/test_SetupTeardown_class.py" />
-        <option value="$PROJECT_DIR$/test/test_SetupTeardown_method.py" />
-        <option value="$PROJECT_DIR$/test/toapi_practice2.py" />
-        <option value="$PROJECT_DIR$/test/toapi_practice1.py" />
-        <option value="$PROJECT_DIR$/test/request_get1.py" />
-        <option value="$PROJECT_DIR$/test/requests_get2.py" />
-        <option value="$PROJECT_DIR$/test/requests_get3.py" />
-        <option value="$PROJECT_DIR$/test/requests_get4.py" />
-        <option value="$PROJECT_DIR$/test/requests_get5.py" />
-        <option value="$PROJECT_DIR$/test/requests_post1.py" />
-        <option value="$PROJECT_DIR$/test/requests_dic/requests_post2.py" />
-        <option value="$PROJECT_DIR$/test/requests_dic/requests_up_file.py" />
-        <option value="$PROJECT_DIR$/test/requests_dic/requests_cookie.py" />
-        <option value="$PROJECT_DIR$/test/pandas_dic/read_excel.py" />
-        <option value="$PROJECT_DIR$/test/pandas_dic/read_excel_2.py" />
-        <option value="$PROJECT_DIR$/test/pandas_dic/read_excel_3.py" />
-        <option value="$PROJECT_DIR$/test/pandas_dic/read_excel_OpLine_1.py" />
-        <option value="$PROJECT_DIR$/test/pandas_dic/read_excel_OpLine_2.py" />
-        <option value="$PROJECT_DIR$/test/pandas_dic/read_excel_OpLineRow.py" />
-        <option value="$PROJECT_DIR$/test/xlrd_dic/read_column1.py" />
-        <option value="$PROJECT_DIR$/test/xlrd_dic/read_column3_exportJson.py" />
-        <option value="$PROJECT_DIR$/test/xlrd_dic/read_xlrd.py" />
-        <option value="$PROJECT_DIR$/report_dic/report.py" />
+        <option value="$PROJECT_DIR$/LICENSE.txt" />
+        <option value="$PROJECT_DIR$/redmine.txt" />
+        <option value="$PROJECT_DIR$/common/configEmail.py" />
+        <option value="$PROJECT_DIR$/common/HTMLTestRunner.py" />
+        <option value="$PROJECT_DIR$/geturlParams.py" />
+        <option value="$PROJECT_DIR$/runAll.py" />
+        <option value="$PROJECT_DIR$/test_sql.py" />
+        <option value="$PROJECT_DIR$/test_api.py" />
+        <option value="$PROJECT_DIR$/common/signature.py" />
+        <option value="$PROJECT_DIR$/testCase/invite_call.py" />
+        <option value="$PROJECT_DIR$/getpathInfo.py" />
+        <option value="$PROJECT_DIR$/readExcel.py" />
+        <option value="$PROJECT_DIR$/common/configHttp.py" />
+        <option value="$PROJECT_DIR$/testCase/inviteCase01.py" />
+        <option value="$PROJECT_DIR$/common/getSignatureParams.py" />
+        <option value="$PROJECT_DIR$/readConfig.py" />
+        <option value="$PROJECT_DIR$/config.ini" />
+        <option value="$PROJECT_DIR$/common/geturlParams.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/test1.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_pro.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Decorator_hello_world.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decorator_html.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decorator_html2.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/hello.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decorator_fib.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Profiler.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str_zlib.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/file_operator.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/duplicate_removal.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/count_subNum.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Game_rollDice.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/number_line.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/MerseCode_covert.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/set_f.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/python_re.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/LISP_calculate.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/add7algorithm.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str_python.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/find_maxstr.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/word_order.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/list_cycle.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/lastStr_cal.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/num_sort.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str_spit8str.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str16tran10.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decom_Prime.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/approx_num.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/merge_table.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Nstring_sort.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/ping.py" />
+        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/ping2.py" />
       </list>
     </option>
   </component>
@@ -208,6 +280,9 @@
     <option name="y" value="2" />
     <option name="width" value="1378" />
     <option name="height" value="733" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -224,11 +299,7 @@
             <path>
               <item name="practice_pro" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice_pro" type="462c0819:PsiDirectoryNode" />
-              <item name="report_dic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice_pro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="meeting_ptactice" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -239,7 +310,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebTest_pytest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
@@ -249,11 +320,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\python_project\practice_pro\meeting_ptactice\Decorator_dir" />
       <recent name="C:\python_project\practice_pro\test\xlrd_dic" />
       <recent name="C:\python_project\practice_pro\test\toapi_dic" />
       <recent name="C:\python_project\practice_pro\test\pytest_SetupTeardown_dic" />
       <recent name="C:\python_project\practice_pro\test\pytest_fixture_dic" />
-      <recent name="C:\python_project\practice_pro\test\requests_dic" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -268,8 +339,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.report">
-    <configuration name="read_xlrd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ping2">
+    <configuration name="Nstring_sort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="practice_pro" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -277,12 +348,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/xlrd_dic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/xlrd_dic/read_xlrd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Nstring_sort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -291,7 +362,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="report" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="approx_num" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="practice_pro" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -299,12 +370,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/report_dic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/report_dic/report.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/approx_num.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -313,61 +384,79 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for report.testError" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="merge_table" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="practice_pro" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/report_dic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;report.testError&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/merge_table.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for report.testXFail" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="ping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="practice_pro" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/report_dic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;report.testXFail&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/ping.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in report.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="ping2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="practice_pro" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/report_dic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/report_dic/report.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/ping2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.report" />
-        <item itemvalue="Python tests.pytest for report.testXFail" />
-        <item itemvalue="Python tests.pytest in report.py" />
-        <item itemvalue="Python tests.pytest for report.testError" />
-        <item itemvalue="Python.read_xlrd" />
+        <item itemvalue="Python.ping2" />
+        <item itemvalue="Python.ping" />
+        <item itemvalue="Python.Nstring_sort" />
+        <item itemvalue="Python.merge_table" />
+        <item itemvalue="Python.approx_num" />
       </list>
     </recent_temporary>
   </component>
@@ -395,6 +484,29 @@
       <workItem from="1573470583017" duration="2447000" />
       <workItem from="1573609765276" duration="19083000" />
       <workItem from="1574763903055" duration="8751000" />
+      <workItem from="1575776683986" duration="2777000" />
+      <workItem from="1576297033042" duration="1802000" />
+      <workItem from="1578731204142" duration="599000" />
+      <workItem from="1581067232089" duration="599000" />
+      <workItem from="1583721991722" duration="1579000" />
+      <workItem from="1583727212879" duration="6646000" />
+      <workItem from="1584435440339" duration="2625000" />
+      <workItem from="1584440608079" duration="12000" />
+      <workItem from="1584440653616" duration="9000" />
+      <workItem from="1584441379714" duration="17771000" />
+      <workItem from="1585280443435" duration="12668000" />
+      <workItem from="1585744934232" duration="11610000" />
+      <workItem from="1587367170798" duration="500000" />
+      <workItem from="1587367773336" duration="156000" />
+      <workItem from="1587367949619" duration="158000" />
+      <workItem from="1587368199471" duration="32128000" />
+      <workItem from="1587968676995" duration="28773000" />
+      <workItem from="1588218640933" duration="35880000" />
+      <workItem from="1588731812269" duration="5318000" />
+      <workItem from="1588744573373" duration="23736000" />
+      <workItem from="1589428778236" duration="678000" />
+      <workItem from="1589435773388" duration="4827000" />
+      <workItem from="1589946853712" duration="658000" />
     </task>
     <servers />
   </component>
@@ -431,19 +543,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84311000" />
+    <option name="totallyTimeSpent" value="278379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30181542" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30786687" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30163935" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933443" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -464,317 +576,327 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testcaseskip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sys_argv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_multiple_env_skip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_class1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_fixtureSam1.py" />
-    <entry file="file://$PROJECT_DIR$/test/test_fixtureSam2.py" />
-    <entry file="file://$PROJECT_DIR$/test/test_fixture_scope.py" />
-    <entry file="file://$PROJECT_DIR$/test_multiple_env.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pytest_fixture_dic/test_fixtureSample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pytest_fixture_dic/test_fixture_autos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pytest_fixture_dic/test_fixture.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pytest_fixture_dic/test_fixture_decorator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pytest_fixture_dic/test_fixture_param.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_fixture_scopeFunc1.py.ipynb" />
-    <entry file="file://$PROJECT_DIR$/test/pytest_fixture_dic/test_fixture_param1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pytest_fixture_dic/test_fixture_scopeFunc1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pytest_fixture_dic/test_fiture_scopeClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" selection-start-line="29" selection-end-line="32" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_EetupTeardown_function.py" />
-    <entry file="file://$PROJECT_DIR$/test/pytest_fixture_dic/test_fixture_scopeFunc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="80" selection-start-line="3" selection-end-line="5" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pytest_SetupTeardown_dic/test_SetupTeardown_function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pytest_SetupTeardown_dic/test_SetupTeardown_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" selection-start-line="18" selection-start-column="3" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/toapi_dic/toapi_practice2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding>
-            <element signature="e#17#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/requests_dic/requests_get3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="11" />
-          <folding>
-            <element signature="e#18#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/requests_dic/requests_get4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="e#17#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/requests_dic/requests_get5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="e#18#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pytest_SetupTeardown_dic/test_SetupTeardown_method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="130" selection-start-line="9" selection-start-column="130" selection-end-line="9" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pytest_fixture_dic/test_fixture_scopeMoudle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/toapi_dic/toapi_practice1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/requests_dic/request_get1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/requests_dic/requests_post2.py" />
-    <entry file="file://$PROJECT_DIR$/test/requests_dic/requests_get2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/requests_dic/requests_post1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/requests_dic/requests_up_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pandas_dic/read_excel.py" />
-    <entry file="file://$PROJECT_DIR$/test/requests_dic/requests_cookie.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/requests_dic/requests_1.py">
+    <entry file="file://$PROJECT_DIR$/runAll.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/pandas_dic/read_excel_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/test_sql.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/xlrd_dic/read_excel_OpLineRow.py" />
-    <entry file="file://$PROJECT_DIR$/test/xlrd_dic/read_excel_Row.py" />
-    <entry file="file://$PROJECT_DIR$/test/pandas_dic/read_excel_OpLine_2.py">
+    <entry file="file://$PROJECT_DIR$/test_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pandas_dic/read_excel_OpLine_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/xlrd_dic/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pandas_dic/read_excel_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="48" selection-start-line="2" selection-end-line="10" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pandas_dic/read_excel_3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/xlrd_dic/read_column2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="57" selection-start-line="20" selection-end-line="20" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/xlrd_dic/read_column1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/xlrd_dic/read_column3_exportJson.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="88" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="88" />
+        <state relative-caret-position="-172">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <element signature="e#34#45#0" expanded="true" />
+            <element signature="e#18#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/xlrd_dic/read_xlrd.py">
+    <entry file="file://$PROJECT_DIR$/testCase/inviteCase01.py" />
+    <entry file="file://$PROJECT_DIR$/testCase/invite_call.py" />
+    <entry file="file://$PROJECT_DIR$/readExcel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+        <state relative-caret-position="204">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding>
+            <element signature="e#18#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report_dic/report.py">
+    <entry file="file://$PROJECT_DIR$/getSignatureParams.py" />
+    <entry file="file://$PROJECT_DIR$/common/getSignatureParams.py" />
+    <entry file="file://$PROJECT_DIR$/common/signature.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="336">
+          <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/geturlParams.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Decorator_pro.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="1740" selection-start-line="1740" selection-end-line="1740" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="29" />
+          <folding>
+            <element signature="e#18#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getpathInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Decorator_hello_world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decorator_html2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Game_rollDice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decorator_html.py" />
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/file_operator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/duplicate_removal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/count_subNum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Profiler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str_zlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#179#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/MerseCode_covert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/set_f.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/LISP_calculate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/add7algorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/find_maxstr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/list_cycle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="18" lean-forward="true" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/lastStr_cal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str16tran10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str_python.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/python_re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="94" column="38" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str_spit8str.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/number_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decorator_fib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/num_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/word_order.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decom_Prime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/approx_num.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/merge_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Nstring_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/meetingreminder/invite_call.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/configHttp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/meetingreminder/inviteCase01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding>
+            <element signature="e#17#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/ping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="26" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meeting_ptactice/Decorator_dir/ping2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
         </state>
       </provider>
     </entry>
