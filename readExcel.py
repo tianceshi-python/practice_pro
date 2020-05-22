@@ -10,10 +10,12 @@ from xlrd import open_workbook
 path = getpathInfo.get_Path()
 
 class readExcel():
-    def get_xls(self,xls_name,sheet_name):
+
+
+    def get_xls(self,caseDirName1,caseDirName2,xls_name,sheet_name):
         cls = []
 
-        xlsPath = os.path.join(path,"testFile",'case',xls_name)
+        xlsPath = os.path.join(path,caseDirName1,caseDirName2,xls_name)
         file =open_workbook(xlsPath)   #打开用例的excel
         #sheet = file.sheets()[0]    #通过索引顺序获取表
 
@@ -32,6 +34,6 @@ class readExcel():
 
 
 if __name__ == '__main__':
-    print(readExcel().get_xls('userCase.xlsx','MeetRoomCase'))
-    print(readExcel().get_xls('userCase.xlsx','MeetRoomCase')[0][1])
-    print(readExcel().get_xls('userCase.xlsx','MeetRoomCase')[1][2])
+    print(readExcel().get_xls('testCase','casedata','conferenceControl_casedate.xlsx','base_uel'))
+    #print(readExcel().get_xls('userCase.xlsx','MeetRoomCase')[0][1])
+    #print(readExcel().get_xls('userCase.xlsx','MeetRoomCase')[1][2])
