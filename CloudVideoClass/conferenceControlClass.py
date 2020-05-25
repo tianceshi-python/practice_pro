@@ -22,9 +22,12 @@ class conferenceControlClass():
             "deviceList": [{"number": self.device_num}]}
         jdata = json.dumps(data)
         print(header.items())
+        #获取该接口的数字签名
         obj = common.signature.Get_signature_url(method=str.upper("put"), req_url=invite_url, req_data=jdata, token=token)
         signaturePra =obj.get_signature()
         #print('signaturePra is :',signaturePra)
+
+        #邀请入会的请求url地址
         invite_last_url = base_url + enterpriseId + '&signature=' + signaturePra
         print('invite_last_url is:',invite_last_url)
         res = requests.put(invite_last_url, data=jdata, headers=header)
@@ -44,7 +47,9 @@ if __name__ == '__main__':
     header = readConfig.ReadConfig().get_header('header')
     enterpriseId = readConfig.ReadConfig().get_enterprise('enterpriseId')
     token = readConfig.ReadConfig().get_enterprise('token')
-    base_url_list = readExcel.readExcel().get_xls('testCase','casedata','conferenceControl_casedate.xlsx','base_uel')
+
+    #5.23修改了获取base_url的表名称
+    base_url_list = readExcel.readExcel().get_xls('testCase','casedata','conferenceControl_casedate.xlsx','base_urll')
     #print('header is:', header.items())
 
     #print('enterpriseId is:',enterpriseId)
