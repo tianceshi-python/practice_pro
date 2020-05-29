@@ -28,12 +28,12 @@ class readExcel():
         nrows = sheet.nrows
 
         for i in range(nrows):  #根据行数循环
-            if sheet.row_values(i)[0] != u'case_name':  #判断将表的第一行排除，第一行不是case
+            if sheet.row_values(i)[0] != u'':  #判断将表的第一行排除，第一行不是case
                 cls.append(sheet.row_values(i))
         return cls
 
 
 if __name__ == '__main__':
-    print(readExcel().get_xls('testCase','casedata','conferenceControl_casedate.xlsx','base_uel'))
+    print(readExcel().get_xls('testCase','casedata','create_meeting_casedate.xlsx','base_urll'))
     #print(readExcel().get_xls('userCase.xlsx','MeetRoomCase')[0][1])
     #print(readExcel().get_xls('userCase.xlsx','MeetRoomCase')[1][2])
