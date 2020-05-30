@@ -4,6 +4,8 @@ import readConfig
 import json
 import common.signature
 import requests
+import time
+import getpass
 import common.logPrintClass   #导入打印log的模块
 
 class conferenceControlClass():
@@ -44,8 +46,6 @@ class conferenceControlClass():
         # 获取签名的req_url=invite_url
         invite_url = base_url + self.enterpriseId
         data = {
-        "callNumber": meeting_room,
-                      "deviceList": [{"number": device_num}]}
         "callNumber": callNumber,
         "deviceList": deviceList}
         print(data)
@@ -249,28 +249,13 @@ class conferenceControlClass():
 
 if __name__ == '__main__':
 
-
-    #邀请入会
     header = readConfig.ReadConfig().get_header('header')
     enterpriseId = readConfig.ReadConfig().get_enterprise('enterpriseId')
     token = readConfig.ReadConfig().get_enterprise('token')
-    logPath = readConfig.ReadConfig().get_LogPath('LogPath')
-    print('LogPath is:', logPath)
-
-    #5.23修改了获取base_url的表名称
-    base_url_list = readExcel.readExcel().get_xls('testCase','casedata','conferenceControl_casedate.xlsx','base_urll')
-    #print('header is:', header.items())
-
-    #print('enterpriseId is:',enterpriseId)
-    #print('token is:',token)
-    #print('base_url_list is:',base_url_list)
-    for i in base_url_list:
-        if i[0] == 'invitation':
-            base_url = i[1]
-            # print('base_url is:',base_url)
-    #print('base_url is:',base_url)
-    obj = conferenceControlClass(logPath,header,enterpriseId,token)
-    obj.invitation(base_url,meeting_room = '9005853980',device_num = '20853543')
+    user_name = getpass.getuser()  # 获取当前用户名
+    LogPath = 'C:\\Users\\' + user_name + '\\AppData\\Roaming\\autoTestLog'
+    # logPath = readConfig.ReadConfig().get_LogPath('LogPath')
+    print('LogPath is:', LogPath)
 
     '''
     #查询会议状态
@@ -300,7 +285,7 @@ if __name__ == '__main__':
         if i[0] == 'Invitation':
             base_url = i[1]
     print('base_url is:', base_url)
-    obj = conferenceControlClass(enterpriseId, token, header)
+    obj = conferenceControlClass(LogPath,header,enterpriseId,token)
     obj.Invitation(base_url, '9005853980', deviceList)
 
     time.sleep(10)
@@ -313,7 +298,7 @@ if __name__ == '__main__':
             base_url = i[1]
     print('base_url is:', base_url)
 
-    obj = conferenceControlClass(enterpriseId, token, header)
+    obj = conferenceControlClass(LogPath,header,enterpriseId,token)
     obj.QueryMeetingStatus(base_url, '9005853980')
 
     # 获取终端id/type等信息
@@ -342,7 +327,7 @@ if __name__ == '__main__':
             base_url = i[1]
     print('base_url is:', base_url)
 
-    obj = conferenceControlClass(enterpriseId, token, header)
+    obj = conferenceControlClass(LogPath,header,enterpriseId,token)
     obj.Kickoutmeeting(base_url, '9005853980', [data[0]])
 
     time.sleep(5)
@@ -355,7 +340,7 @@ if __name__ == '__main__':
             base_url = i[1]
     print('base_url is:', base_url)
 
-    obj = conferenceControlClass(enterpriseId, token, header)
+    obj = conferenceControlClass(LogPath,header,enterpriseId,token)
     obj.Mainscreen(base_url, '9005853980', data[1])
 
     time.sleep(5)
@@ -368,7 +353,7 @@ if __name__ == '__main__':
             base_url = i[1]
     print('base_url is:', base_url)
 
-    obj = conferenceControlClass(enterpriseId, token, header)
+    obj = conferenceControlClass(LogPath,header,enterpriseId,token)
     obj.Nospeaking(base_url, '9005853980', data)
 
     time.sleep(5)
@@ -381,7 +366,7 @@ if __name__ == '__main__':
             base_url = i[1]
     print('base_url is:', base_url)
 
-    obj = conferenceControlClass(enterpriseId, token, header)
+    obj = conferenceControlClass(LogPath,header,enterpriseId,token)
     obj.Allowspeaking(base_url, '9005853980', data)
 
     time.sleep(5)
@@ -396,7 +381,7 @@ if __name__ == '__main__':
 
     datas = {"content": "测试test", "targets": [{"deviceId": 221123196, "deviceType": 8}]}
 
-    obj = conferenceControlClass(enterpriseId, token, header)
+    obj = conferenceControlClass(LogPath,header,enterpriseId,token)
     obj.Sendsubtitles(base_url, '9005853980', *datas)
 
     time.sleep(10)
@@ -409,11 +394,8 @@ if __name__ == '__main__':
             base_url = i[1]
     # print('base_url is:',base_url)
     # print('base_url is:',base_url)
-    obj = conferenceControlClass(logPath, header, enterpriseId, token)
-    obj.invitation(base_url, meeting_room='9005853980', device_num='20853543')
+    obj = conferenceControlClass(LogPath, header, enterpriseId, token)
+    obj.Endmeeting(base_url, meeting_room='9005853980', device_num='20853543')
     print('base_url is:', base_url)
-
-    obj = conferenceControlClass(enterpriseId, token, header)
-    obj.Endmeeting(base_url, '9005853980')
 
 
