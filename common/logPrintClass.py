@@ -4,11 +4,14 @@ import logging
 import time
 import os
 import readConfig
+import getpass
 
 
-'''
 # 定义要创建的目录
-def mkdir(path):
+def mkdir():
+    user_name = getpass.getuser()  # 获取当前用户名
+    path = 'C:\\Users\\' + user_name + '\\AppData\\Roaming\\autoTestLog'
+    print('path is:', path)
     #判断路径是否存在
     #存在 True
     #不存在 False
@@ -22,27 +25,15 @@ def mkdir(path):
         print('path创建成功：',path)
     else:
         print( path +'  目录已经存在')
-'''
+    return path
+
 
 
 
 #写log类
-class Log:
-    def __init__(self,path):
-        # 定义要创建的目录
-
-        # 判断路径是否存在
-        # 存在 True
-        # 不存在 False
-        isExists = os.path.exists(path)
-        if not isExists:
-            # 如果不存在则创建目录
-            # 如果不存在则创建目录
-            os.makedirs(path)
-            print('path创建成功：', path)
-        else:
-            print(path + '  目录已经存在')
-
+class Log():
+    def __init__(self):
+        path = mkdir()
         self.logname = path + '\\' +'autoTestLog' +  time.strftime('%Y-%m-%d') + '.log'
 
 
@@ -100,10 +91,8 @@ class Log:
 
 
 if __name__ == '__main__':
-    path = readConfig.ReadConfig().get_LogPath('LogPath')
-    print('LogPath is:',path)
 
-    log = Log(path)
+    log = Log()
     log.info('info msg1000013333')
     log.debug('debug msg')
     log.warning('warning msg')
