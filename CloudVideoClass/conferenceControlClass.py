@@ -5,21 +5,18 @@ import json
 import common.signature
 import requests
 import time
-import getpass
 import common.logPrintClass   #导入打印log的模块
 
 class conferenceControlClass():
-    def __init__(self,logPath,header,enterpriseId,token):
+    def __init__(self,header,enterpriseId,token):
         self.header = header
         self.enterpriseId = enterpriseId
         self.token = token
 
-        #实例化log打印类
-        self.logPath = logPath
-        self.log = common.logPrintClass.Log(self.logPath)
-
     # 根据云会议室号查看当前会议全体成员的会议状态
     def QueryMeetingStatus(self, base_url, callNumber):
+
+        log.info('根据云会议室号查看当前会议全体成员的会议状态 start....')
         meetingStatus_url = base_url + callNumber + '/meetingStatus?enterpriseId=' + self.enterpriseId
         jdata = ""
         print(meetingStatus_url)
@@ -33,6 +30,11 @@ class conferenceControlClass():
         print('meetingStatus_last_url is:', meetingStatus_last_url)
 
         res = requests.get(meetingStatus_last_url, data=jdata, headers=self.header)
+
+        log.debug('res_url is:' + res.url)
+        log.debug('status_code is:' + str(res.status_code))
+        log.debug('res.text is:' + res.text)
+
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
         print('res.text is:\n', res.text)
@@ -41,8 +43,8 @@ class conferenceControlClass():
     # 邀请入会
 
     def Invitation(self, base_url, callNumber, deviceList):  # devicelist为列表参数：[{'number':'20734806'},{'number':'619827'}
-        self.log.info('邀请入会请求 start....')
 
+        log.info('邀请入会请求 start....')
         # 获取签名的req_url=invite_url
         invite_url = base_url + self.enterpriseId
         data = {
@@ -61,9 +63,9 @@ class conferenceControlClass():
         print('invite_last_url is:', invite_last_url)
         res = requests.put(invite_last_url, data=jdata, headers=self.header)
 
-        self.log.debug('res_url is:' + res.url)
-        self.log.debug('status_code is:' + str(res.status_code))
-        self.log.debug('res.text is:' + res.text)
+        log.debug('res_url is:' + res.url)
+        log.debug('status_code is:' + str(res.status_code))
+        log.debug('res.text is:' + res.text)
 
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
@@ -73,6 +75,8 @@ class conferenceControlClass():
 
     # 踢出会议
     def Kickoutmeeting(self, base_url, callNumber, data):
+
+        log.info('踢出会议请求 start....')
         kickoutmeeting_url = base_url + callNumber + '/disconnect?enterpriseId=' + self.enterpriseId
         data = data
         # data数据格式如下
@@ -94,6 +98,11 @@ class conferenceControlClass():
         kickoutmeeting_url_last_url = kickoutmeeting_url + '&signature=' + signaturePra
         print('kickoutmeeting_url_last_url is:', kickoutmeeting_url_last_url)
         res = requests.put(kickoutmeeting_url_last_url, data=jdata, headers=self.header)
+
+        log.debug('res_url is:' + res.url)
+        log.debug('status_code is:' + str(res.status_code))
+        log.debug('res.text is:' + res.text)
+
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
         print('res.text is:\n', res.text)
@@ -102,6 +111,8 @@ class conferenceControlClass():
 
     # 设置主画面
     def Mainscreen(self, base_url, meetingRoomNumber, data):
+
+        log.info('设置主画面请求 start....')
         Mainscreen_url = base_url + meetingRoomNumber + '/mainImage?enterpriseId=' + self.enterpriseId
         data = data
         # data数据格式如下
@@ -124,6 +135,11 @@ class conferenceControlClass():
         Mainscreen_url_last_url = Mainscreen_url + '&signature=' + signaturePra
         print('Mainscreen_url_last_url is:', Mainscreen_url_last_url)
         res = requests.put(Mainscreen_url_last_url, data=jdata, headers=self.header)
+
+        log.debug('res_url is:' + res.url)
+        log.debug('status_code is:' + str(res.status_code))
+        log.debug('res.text is:' + res.text)
+
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
         print('res.text is:\n', res.text)
@@ -132,6 +148,8 @@ class conferenceControlClass():
 
     # 禁言
     def Nospeaking(self, base_url, callNumber, data):
+
+        log.info('禁言请求 start....')
         Nospeaking_url = base_url + callNumber + '/mute?enterpriseId=' + self.enterpriseId + '&force=True'
         data = data
         # data数据格式如下
@@ -154,6 +172,11 @@ class conferenceControlClass():
         Nospeaking_url_last_url = Nospeaking_url + '&signature=' + signaturePra
         print('Mainscreen_url_last_url is:', Nospeaking_url_last_url)
         res = requests.put(Nospeaking_url_last_url, data=jdata, headers=self.header)
+
+        log.debug('res_url is:' + res.url)
+        log.debug('status_code is:' + str(res.status_code))
+        log.debug('res.text is:' + res.text)
+
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
         print('res.text is:\n', res.text)
@@ -162,6 +185,8 @@ class conferenceControlClass():
 
     # 解除禁言
     def Allowspeaking(self, base_url, callNumber, data):
+
+        log.info('解除禁言请求 start....')
         Allowspeaking_url = base_url + callNumber + '/unmute?enterpriseId=' + self.enterpriseId
         data = data
         # data数据格式如下
@@ -184,6 +209,11 @@ class conferenceControlClass():
         Allowspeaking_url_last_url = Allowspeaking_url + '&signature=' + signaturePra
         print('Mainscreen_url_last_url is:', Allowspeaking_url_last_url)
         res = requests.put(Allowspeaking_url_last_url, data=jdata, headers=self.header)
+
+        log.debug('res_url is:' + res.url)
+        log.debug('status_code is:' + str(res.status_code))
+        log.debug('res.text is:' + res.text)
+
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
         print('res.text is:\n', res.text)
@@ -192,6 +222,8 @@ class conferenceControlClass():
 
     # 向终端发送字幕
     def Sendsubtitles(self, base_url, callNumber, *datas):
+
+        log.info('向终端发送字幕请求 start....')
         Sendsubtitles_url = base_url + callNumber + '/meeting/subtitle?enterpriseId=' + self.enterpriseId
         data = datas
         # data数据格式
@@ -219,6 +251,11 @@ class conferenceControlClass():
         Sendsubtitles_url_last_url = Sendsubtitles_url + '&signature=' + signaturePra
         print('Sendsubtitles_url_last_url is:', Sendsubtitles_url_last_url)
         res = requests.post(Sendsubtitles_url_last_url, data=jdata, headers=self.header)
+
+        log.debug('res_url is:' + res.url)
+        log.debug('status_code is:' + str(res.status_code))
+        log.debug('res.text is:' + res.text)
+
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
         print('res.text is:\n', res.text)
@@ -227,6 +264,8 @@ class conferenceControlClass():
 
     # 结束会议
     def Endmeeting(self, base_url, callNumber):
+
+        log.info('结束会议请求 start....')
         Endmeeting_url = base_url + callNumber + '/end?enterpriseId=' + self.enterpriseId
         jdata = ""
 
@@ -241,6 +280,11 @@ class conferenceControlClass():
         Endmeeting_url_last_url = Endmeeting_url + '&signature=' + signaturePra
         print('Sendsubtitles_url_last_url is:', Endmeeting_url_last_url)
         res = requests.put(Endmeeting_url_last_url, data=jdata, headers=self.header)
+
+        log.debug('res_url is:' + res.url)
+        log.debug('status_code is:' + str(res.status_code))
+        log.debug('res.text is:' + res.text)
+
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
         print('res.text is:\n', res.text)
@@ -252,10 +296,7 @@ if __name__ == '__main__':
     header = readConfig.ReadConfig().get_header('header')
     enterpriseId = readConfig.ReadConfig().get_enterprise('enterpriseId')
     token = readConfig.ReadConfig().get_enterprise('token')
-    user_name = getpass.getuser()  # 获取当前用户名
-    LogPath = 'C:\\Users\\' + user_name + '\\AppData\\Roaming\\autoTestLog'
-    # logPath = readConfig.ReadConfig().get_LogPath('LogPath')
-    print('LogPath is:', LogPath)
+    log = common.logPrintClass.Log()
 
     '''
     #查询会议状态
@@ -285,7 +326,7 @@ if __name__ == '__main__':
         if i[0] == 'Invitation':
             base_url = i[1]
     print('base_url is:', base_url)
-    obj = conferenceControlClass(LogPath,header,enterpriseId,token)
+    obj = conferenceControlClass(header,enterpriseId,token)
     obj.Invitation(base_url, '9005853980', deviceList)
 
     time.sleep(10)
@@ -298,7 +339,7 @@ if __name__ == '__main__':
             base_url = i[1]
     print('base_url is:', base_url)
 
-    obj = conferenceControlClass(LogPath,header,enterpriseId,token)
+    obj = conferenceControlClass(header,enterpriseId,token)
     obj.QueryMeetingStatus(base_url, '9005853980')
 
     # 获取终端id/type等信息
@@ -327,7 +368,7 @@ if __name__ == '__main__':
             base_url = i[1]
     print('base_url is:', base_url)
 
-    obj = conferenceControlClass(LogPath,header,enterpriseId,token)
+    obj = conferenceControlClass(header,enterpriseId,token)
     obj.Kickoutmeeting(base_url, '9005853980', [data[0]])
 
     time.sleep(5)
@@ -340,7 +381,7 @@ if __name__ == '__main__':
             base_url = i[1]
     print('base_url is:', base_url)
 
-    obj = conferenceControlClass(LogPath,header,enterpriseId,token)
+    obj = conferenceControlClass(header,enterpriseId,token)
     obj.Mainscreen(base_url, '9005853980', data[1])
 
     time.sleep(5)
@@ -353,7 +394,7 @@ if __name__ == '__main__':
             base_url = i[1]
     print('base_url is:', base_url)
 
-    obj = conferenceControlClass(LogPath,header,enterpriseId,token)
+    obj = conferenceControlClass(header,enterpriseId,token)
     obj.Nospeaking(base_url, '9005853980', data)
 
     time.sleep(5)
@@ -366,7 +407,7 @@ if __name__ == '__main__':
             base_url = i[1]
     print('base_url is:', base_url)
 
-    obj = conferenceControlClass(LogPath,header,enterpriseId,token)
+    obj = conferenceControlClass(header,enterpriseId,token)
     obj.Allowspeaking(base_url, '9005853980', data)
 
     time.sleep(5)
@@ -381,7 +422,7 @@ if __name__ == '__main__':
 
     datas = {"content": "测试test", "targets": [{"deviceId": 221123196, "deviceType": 8}]}
 
-    obj = conferenceControlClass(LogPath,header,enterpriseId,token)
+    obj = conferenceControlClass(header,enterpriseId,token)
     obj.Sendsubtitles(base_url, '9005853980', *datas)
 
     time.sleep(10)
@@ -394,7 +435,7 @@ if __name__ == '__main__':
             base_url = i[1]
     # print('base_url is:',base_url)
     # print('base_url is:',base_url)
-    obj = conferenceControlClass(LogPath, header, enterpriseId, token)
+    obj = conferenceControlClass(header, enterpriseId, token)
     obj.Endmeeting(base_url, meeting_room='9005853980', device_num='20853543')
     print('base_url is:', base_url)
 
