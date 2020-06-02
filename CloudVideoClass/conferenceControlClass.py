@@ -221,11 +221,12 @@ class conferenceControlClass():
 
 
     # 向终端发送字幕
-    def Sendsubtitles(self, base_url, callNumber, *datas):
+    def Sendsubtitles(self, base_url, callNumber, **datas):
 
         log.info('向终端发送字幕请求 start....')
         Sendsubtitles_url = base_url + callNumber + '/meeting/subtitle?enterpriseId=' + self.enterpriseId
         data = datas
+        # print('data is:',data)
         # data数据格式
         # {
         #
@@ -241,7 +242,7 @@ class conferenceControlClass():
         jdata = json.dumps(data)
 
         # 获取该接口的数字签名
-        obj = common.signature.Get_signature_url(method=str.upper("put"), req_url=Sendsubtitles_url,
+        obj = common.signature.Get_signature_url(method=str.upper("post"), req_url=Sendsubtitles_url,
                                                  req_data=jdata,
                                                  token=self.token)
         signaturePra = obj.get_signature()
@@ -420,10 +421,8 @@ if __name__ == '__main__':
             base_url = i[1]
     print('base_url is:', base_url)
 
-    datas = {"content": "测试test", "targets": [{"deviceId": 221123196, "deviceType": 8}]}
-
     obj = conferenceControlClass(header,enterpriseId,token)
-    obj.Sendsubtitles(base_url, '9005853980', *datas)
+    obj.Sendsubtitles(base_url, '9005853980',content = "测试test",targets = [{"deviceId": 26221690, "deviceType": 8}])
 
     time.sleep(10)
 
