@@ -436,7 +436,7 @@ if __name__ == '__main__':
     # print('base_url is:',base_url)
     # print('base_url is:',base_url)
     obj = conferenceControlClass(header, enterpriseId, token)
-    obj.Endmeeting(base_url, meeting_room='9005853980', device_num='20853543')
+    obj.Endmeeting(base_url,'9005853980')
     print('base_url is:', base_url)
 
 
