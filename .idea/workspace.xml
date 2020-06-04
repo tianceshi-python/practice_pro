@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94ce7423-1d1c-49bc-a71b-de8132fea33b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CloudVideoClass/conferenceControlClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/CloudVideoClass/conferenceControlClass.py" afterDir="false" />
-    </list>
+    <list default="true" id="94ce7423-1d1c-49bc-a71b-de8132fea33b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,8 +177,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CloudVideoClass/conferenceControlClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="432" column="32" lean-forward="true" selection-start-line="432" selection-start-column="32" selection-end-line="432" selection-end-column="32" />
+            <state relative-caret-position="221">
+              <caret line="439" lean-forward="true" selection-start-line="439" selection-end-line="439" />
               <folding>
                 <element signature="e#17#33#0" expanded="true" />
               </folding>
@@ -264,7 +262,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-20" />
     <option name="y" value="8" />
     <option name="width" value="1379" />
@@ -285,6 +283,11 @@
             <path>
               <item name="practice_pro" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice_pro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice_pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice_pro" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -497,7 +500,7 @@
       <workItem from="1590041238538" duration="49733000" />
       <workItem from="1590406995060" duration="26552000" />
       <workItem from="1590819417421" duration="2158000" />
-      <workItem from="1590974002662" duration="3717000" />
+      <workItem from="1590974002662" duration="5741000" />
     </task>
     <servers />
   </component>
@@ -534,17 +537,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="361804000" />
+    <option name="totallyTimeSpent" value="363828000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23793566" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23793566" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39660057" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39660057" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -908,8 +911,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CloudVideoClass/conferenceControlClass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="432" column="32" lean-forward="true" selection-start-line="432" selection-start-column="32" selection-end-line="432" selection-end-column="32" />
+        <state relative-caret-position="221">
+          <caret line="439" lean-forward="true" selection-start-line="439" selection-end-line="439" />
           <folding>
             <element signature="e#17#33#0" expanded="true" />
           </folding>
