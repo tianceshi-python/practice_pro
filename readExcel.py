@@ -26,7 +26,7 @@ class readExcel():
 
         #获取这个sheet的内容行数
         nrows = sheet.nrows
-
+        #cols = sheet.ncols
         for i in range(nrows):  #根据行数循环
             if sheet.row_values(i)[0] != u'':  #判断将表的第一行排除，第一行不是case
                 cls.append(sheet.row_values(i))

@@ -11,7 +11,7 @@ import getpass
 def mkdir():
     user_name = getpass.getuser()  # 获取当前用户名
     path = 'C:\\Users\\' + user_name + '\\AppData\\Roaming\\autoTestLog'
-    print('path is:', path)
+    #print('path is:', path)
     #判断路径是否存在
     #存在 True
     #不存在 False
