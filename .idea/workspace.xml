@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94ce7423-1d1c-49bc-a71b-de8132fea33b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/get_parameter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCase/shortcall.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudVideoClass/conferenceControlClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/CloudVideoClass/conferenceControlClass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudVideoClass/create_meetingClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/CloudVideoClass/create_meetingClass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudVideoClass/recordingVodsClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/CloudVideoClass/recordingVodsClass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/logPrintClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/logPrintClass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readExcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/readExcel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCase/casedata/conferenceControl_casedate.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/casedata/conferenceControl_casedate.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -145,13 +137,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CloudVideoClass/recordingVodsClass.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="1190">
-              <caret line="415" column="7" lean-forward="true" selection-start-line="415" selection-start-column="7" selection-end-line="415" selection-end-column="7" />
-=======
-            <state relative-caret-position="17">
-              <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
->>>>>>> dev-tian
+            <state relative-caret-position="459">
+              <caret line="351" selection-start-line="351" selection-end-line="351" />
               <folding>
                 <element signature="e#17#33#0" expanded="true" />
               </folding>
@@ -163,7 +150,7 @@
         <entry file="file://$PROJECT_DIR$/testCase/shortcall.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -193,7 +180,7 @@
         <entry file="file://$PROJECT_DIR$/config.ini">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="7" selection-start-line="13" selection-end-line="13" selection-end-column="7" />
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -202,7 +189,7 @@
         <entry file="file://$PROJECT_DIR$/CloudVideoClass/conferenceControlClass.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="7344">
-              <caret line="441" lean-forward="true" selection-start-line="441" selection-end-line="441" />
+              <caret line="441" selection-start-line="441" selection-end-line="441" />
               <folding>
                 <element signature="e#17#33#0" expanded="true" />
               </folding>
@@ -535,11 +522,7 @@
       <workItem from="1590406995060" duration="26552000" />
       <workItem from="1590819417421" duration="2158000" />
       <workItem from="1590974002662" duration="6007000" />
-<<<<<<< HEAD
-      <workItem from="1591607714161" duration="1289000" />
-=======
-      <workItem from="1591607714161" duration="1524000" />
->>>>>>> dev-tian
+      <workItem from="1591607714161" duration="1835000" />
     </task>
     <servers />
   </component>
@@ -576,18 +559,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="365383000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-=======
-    <option name="totallyTimeSpent" value="365618000" />
+    <option name="totallyTimeSpent" value="365929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
->>>>>>> dev-tian
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24130106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -935,14 +911,14 @@
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="7" selection-start-line="13" selection-end-line="13" selection-end-column="7" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CloudVideoClass/conferenceControlClass.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7344">
-          <caret line="441" lean-forward="true" selection-start-line="441" selection-end-line="441" />
+          <caret line="441" selection-start-line="441" selection-end-line="441" />
           <folding>
             <element signature="e#17#33#0" expanded="true" />
           </folding>
@@ -952,19 +928,14 @@
     <entry file="file://$PROJECT_DIR$/testCase/shortcall.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CloudVideoClass/recordingVodsClass.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="1190">
-          <caret line="415" column="7" lean-forward="true" selection-start-line="415" selection-start-column="7" selection-end-line="415" selection-end-column="7" />
-=======
-        <state relative-caret-position="17">
-          <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
->>>>>>> dev-tian
+        <state relative-caret-position="459">
+          <caret line="351" selection-start-line="351" selection-end-line="351" />
           <folding>
             <element signature="e#17#33#0" expanded="true" />
           </folding>
