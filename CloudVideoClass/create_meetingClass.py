@@ -13,11 +13,13 @@ class conferenceControlClass():
         self.enterpriseId = enterpriseId
         self.token = token
 
+        self.log = common.logPrintClass.Log()
+
 
 
     def create_meeting(self,base_url,**dictargs):  #字典ditargs存data数据
 
-        log.info('创建云会议室号请求 start....')
+        self.log.info('创建云会议室号请求 start....')
         createmeet_url = base_url + self.enterpriseId
         print('createmeet_url is:',createmeet_url)
         data = dictargs
@@ -34,9 +36,9 @@ class conferenceControlClass():
         print('createmeet_last_url is:',createmeet_last_url)
         res = requests.post(createmeet_last_url,data=jdata, headers=self.header)
 
-        log.debug('res_url is:' + res.url)
-        log.debug('status_code is:' + str(res.status_code))
-        log.debug('res.text is:' + res.text)
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
 
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
@@ -45,7 +47,7 @@ class conferenceControlClass():
 
     def QueryMeetingInfo(self,base_url,meetingRoomNumber,**dictargs):
 
-        log.info('按云会议室号获取会议室信息请求 start....')
+        self.log.info('按云会议室号获取会议室信息请求 start....')
         meetingInfo_url = base_url + meetingRoomNumber + '?enterpriseId=' + self.enterpriseId
         jdata = ""
 
@@ -57,9 +59,9 @@ class conferenceControlClass():
         print('meetingInfo_last_url is:',meetingInfo_last_url)
         res = requests.get(meetingInfo_last_url,data=jdata,headers=self.header)
 
-        log.debug('res_url is:' + res.url)
-        log.debug('status_code is:' + str(res.status_code))
-        log.debug('res.text is:' + res.text)
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
 
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
@@ -68,7 +70,7 @@ class conferenceControlClass():
 
     def ModifyMeetingInfo(self,base_url,**dictargs):
 
-        log.info('按云会议室号修改SDK云会议室信息请求 start....')
+        self.log.info('按云会议室号修改SDK云会议室信息请求 start....')
 
         data = dictargs
         print('data is:',data)
@@ -86,9 +88,9 @@ class conferenceControlClass():
 
         res =requests.put(ModifyMeetingInfo_last_url,data =jdata,headers = self.header )
 
-        log.debug('res_url is:' + res.url)
-        log.debug('status_code is:' + str(res.status_code))
-        log.debug('res.text is:' + res.text)
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
 
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
@@ -97,7 +99,7 @@ class conferenceControlClass():
 
     def DeleMeetingInfo(self,base_url,meetingRoomNumber):
 
-        log.info('按云会议室号删除SDK云会议室请求 start....')
+        self.log.info('按云会议室号删除SDK云会议室请求 start....')
 
         #获取签名的基本url
         DeleMeetingInfo_base_url = base_url + meetingRoomNumber + '?enterpriseId=' + self.enterpriseId
@@ -111,9 +113,9 @@ class conferenceControlClass():
         DeleMeetingInfo_last_url = DeleMeetingInfo_base_url + '&signature=' + signaturePra
         res = requests.delete(DeleMeetingInfo_last_url,data =jdata,headers = self.header)
 
-        log.debug('res_url is:' + res.url)
-        log.debug('status_code is:' + str(res.status_code))
-        log.debug('res.text is:' + res.text)
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
 
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
@@ -123,7 +125,7 @@ class conferenceControlClass():
 
     def QueryEnterpriseMeetingInfo(self,base_url,**dictargs):
 
-        log.info('按云会议室类型查询企业下云会议室列表请求 start....')
+        self.log.info('按云会议室类型查询企业下云会议室列表请求 start....')
 
         #获取请求数字签名的url
         QueryEnterpriseMeetingInfo_base_url= base_url + '?enterpriseId=' + self.enterpriseId
@@ -140,9 +142,9 @@ class conferenceControlClass():
         QueryEnterpriseMeetingInfo_last_url = QueryEnterpriseMeetingInfo_base_url + '&signature=' + signaturePra
         res = requests.get(QueryEnterpriseMeetingInfo_last_url,data =jdata,headers = self.header)
 
-        log.debug('res_url is:' + res.url)
-        log.debug('status_code is:' + str(res.status_code))
-        log.debug('res.text is:' + res.text)
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
 
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
@@ -152,7 +154,7 @@ class conferenceControlClass():
 
     def QueryBatchMeetingInfo_inMeetingType(self,base_url,*tupmeetingroom):  # ’*tupmeetingroom‘ 表示非固定传参，可同时指定多个云会议室号码，传过来的所有参数打包元祖
 
-        log.info('按云会议室号批量查询云会议室信息请求 start....')
+        self.log.info('按云会议室号批量查询云会议室信息请求 start....')
 
         # 获取请求数字签名的url
         QueryBatchMeetingInfo_inMeetingType_base_url = base_url + '?enterpriseId=' + self.enterpriseId
@@ -169,9 +171,9 @@ class conferenceControlClass():
         QueryBatchMeetingInfo_inMeetingType_last_url = QueryBatchMeetingInfo_inMeetingType_base_url + '&signature=' + signaturePra
         res = requests.put(QueryBatchMeetingInfo_inMeetingType_last_url,data =jdata,headers = self.header)
 
-        log.debug('res_url is:' + res.url)
-        log.debug('status_code is:' + str(res.status_code))
-        log.debug('res.text is:' + res.text)
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
 
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
@@ -201,7 +203,7 @@ if __name__ == '__main__':
     print('token is:',token)
     print('header is:',header)
 
-    log = common.logPrintClass.Log()
+    #log = common.logPrintClass.Log()
     '''
     #创建云会议室号
     

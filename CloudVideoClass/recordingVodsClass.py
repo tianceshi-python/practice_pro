@@ -15,11 +15,13 @@ class recordingVodsClass():
         self.enterpriseId = enterpriseId
         self.token = token
 
+        self.log = common.logPrintClass.Log()
+
 
 
     #开始录制
     def start_recording(self,base_url,meetingRoomNumber):
-        log.info('开始录制请求 start....')
+        self.log.info('开始录制请求 start....')
         #获取数字签名的url
         start_recording_base_url = base_url + meetingRoomNumber + '/start?enterpriseId=' + self.enterpriseId
         jdata = ''
@@ -36,9 +38,9 @@ class recordingVodsClass():
 
         res = requests.get(start_recording_last_url,data=jdata, headers=self.header)
 
-        log.debug('res_url is:' + res.url)
-        log.debug('status_code is:' + str(res.status_code))
-        log.debug('res.text is:' + res.text)
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
 
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
@@ -47,7 +49,7 @@ class recordingVodsClass():
 
     # 结束录制
     def stop_recording(self,base_url,meetingRoomNumber):
-        log.info('结束录制请求 start....')
+        self.log.info('结束录制请求 start....')
 
         # 获取数字签名的url
         stop_recording_base_url = base_url + meetingRoomNumber + '/stopWithSessionId?enterpriseId=' + self.enterpriseId
@@ -64,9 +66,9 @@ class recordingVodsClass():
         stop_recording_last_url = stop_recording_base_url + '&signature=' + signaturePra
         res = requests.get(stop_recording_last_url,data=jdata, headers=self.header)
 
-        log.debug('res_url is:' + res.url)
-        log.debug('status_code is:' + str(res.status_code))
-        log.debug('res.text is:' + res.text)
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
 
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
@@ -75,7 +77,7 @@ class recordingVodsClass():
 
     #根据sessionId获取视频的下载链接
     def get_vodsDownloadurl(self,base_url,sessionId):
-        log.info('根据sessionId获取视频的下载链接请求 start....')
+        self.log.info('根据sessionId获取视频的下载链接请求 start....')
 
         # 获取数字签名的url
         get_vodsDownloadurl_base_url = base_url + sessionId + '/downloadurl?enterpriseId=' + self.enterpriseId
@@ -92,9 +94,9 @@ class recordingVodsClass():
 
         res = requests.get(get_vodsDownloadurl_last_url,data=jdata, headers=self.header)
 
-        log.debug('res_url is:' + res.url)
-        log.debug('status_code is:' + str(res.status_code))
-        log.debug('res.text is:' + res.text)
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
 
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
@@ -103,7 +105,7 @@ class recordingVodsClass():
 
     #按云会议号分页获取视频列表
     def get_vodsList_accordMeetingroom(self,base_url,startTime,endTime,meetingRoomNumber,pageIndex,pageSize):
-        log.info('按云会议号分页获取视频列表请求 start....')
+        self.log.info('按云会议号分页获取视频列表请求 start....')
 
         # 获取数字签名的url
         get_vodsList_accordMeetingroom_base_url = base_url + meetingRoomNumber + '/vods/page?enterpriseId=' + self.enterpriseId + '&startTime=' + str(startTime) + '&endTime=' + str(endTime) + '&pageIndex=' + str(pageIndex) + '&pageSize=' + str(pageSize)
@@ -118,9 +120,250 @@ class recordingVodsClass():
         get_vodsList_accordMeetingroom_last_url = get_vodsList_accordMeetingroom_base_url + '&signature=' + signaturePra
         res = requests.get(get_vodsList_accordMeetingroom_last_url,data=jdata, headers=self.header)
 
-        log.debug('res_url is:' + res.url)
-        log.debug('status_code is:' + str(res.status_code))
-        log.debug('res.text is:' + res.text)
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
+
+        print('status_code is:\n', res.status_code)
+        print('res_url is:\n', res.url)
+        print('res.text is:\n', res.text)
+        return res.status_code, res.text
+
+
+    #按小鱼号分页获取视频列表
+    def get_vodsList_accordDeviceNum(self,base_url,startTime,endTime,nemoNumber,pageIndex,pageSize):
+
+        self.log.info('按小鱼号分页获取视频列表 API start......')
+        # 获取数字签名的url
+        get_vodsList_accordDeviceNum_base_url = base_url + nemoNumber + '/vods/page?enterpriseId=' + self.enterpriseId + '&startTime=' + str(startTime) + '&endTime=' + str(endTime) + '&pageIndex=' + str(pageIndex) + '&pageSize=' + str(pageSize)
+        jdata = ''
+
+        # 获取数字签名
+        obj = common.signature.Get_signature_url(method=str.upper("get"),
+                                                 req_url=get_vodsList_accordDeviceNum_base_url,
+                                                 req_data=jdata, token=self.token)
+        signaturePra = obj.get_signature()
+
+
+        get_vodsList_accordDeviceNum_last_url = get_vodsList_accordDeviceNum_base_url + '&signature=' + signaturePra
+        res = requests.get(get_vodsList_accordDeviceNum_last_url,data=jdata, headers=self.header)
+
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
+
+        print('status_code is:\n', res.status_code)
+        print('res_url is:\n', res.url)
+        print('res.text is:\n', res.text)
+        return res.status_code, res.text
+
+
+    #分页查询企业一天内的视频列表
+    def get_vodsList_enterpriseOneDay(self,base_url,startTime,endTime,pageIndex,pageSize):
+
+        self.log.info('分页查询企业一天内的视频列表 PAI start....')
+
+        #获取数字签名的url
+        get_vodsList_enterpriseOneDay_base_url = base_url + '?enterpriseId=' + self.enterpriseId + '&startTime=' + str(startTime) + '&endTime=' + str(endTime) + '&pageIndex=' + str(pageIndex) + '&pageSize=' + str(pageSize)
+        jdata = ''
+
+        #获取数字签名
+        obj = common.signature.Get_signature_url(method=str.upper("get"),
+                                                 req_url=get_vodsList_enterpriseOneDay_base_url,
+                                                 req_data=jdata, token=self.token)
+        signaturePra = obj.get_signature()
+
+        get_vodsList_enterpriseOneDay_last_url = get_vodsList_enterpriseOneDay_base_url + '&signature=' + signaturePra
+
+        res = requests.get(get_vodsList_enterpriseOneDay_last_url,data=jdata, headers=self.header)
+
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
+
+        print('status_code is:\n', res.status_code)
+        print('res_url is:\n', res.url)
+        print('res.text is:\n', res.text)
+        return res.status_code, res.text
+
+    #删除一个视频
+    def delete_vod(self,base_url,vodId):
+
+        self.log.info('删除一个视频 API strat......')
+        delete_vod_base_url = base_url + str(vodId) + '?enterpriseId=' + self.enterpriseId
+        jdata = ''
+
+        # 获取数字签名
+        obj = common.signature.Get_signature_url(method=str.upper("delete"),
+                                                 req_url=delete_vod_base_url,
+                                                 req_data=jdata, token=self.token)
+        signaturePra = obj.get_signature()
+
+        delete_vod_last_url = delete_vod_base_url + '&signature=' + signaturePra
+        res = requests.delete(delete_vod_last_url,data=jdata, headers=self.header)
+
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
+
+        print('status_code is:\n', res.status_code)
+        print('res_url is:\n', res.url)
+        print('res.text is:\n', res.text)
+        return res.status_code, res.text
+
+    # 按vodId获取视频的播放链接
+    def get_sharedInfo_accordVodId(self,base_url,vodId):
+
+        self.log.info('按vodId获取视频的播放链接 API start......')
+        get_sharedInfo_accordVodId_base_url = base_url + str(vodId) + '/sharedInfo?enterpriseId=' + self.enterpriseId
+        jdata = ''
+
+        # 获取数字签名
+        obj = common.signature.Get_signature_url(method=str.upper("get"),
+                                                 req_url=get_sharedInfo_accordVodId_base_url,
+                                                 req_data=jdata, token=self.token)
+        signaturePra = obj.get_signature()
+
+        get_sharedInfo_accordVodId_last_url = get_sharedInfo_accordVodId_base_url + '&signature=' + signaturePra
+
+        res = requests.get(get_sharedInfo_accordVodId_last_url,data=jdata, headers=self.header)
+
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
+
+        print('status_code is:\n', res.status_code)
+        print('res_url is:\n', res.url)
+        print('res.text is:\n', res.text)
+        return res.status_code, res.text
+
+
+    #根据vodid获取视频的下载链接
+    def get_getdownloadurl_accordVodId(self,base_url,vodId):
+
+        self.log.info('根据vodid获取视频的下载链接 API start ......')
+        get_getdownloadurl_accordVodId_base_url = base_url + str(vodId) + '/getdownloadurl?enterpriseId=' + self.enterpriseId
+        jdata = ''
+
+        # 获取数字签名
+        obj = common.signature.Get_signature_url(method=str.upper("get"),
+                                                 req_url=get_getdownloadurl_accordVodId_base_url,
+                                                 req_data=jdata, token=self.token)
+        signaturePra = obj.get_signature()
+
+        get_getdownloadurl_accordVodId_last_url = get_getdownloadurl_accordVodId_base_url + '&signature=' + signaturePra
+        res = requests.get(get_getdownloadurl_accordVodId_last_url,data=jdata, headers=self.header)
+
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
+
+        print('status_code is:\n', res.status_code)
+        print('res_url is:\n', res.url)
+        print('res.text is:\n', res.text)
+        return res.status_code, res.text
+
+    # 按云会议号删除视频
+    def delete_vod_accordMeetingRoomNumber(self,base_url,meetingRoomNumber):
+
+        self.log.info(' 按云会议号删除视频 API start......')
+        delete_vod_accordMeetingRoomNumber_base_url = base_url + meetingRoomNumber + '/vods?enterpriseId=' + self.enterpriseId
+        jdata = ''
+
+        # 获取数字签名
+        obj = common.signature.Get_signature_url(method=str.upper("delete"),
+                                                 req_url=delete_vod_accordMeetingRoomNumber_base_url,
+                                                 req_data=jdata, token=self.token)
+        signaturePra = obj.get_signature()
+
+        delete_vod_accordMeetingRoomNumber_last_url = delete_vod_accordMeetingRoomNumber_base_url +  '&signature=' + signaturePra
+
+        res = requests.delete(delete_vod_accordMeetingRoomNumber_last_url,data=jdata, headers=self.header)
+
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
+
+        print('status_code is:\n', res.status_code)
+        print('res_url is:\n', res.url)
+        print('res.text is:\n', res.text)
+        return res.status_code, res.text
+
+
+
+    #根据meetingId分页获取视频列表
+    def get_vodsList_accordMeetingId(self,base_url,meetingRoomNumber,meetingId,startTime,endTime,pageIndex,pageSize):
+
+        self.log.info('根据meetingId分页获取视频列表 API start......')
+        get_vodsList_accordMeetingId_base_url = base_url + meetingRoomNumber + '/' + meetingId + '/vods?enterpriseId=' + self.enterpriseId + '&startTime=' + str(startTime) + '&endTime=' + str(endTime)+ '&pageIndex=' + str(pageIndex) + '&pageSize=' + str(pageSize)
+        jdata = ''
+
+        # 获取数字签名
+        obj = common.signature.Get_signature_url(method=str.upper("get"),
+                                                 req_url=get_vodsList_accordMeetingId_base_url,
+                                                 req_data=jdata, token=self.token)
+        signaturePra = obj.get_signature()
+
+        get_vodsList_accordMeetingId_last_url = get_vodsList_accordMeetingId_base_url + '&signature=' + signaturePra
+        res = requests.get(get_vodsList_accordMeetingId_last_url,data=jdata, headers=self.header)
+
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
+
+        print('status_code is:\n', res.status_code)
+        print('res_url is:\n', res.url)
+        print('res.text is:\n', res.text)
+        return res.status_code, res.text
+
+
+    #根据vodId获取视频缩略图的下载链接
+    def get_thumbnailurl_accordVodId(self,base_url,vodId):
+
+        self.log.info('根据vodId获取视频缩略图的下载链接 API start......')
+        get_thumbnailurl_accordVodId_base_url = base_url + vodId + '/thumbnailurl?enterpriseId=' + self.enterpriseId
+        jdata = ''
+
+        # 获取数字签名
+        obj = common.signature.Get_signature_url(method=str.upper("get"),
+                                                 req_url=get_thumbnailurl_accordVodId_base_url,
+                                                 req_data=jdata, token=self.token)
+        signaturePra = obj.get_signature()
+
+        get_thumbnailurl_accordVodId_last_url = get_thumbnailurl_accordVodId_base_url + '&signature=' + signaturePra
+
+        res = requests.get(get_thumbnailurl_accordVodId_last_url,data=jdata, headers=self.header)
+
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
+
+        print('status_code is:\n', res.status_code)
+        print('res_url is:\n', res.url)
+        print('res.text is:\n', res.text)
+        return res.status_code, res.text
+
+
+    #根据直播id查询视频列表
+    def query_vodsList_accordLiveId(self,base_url,liveId):
+
+        self.log.info('根据直播id查询视频列表 API start......')
+        query_vodsList_accordLiveId_base_url = base_url + str(liveId) + '/query?enterpriseId=' + self.enterpriseId
+        jdata = ''
+
+        # 获取数字签名
+        obj = common.signature.Get_signature_url(method=str.upper("get"),
+                                                 req_url=query_vodsList_accordLiveId_base_url,
+                                                 req_data=jdata, token=self.token)
+        signaturePra = obj.get_signature()
+
+        query_vodsList_accordLiveId_last_url = query_vodsList_accordLiveId_base_url + '&signature=' + signaturePra
+
+        res = requests.get(query_vodsList_accordLiveId_last_url, data=jdata, headers=self.header)
+
+        self.log.debug('res_url is:' + res.url)
+        self.log.debug('status_code is:' + str(res.status_code))
+        self.log.debug('res.text is:' + res.text)
 
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
@@ -140,7 +383,7 @@ if  __name__ == '__main__':
     print('token is:', token)
     print('header is:', header)
 
-    log = common.logPrintClass.Log()
+    #log = common.logPrintClass.Log()
 
     '''
     # 开始录制
