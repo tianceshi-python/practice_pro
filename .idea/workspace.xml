@@ -145,8 +145,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CloudVideoClass/recordingVodsClass.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1190">
               <caret line="415" column="7" lean-forward="true" selection-start-line="415" selection-start-column="7" selection-end-line="415" selection-end-column="7" />
+=======
+            <state relative-caret-position="17">
+              <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
+>>>>>>> dev-tian
               <folding>
                 <element signature="e#17#33#0" expanded="true" />
               </folding>
@@ -530,7 +535,11 @@
       <workItem from="1590406995060" duration="26552000" />
       <workItem from="1590819417421" duration="2158000" />
       <workItem from="1590974002662" duration="6007000" />
+<<<<<<< HEAD
       <workItem from="1591607714161" duration="1289000" />
+=======
+      <workItem from="1591607714161" duration="1524000" />
+>>>>>>> dev-tian
     </task>
     <servers />
   </component>
@@ -567,10 +576,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="365383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="365618000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
+>>>>>>> dev-tian
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24130106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -941,8 +958,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CloudVideoClass/recordingVodsClass.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1190">
           <caret line="415" column="7" lean-forward="true" selection-start-line="415" selection-start-column="7" selection-end-line="415" selection-end-column="7" />
+=======
+        <state relative-caret-position="17">
+          <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
+>>>>>>> dev-tian
           <folding>
             <element signature="e#17#33#0" expanded="true" />
           </folding>
