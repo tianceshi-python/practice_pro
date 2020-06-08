@@ -177,7 +177,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CloudVideoClass/conferenceControlClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="501">
               <caret line="439" lean-forward="true" selection-start-line="439" selection-end-line="439" />
               <folding>
                 <element signature="e#17#33#0" expanded="true" />
@@ -500,7 +500,7 @@
       <workItem from="1590041238538" duration="49733000" />
       <workItem from="1590406995060" duration="26552000" />
       <workItem from="1590819417421" duration="2158000" />
-      <workItem from="1590974002662" duration="5741000" />
+      <workItem from="1590974002662" duration="6007000" />
     </task>
     <servers />
   </component>
@@ -537,7 +537,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363828000" />
+    <option name="totallyTimeSpent" value="364094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
@@ -547,7 +547,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39660057" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39660057" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -911,7 +911,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CloudVideoClass/conferenceControlClass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="501">
           <caret line="439" lean-forward="true" selection-start-line="439" selection-end-line="439" />
           <folding>
             <element signature="e#17#33#0" expanded="true" />
