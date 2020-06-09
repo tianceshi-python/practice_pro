@@ -317,7 +317,7 @@ if __name__ == '__main__':
     # 邀请入会
     '''参数传入'''
     deviceList = []
-    devicenumber1 = {'number': '20734806'}
+    devicenumber1 = {'number': '18710881116'}
     devicenumber2 = {'number': '619827'}
     devicenumber3 = {'number': '22481414'}
     deviceList.append(devicenumber1)

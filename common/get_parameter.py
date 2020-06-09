@@ -30,7 +30,7 @@ class get_parameter:
         return header,enterpriseId,token
 
 
-    #从casedata的excel表种获取API请求的
+    #从casedata的excel表种获取API请求的base_url
     def get_baseUrl(self,ExcelName,sheetName,apiName):
         base_url_list = readExcel.readExcel().get_xls('testCase', 'casedata', ExcelName,
                                                       sheetName)

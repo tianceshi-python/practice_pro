@@ -38,17 +38,18 @@ class shortcall:
         #从excel中读取参数
         get_parameterObj = get_parameter.get_parameter()
         callNumber = get_parameterObj.get_resBodyPara(ExcelName ='conferenceControl_casedate.xlsx',sheetName = 'data',Para = 'callNumber')[1]
-        deviceNum_list = get_parameterObj.get_resBodyPara(ExcelName ='conferenceControl_casedate.xlsx',sheetName = 'data',Para = 'device_number')[1:]
+        callNumber = str(int(callNumber))
+        deviceNum_list = get_parameterObj.get_resBodyPara(ExcelName ='conferenceControl_casedate.xlsx',sheetName = 'data',Para = 'device_number')
         InvitationBase_url = get_parameterObj.get_baseUrl(ExcelName = 'conferenceControl_casedate.xlsx',sheetName = 'base_urll',apiName = 'Invitation')
         print('callNumber_list is: ',callNumber)
         print('InvitationBase_url is: ',InvitationBase_url)
+        #print('deviceNum_list is:',deviceNum_list[1:])
         deviceList = []
-        devicedic = {}
-        for i in deviceNum_list:
-            if i != '':
-                devicedic['number'] = str(int(i))
-                deviceList.append(devicedic)
+        for i in deviceNum_list[1:]:
+            devicedic=  {'number': str(int(i))}
+            deviceList.append(devicedic)
         print('deviceList is: ',deviceList)
+
 
         conferenceControlObj = conferenceControlClass.conferenceControlClass(self.header, self.enterpriseId, self.token)
         code,body = conferenceControlObj.Invitation(InvitationBase_url,callNumber,deviceList)
