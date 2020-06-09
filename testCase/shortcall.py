@@ -11,6 +11,7 @@ import common.logPrintClass
 from CloudVideoClass import conferenceControlClass,create_meetingClass,recordingVodsClass
 import readConfig
 from common import get_parameter
+from common import Assert
 
 
 
@@ -29,6 +30,8 @@ class shortcall:
         conferenceControlObj = conferenceControlClass.conferenceControlClass(self.header,self.enterpriseId,self.token)
         self.create_meetingObj = create_meetingClass.conferenceControlClass(self.header,self.enterpriseId,self.token)
         self.recordingVodsObj = recordingVodsClass.recordingVodsClass(self.header,self.enterpriseId,self.token)
+
+        self.assertObj = common.Assert.Assertions()
 
 
 
@@ -54,7 +57,7 @@ class shortcall:
         conferenceControlObj = conferenceControlClass.conferenceControlClass(self.header, self.enterpriseId, self.token)
         code,body = conferenceControlObj.Invitation(InvitationBase_url,callNumber,deviceList)
         print('code is: ',code)
-        print('body is: ',body)
+        self.assertObj.assert_code(code,expected_code = 200)
 
 
 
