@@ -12,6 +12,7 @@ from CloudVideoClass import conferenceControlClass,create_meetingClass,recording
 import readConfig
 from common import get_parameter
 from common import Assert
+import time
 
 
 
@@ -44,8 +45,15 @@ class shortcall:
         callNumber = str(int(callNumber))
         deviceNum_list = get_parameterObj.get_resBodyPara(ExcelName ='conferenceControl_casedate.xlsx',sheetName = 'data',Para = 'device_number')
         InvitationBase_url = get_parameterObj.get_baseUrl(ExcelName = 'conferenceControl_casedate.xlsx',sheetName = 'base_urll',apiName = 'Invitation')
-        print('callNumber_list is: ',callNumber)
-        print('InvitationBase_url is: ',InvitationBase_url)
+        start_recording_url = get_parameterObj.get_baseUrl(ExcelName='recordingVods_casedata.xlsx',
+                                                          sheetName='base_url', apiName='start_recording')
+        stop_recording_url = get_parameterObj.get_baseUrl(ExcelName='recordingVods_casedata.xlsx',
+                                                          sheetName='base_url', apiName='stop_recording')
+        Querymeetingstatus_url = get_parameterObj.get_baseUrl(ExcelName = 'conferenceControl_casedate.xlsx',sheetName = 'base_urll',apiName = 'Querymeetingstatus')
+        Kickoutmeeting_url = get_parameterObj.get_baseUrl(ExcelName = 'conferenceControl_casedate.xlsx',sheetName = 'base_urll',apiName = 'kickoutmeeting_url')
+
+
+        #print('callNumber_list is: ',callNumber)
         #print('deviceNum_list is:',deviceNum_list[1:])
         deviceList = []
         for i in deviceNum_list[1:]:
@@ -55,9 +63,40 @@ class shortcall:
 
 
         conferenceControlObj = conferenceControlClass.conferenceControlClass(self.header, self.enterpriseId, self.token)
+        recordingVodsObj = recordingVodsClass.recordingVodsClass(self.header, self.enterpriseId, self.token)
+
+
         code,body = conferenceControlObj.Invitation(InvitationBase_url,callNumber,deviceList)
-        print('code is: ',code)
-        self.assertObj.assert_code(code,expected_code = 200)
+        self.assertObj.assert_code(code, expected_code=200)
+        print('已经通过！！！')
+        time.sleep(5)
+
+        code, body = conferenceControlObj.QueryMeetingStatus(Querymeetingstatus_url, callNumber)
+        print('body is: ',body)
+        self.assertObj.assert_code(code, expected_code=200)
+        print('已经通过！！！')
+        time.sleep(5)
+
+
+        print('开始录制。。。。')
+        code, bidy = recordingVodsObj.start_recording(start_recording_url, callNumber)
+        print('start_recording code is: ', code)
+        time.sleep(20)
+        self.assertObj.assert_code(code, expected_code=200)
+
+        print('停止录制。。。。')
+        code, bidy = recordingVodsObj.stop_recording(stop_recording_url, callNumber)
+        print('start_recording code is: ', code)
+        time.sleep(20)
+        self.assertObj.assert_code(code, expected_code=200)
+
+        print('踢出会议！！！')
+
+
+
+
+
+
 
 
 

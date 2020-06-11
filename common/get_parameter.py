@@ -9,6 +9,7 @@
 import readExcel
 import readConfig
 import common.logPrintClass
+import re
 
 
 class get_parameter:
@@ -44,21 +45,13 @@ class get_parameter:
         return base_url
 
 
-    def get_resBodyPara(self,ExcelName,sheetName,Para):
-        base_url_list = readExcel.readExcel().get_xls('testCase', 'casedata', ExcelName,
-                                                      sheetName)
 
-        for i in base_url_list:
-            if i[0] == Para:
-                #print(i)
-                return i
+
 
 
 if __name__ == '__main__':
 
     para = get_parameter()
-    print('apiName is: ' + para.get_baseUrl(ExcelName = 'conferenceControl_casedate.xlsx',sheetName = 'base_urll',apiName = 'Invitation'))
-    list_device_number = para.get_resBodyPara(ExcelName ='conferenceControl_casedate.xlsx',sheetName = 'data',Para = 'device_number')
-    callNumber = para.get_resBodyPara(ExcelName ='conferenceControl_casedate.xlsx',sheetName = 'data',Para = 'callNumber')
-    print('list_device_number is: ',list_device_number)
-    print('callNumber is: ',callNumber)
+    print('apiName is: ' + para.get_baseUrl(ExcelName = 'conferenceControl_casedate.xlsx',sheetName = 'base_url',apiName = 'Invitation'))
+
+
