@@ -11,6 +11,8 @@
 
 import common.logPrintClass
 import json
+import pytest
+from assertpy import assert_that
 
 class Assertions:
     def __init__(self):
@@ -26,7 +28,7 @@ class Assertions:
         '''
 
         try:
-            assert code == expected_code
+            assert int(expected_code) == int(code)
             return True
         except:
             self.log.error("statusCode error, expected_code is %s, statusCode is %s " % (expected_code, code))

@@ -304,7 +304,7 @@ if __name__ == '__main__':
     '''
     #查询会议状态
     base_url_list = readExcel.readExcel().get_xls('testCase', 'casedata', 'conferenceControl_casedate.xlsx',
-                                                  'base_urll')
+                                                  'base_url')
     for i in base_url_list:
         if i[0] == 'Querymeetingstatus':
             base_url = i[1]
@@ -430,7 +430,7 @@ if __name__ == '__main__':
 
     # 结束会议
     base_url_list = readExcel.readExcel().get_xls('testCase', 'casedata', 'conferenceControl_casedate.xlsx',
-                                                  'base_urll')
+                                                  'base_url')
     for i in base_url_list:
         if i[0] == 'Endmeeting':
             base_url = i[1]

@@ -10,12 +10,12 @@ import pytest
 import re
 from common import logPrintClass
 
-class Get_conferenceControl_caseData:
+class Get_caseData:
 
     def __init__(self):
         self.log = logPrintClass.Log()
 
-    def get_QueryMeetingStatus_data(self,ExcelName,sheetName,testName,getdata):
+    def get_data(self,ExcelName,sheetName,testName,getdata):
 
 
         # 从excel中读取参数
@@ -32,20 +32,21 @@ class Get_conferenceControl_caseData:
 
         #从case那一行的数据中获取云会议室号码
         pattern = getdata + '.*'
-        print('pattern is: ',pattern)
+        #print('pattern is: ',pattern)
         for i in caseDataList:
             caseData = re.findall(pattern,i)
             if len(caseData) != 0:
                 caseDataStr = str(caseData).split(':')[-1][:-2]
-                print('callNumberStr is:',caseDataStr)
-                return caseDataStr
+                #print('callNumberStr is:',caseDataStr)
+        self.log.debug(testName + getdata + 'is: ' + caseDataStr)
+        return caseDataStr
 
 
 
 
 
 if __name__ == '__main__':
-    obj = Get_conferenceControl_caseData()
-    obj.get_QueryMeetingStatus_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'test_data',testName = 'test_QueryMeetingStatus001',getdata = 'callNumber')
-    obj.get_QueryMeetingStatus_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'result',testName = 'test_QueryMeetingStatus001',getdata = 'expected_code')
-    obj.get_QueryMeetingStatus_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'test_data',testName = 'test_Invitation001',getdata = 'device_number')
+    obj = Get_caseData()
+    obj.get_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'test_data',testName = 'test_QueryMeetingStatus001',getdata = 'callNumber')
+    obj.get_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'result',testName = 'test_QueryMeetingStatus001',getdata = 'expected_code')
+    obj.get_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'test_data',testName = 'test_Invitation001',getdata = 'device_number')
