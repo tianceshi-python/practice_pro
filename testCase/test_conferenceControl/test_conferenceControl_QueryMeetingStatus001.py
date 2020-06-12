@@ -33,7 +33,7 @@ class Test_conferenceControl:
         self.conferenceControlObj = CloudVideoClass.conferenceControlClass.conferenceControlClass(self.header,self.enterpriseId,self.token)
 
         #实例化获取case data实例化
-        self.get_caseDataObj = testCase.test_conferenceControl.get_caseData()
+        self.get_caseDataObj = testCase.test_conferenceControl.get_caseData.Get_conferenceControl_caseData()
 
         #获取接口的基本base_url
         self.QueryMeetingStatus_base_url = common.get_parameter.get_parameter.get_baseUrl(ExcelName = 'conferenceControl_casedate.xlsx',sheetName = 'base_url',apiName = 'Querymeetingstatus')
@@ -43,7 +43,15 @@ class Test_conferenceControl:
     def test_QueryMeetingStatus001(self):
 
         #获取云会议室callNumber
-        callNumber = self.get_caseDataObj.Get_conferenceControl_caseData(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'test_data',testName = 'test_QueryMeetingStatus001')
+        callNumber = self.get_caseDataObj.get_QueryMeetingStatus_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'test_data',testName = 'test_QueryMeetingStatus001')
+        print('callNumber is: '+ callNumber)
+        responsedata = list(self.conferenceControlObj.QueryMeetingStatus(self.QueryMeetingStatus_base_url,callNumber))
+        code = responsedata[0]
+        msg = responsedata[1]
+        assert code == 200
+        assert
+        print("test_addCategory_0000001 is:", )
 
-        code = self.conferenceControlObj.QueryMeetingStatus(self.QueryMeetingStatus_base_url,callNumber)
-        print('code is: ',code)
+    if __name__ == "__main__":
+        pytest.main(['-s', r''])
+
