@@ -8,12 +8,14 @@ import readExcel
 import readConfig
 import pytest
 import re
+from common import logPrintClass
 
-class Get_conferenceControl_caseData():
+class Get_conferenceControl_caseData:
 
+    def __init__(self):
+        self.log = logPrintClass.Log()
 
-    @pytest.fixture()
-    def get_QueryMeetingStatus_data(self,ExcelName,sheetName,testName):
+    def get_QueryMeetingStatus_data(self,ExcelName,sheetName,testName,getdata):
 
 
         # 从excel中读取参数
@@ -29,7 +31,8 @@ class Get_conferenceControl_caseData():
 
 
         #从case那一行的数据中获取云会议室号码
-        pattern = r'callNumber.*'
+        pattern = getdata + '.*'
+        print('pattern is: ',pattern)
         for i in caseData:
             callNumber = re.findall(pattern,i)
             if len(callNumber) != 0:
@@ -42,4 +45,7 @@ class Get_conferenceControl_caseData():
 
 
 if __name__ == '__main__':
-    Get_conferenceControl_caseData.get_QueryMeetingStatus_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'test_data',testName = 'test_QueryMeetingStatus001')
+    obj = Get_conferenceControl_caseData()
+    obj.get_QueryMeetingStatus_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'test_data',testName = 'test_QueryMeetingStatus001',getdata = 'callNumber')
+    obj.get_QueryMeetingStatus_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'result',testName = 'test_QueryMeetingStatus001',getdata = 'expected_code')
+    obj.get_QueryMeetingStatus_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'test_data',testName = 'test_Invitation001',getdata = 'device_number')
