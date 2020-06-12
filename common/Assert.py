@@ -12,7 +12,7 @@
 import common.logPrintClass
 import json
 import pytest
-from assertpy import assert_that
+
 
 class Assertions:
     def __init__(self):
