@@ -9,7 +9,7 @@ import readConfig
 import pytest
 import re
 
-class Get_conferenceControl_caseData:
+class Get_conferenceControl_caseData():
 
 
     @pytest.fixture()
