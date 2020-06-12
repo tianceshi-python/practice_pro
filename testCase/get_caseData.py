@@ -26,19 +26,19 @@ class Get_conferenceControl_caseData:
 
         for i in caseData_List:
             if i[0] == testName:
-                caseData = i
+                caseDataList = i
                 #print('caseData is: ',caseData)
 
 
         #从case那一行的数据中获取云会议室号码
         pattern = getdata + '.*'
         print('pattern is: ',pattern)
-        for i in caseData:
-            callNumber = re.findall(pattern,i)
-            if len(callNumber) != 0:
-                callNumberStr = str(callNumber).split(':')[-1][:-2]
-                print('callNumberStr is:',callNumberStr)
-                return callNumberStr
+        for i in caseDataList:
+            caseData = re.findall(pattern,i)
+            if len(caseData) != 0:
+                caseDataStr = str(caseData).split(':')[-1][:-2]
+                print('callNumberStr is:',caseDataStr)
+                return caseDataStr
 
 
 
