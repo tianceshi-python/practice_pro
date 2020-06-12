@@ -41,9 +41,21 @@ class ReadConfig():
     def get_email(self, name):
         value = self.config.get('EMAIL', name)
         return value
+    def get_LogPath(self,name):
+        value = self.config.get('LOGPATH', name)
+        return value
+    def get_header(self,name):
+        value = self.config.get('HEADER',name)
+        #value是str类型，需要转换成dict类型
+        value_list = value.split('"')
+        #print('value_list is:',value_list)
+        value_dict = {}
+        value_dict[value_list[1]] = value_list[-2]
+        return value_dict
 
 
 if __name__ == '__main__':
-    print ('企业的token信息为',ReadConfig().get_enterprise('token'))
-    print('EMAIL中的开关on_off值为：', ReadConfig().get_email('on_off'))
-
+    #print ('企业的token信息为',ReadConfig().get_enterprise('token'))
+    #print('EMAIL中的开关on_off值为：', ReadConfig().get_email('on_off'))
+    #print('header is:',ReadConfig().get_header('header'))
+    print('LogPath is:',ReadConfig().get_LogPath('LogPath'))

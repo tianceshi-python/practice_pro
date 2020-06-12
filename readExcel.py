@@ -10,10 +10,12 @@ from xlrd import open_workbook
 path = getpathInfo.get_Path()
 
 class readExcel():
-    def get_xls(self,xls_name,sheet_name):
+
+
+    def get_xls(self,caseDirName1,caseDirName2,xls_name,sheet_name):
         cls = []
 
-        xlsPath = os.path.join(path,"testFile",'case',xls_name)
+        xlsPath = os.path.join(path,caseDirName1,caseDirName2,xls_name)
         file =open_workbook(xlsPath)   #打开用例的excel
         #sheet = file.sheets()[0]    #通过索引顺序获取表
 
@@ -24,14 +26,14 @@ class readExcel():
 
         #获取这个sheet的内容行数
         nrows = sheet.nrows
-
+        #cols = sheet.ncols
         for i in range(nrows):  #根据行数循环
-            if sheet.row_values(i)[0] != u'case_name':  #判断将表的第一行排除，第一行不是case
+            if sheet.row_values(i)[0] != u'':  #判断将表的第一行排除，第一行不是case
                 cls.append(sheet.row_values(i))
         return cls
 
 
 if __name__ == '__main__':
-    print(readExcel().get_xls('userCase.xlsx','MeetRoomCase'))
-    print(readExcel().get_xls('userCase.xlsx','MeetRoomCase')[0][1])
-    print(readExcel().get_xls('userCase.xlsx','MeetRoomCase')[1][2])
+    print(readExcel().get_xls('testCase','casedata','create_meeting_casedate.xlsx','base_urll'))
+    #print(readExcel().get_xls('userCase.xlsx','MeetRoomCase')[0][1])
+    #print(readExcel().get_xls('userCase.xlsx','MeetRoomCase')[1][2])
