@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94ce7423-1d1c-49bc-a71b-de8132fea33b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/practice_pro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/practice_pro.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCase/test_conferenceControl/test_conferenceControl_Invitation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCase/test_conferenceControl/test_conferenceControl_QueryMeetingStatus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/Assert.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/Assert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCase/casedata/conferenceControl_casedate.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/casedata/conferenceControl_casedate.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCase/test_conferenceControl/test_conferenceControl_QueryMeetingStatus001.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/test_conferenceControl/test_conferenceControl_QueryMeetingStatus001.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCase/get_testCaseData.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/get_testCaseData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCase/test_conferenceControl/test_conferenceControl_QueryMeetingStatus001.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +151,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -341,34 +341,38 @@
       <workItem from="1591872984806" duration="3290000" />
       <workItem from="1591934713463" duration="1251000" />
       <workItem from="1591941125797" duration="6014000" />
-      <workItem from="1591969540650" duration="1797000" />
+      <workItem from="1591969540650" duration="2118000" />
+      <workItem from="1592105775967" duration="981000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1591970127249">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591970127249" />
-    <state width="1286" height="192" key="GridCell.Tab.0.bottom" timestamp="1591971335897">
+    <state width="1322" height="192" key="GridCell.Tab.0.bottom" timestamp="1591971701167">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="192" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591971335897" />
-    <state width="1286" height="192" key="GridCell.Tab.0.center" timestamp="1591971335897">
+    <state width="1322" height="192" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591971701167" />
+    <state width="1322" height="192" key="GridCell.Tab.0.center" timestamp="1591971701167">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="192" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591971335897" />
-    <state width="1286" height="192" key="GridCell.Tab.0.left" timestamp="1591971335896">
+    <state width="1322" height="192" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591971701167" />
+    <state width="1322" height="192" key="GridCell.Tab.0.left" timestamp="1591971701167">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="192" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591971335896" />
-    <state width="1286" height="192" key="GridCell.Tab.0.right" timestamp="1591971335897">
+    <state width="1322" height="192" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591971701167" />
+    <state width="1322" height="192" key="GridCell.Tab.0.right" timestamp="1591971701167">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="192" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591971335897" />
+    <state width="1322" height="192" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591971701167" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1591970594143">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

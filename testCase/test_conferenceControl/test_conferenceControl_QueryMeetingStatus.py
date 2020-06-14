@@ -1,5 +1,9 @@
 # encoding:utf-8
 
+# @Time    : 2020/6/12
+# @Author  : xueyan
+# @File    : test_conferenceControl_Querymeetingstatus.py
+
 from CloudVideoClass import conferenceControlClass
 import pytest
 from common import Assert,logPrintClass,get_parameter
