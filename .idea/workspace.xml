@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="94ce7423-1d1c-49bc-a71b-de8132fea33b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/testCase/casedata/conferenceControl_casedate.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/casedata/conferenceControl_casedate.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCase/test_conferenceControl/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/test_conferenceControl/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCase/test_conferenceControl/test_conferenceControl_Invitation.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/test_conferenceControl/test_conferenceControl_Invitation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCase/test_conferenceControl/test_conferenceControl_QueryMeetingStatus.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/test_conferenceControl/test_conferenceControl_QueryMeetingStatus.py" afterDir="false" />
+>>>>>>> 2670aa92010528c3be3b0fe9a5de966d3f8cce00
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,6 +128,7 @@
     <SUITE FILE_PATH="coverage/practice_pro$file_operator.coverage" NAME="file_operator Coverage Results" MODIFIED="1587894598594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meeting_ptactice/Decorator_dir" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_in_test_conferenceControl_QueryMeetingStatus001_py.coverage" NAME="pytest in test_conferenceControl_QueryMeetingStatus001.py Coverage Results" MODIFIED="1591946807188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCase/test_conferenceControl" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -213,6 +220,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> 2670aa92010528c3be3b0fe9a5de966d3f8cce00
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -224,69 +233,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_pro.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Decorator_hello_world.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decorator_html.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decorator_html2.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/hello.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decorator_fib.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Profiler.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str_zlib.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/file_operator.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/duplicate_removal.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/count_subNum.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Game_rollDice.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/number_line.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/MerseCode_covert.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/set_f.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/python_re.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/LISP_calculate.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/add7algorithm.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str_python.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/find_maxstr.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/word_order.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/list_cycle.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/lastStr_cal.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/num_sort.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str_spit8str.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/str16tran10.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/decom_Prime.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/approx_num.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/merge_table.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/Nstring_sort.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/ping.py" />
-        <option value="$PROJECT_DIR$/meeting_ptactice/Decorator_dir/ping2.py" />
-        <option value="$PROJECT_DIR$/common/signature.py" />
-        <option value="$PROJECT_DIR$/readExcel.py" />
-        <option value="$PROJECT_DIR$/config.ini" />
-        <option value="$PROJECT_DIR$/readConfig.py" />
-        <option value="$PROJECT_DIR$/common/logPrintClass.py" />
-        <option value="$PROJECT_DIR$/CloudVideoClass/create_meetingClass.py" />
-        <option value="$PROJECT_DIR$/CloudVideoClass/recordingVodsClass.py" />
-        <option value="$PROJECT_DIR$/common/Email.py" />
-        <option value="$PROJECT_DIR$/testCase/shortcall.py" />
-        <option value="$PROJECT_DIR$/testCase/test_conferenceControl/conftest.py" />
-        <option value="$PROJECT_DIR$/common/get_parameter.py" />
-        <option value="$PROJECT_DIR$/testCase/test_conferenceControl/get_expectedData.py" />
-        <option value="$PROJECT_DIR$/testCase/test_conferenceControl/get_caseData.py" />
-        <option value="$PROJECT_DIR$/CloudVideoClass/conferenceControlClass.py" />
-        <option value="$PROJECT_DIR$/testCase/get_caseData.py" />
-        <option value="$PROJECT_DIR$/testCase/get_CaseData.py" />
-        <option value="$PROJECT_DIR$/testCase/get_testCaseData.py" />
-        <option value="$PROJECT_DIR$/common/Assert.py" />
-        <option value="$PROJECT_DIR$/testCase/test_conferenceControl/test_conferenceControl_QueryMeetingStatus001.py" />
-      </list>
-    </option>
-  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="1378" />
@@ -324,14 +277,30 @@
         </subPane>
       </pane>
     </panes>
+=======
+  <component name="ProjectId" id="1dDpMqPkxFTIdUfaRE7Pxa9dU01" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+>>>>>>> 2670aa92010528c3be3b0fe9a5de966d3f8cce00
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -345,19 +314,7 @@
       <recent name="C:\python_project\practice_pro\test\pytest_fixture_dic" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python tests.pytest for test_conferenceControl_QueryMeetingStatus001.Test_conferenceControl.test_QueryMeetingStatus001">
+  <component name="RunManager" selected="Python tests.pytest for test_conferenceControl_Invitation.Test_conferenceControl_Invitation.test_Invitation001">
     <configuration name="Assert" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="practice_pro" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -380,29 +337,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_parameter" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="practice_pro" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/get_parameter.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_conferenceControl_QueryMeetingStatus001.Test_conferenceControl" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_conferenceControl_Invitation.Test_conferenceControl_Invitation.test_Invitation001" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="practice_pro" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -413,8 +348,9 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_conferenceControl_QueryMeetingStatus001.Test_conferenceControl&quot;" />
+      <option name="_new_target" value="&quot;test_conferenceControl_Invitation.Test_conferenceControl_Invitation.test_Invitation001&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -429,8 +365,26 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_conferenceControl_QueryMeetingStatus001.Test_conferenceControl.test_QueryMeetingStatus001&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_conferenceControl_QueryMeetingStatus.Test_conferenceControl_QueryMeetingStatus.test_QueryMeetingStatus001" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="practice_pro" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testCase/test_conferenceControl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_conferenceControl_QueryMeetingStatus.Test_conferenceControl_QueryMeetingStatus.test_QueryMeetingStatus001&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -445,6 +399,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/testCase/test_conferenceControl/test_conferenceControl_QueryMeetingStatus001.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
@@ -452,11 +407,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_conferenceControl_Invitation.Test_conferenceControl_Invitation.test_Invitation001" />
+        <item itemvalue="Python tests.pytest for test_conferenceControl_QueryMeetingStatus.Test_conferenceControl_QueryMeetingStatus.test_QueryMeetingStatus001" />
         <item itemvalue="Python tests.pytest for test_conferenceControl_QueryMeetingStatus001.Test_conferenceControl.test_QueryMeetingStatus001" />
         <item itemvalue="Python tests.pytest in test_conferenceControl_QueryMeetingStatus001.py" />
         <item itemvalue="Python.Assert" />
-        <item itemvalue="Python tests.pytest for test_conferenceControl_QueryMeetingStatus001.Test_conferenceControl" />
-        <item itemvalue="Python.get_parameter" />
       </list>
     </recent_temporary>
   </component>
@@ -517,6 +472,7 @@
       <workItem from="1591768240713" duration="21298000" />
       <workItem from="1591872984806" duration="3290000" />
       <workItem from="1591934713463" duration="1251000" />
+<<<<<<< HEAD
       <workItem from="1591941125797" duration="7852000" />
     </task>
     <servers />
@@ -604,15 +560,59 @@
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
     </layout-to-restore>
+=======
+      <workItem from="1591941125797" duration="6014000" />
+      <workItem from="1591969540650" duration="2118000" />
+      <workItem from="1592105775967" duration="6315000" />
+    </task>
+    <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+>>>>>>> 2670aa92010528c3be3b0fe9a5de966d3f8cce00
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1591970127249">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591970127249" />
+    <state width="1322" height="238" key="GridCell.Tab.0.bottom" timestamp="1592143774382">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="238" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592143774382" />
+    <state width="1322" height="238" key="GridCell.Tab.0.center" timestamp="1592143774382">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="238" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592143774382" />
+    <state width="1322" height="238" key="GridCell.Tab.0.left" timestamp="1592143774382">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="238" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592143774382" />
+    <state width="1322" height="238" key="GridCell.Tab.0.right" timestamp="1592143774382">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="238" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592143774382" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1591970594143">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591970594143" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1591971306532">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1591971306532" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_conferenceControl_Invitation_Test_conferenceControl_Invitation_test_Invitation001.coverage" NAME="pytest for test_conferenceControl_Invitation.Test_conferenceControl_Invitation.test_Invitation001 Coverage Results" MODIFIED="1592112706944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCase/test_conferenceControl" />
     <SUITE FILE_PATH="coverage/practice_pro$logPrintClass.coverage" NAME="logPrintClass Coverage Results" MODIFIED="1591079261703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_conferenceControl_QueryMeetingStatus_Test_conferenceControl_QueryMeetingStatus_test_QueryMeetingStatus001.coverage" NAME="pytest for test_conferenceControl_QueryMeetingStatus.Test_conferenceControl_QueryMeetingStatus.test_QueryMeetingStatus001 Coverage Results" MODIFIED="1592111305546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCase/test_conferenceControl" />
+    <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_conferenceControl_QueryMeetingStatus001_Test_conferenceControl_test_QueryMeetingStatus001.coverage" NAME="pytest for test_conferenceControl_QueryMeetingStatus001.Test_conferenceControl.test_QueryMeetingStatus001 Coverage Results" MODIFIED="1591971335866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCase/test_conferenceControl" />
     <SUITE FILE_PATH="coverage/practice_pro$conferenceControlClass.coverage" NAME="conferenceControlClass Coverage Results" MODIFIED="1591874805031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CloudVideoClass" />
     <SUITE FILE_PATH="coverage/practice_pro$pytest_for_test_conferenceControl_QueryMeetingStatus001_Test_conferenceControl.coverage" NAME="pytest for test_conferenceControl_QueryMeetingStatus001.Test_conferenceControl Coverage Results" MODIFIED="1591874850845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCase/test_conferenceControl" />
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test_multiple_env_skip.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -891,6 +891,8 @@
       </provider>
     </entry>
   </component>
+=======
+>>>>>>> 2670aa92010528c3be3b0fe9a5de966d3f8cce00
   <component name="masterDetails">
     <states>
       <state key="Copyright.UI">

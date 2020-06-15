@@ -8,7 +8,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PackageRequirementsSettings">
-    <option name="requirementsPath" value="" />
+    <option name="requirementsPath" value="E:\my_project\practice_pro" />
   </component>
   <component name="TestRunnerService">
     <option name="projectConfiguration" value="pytest" />
