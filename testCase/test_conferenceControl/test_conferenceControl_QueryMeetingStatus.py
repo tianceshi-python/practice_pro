@@ -17,7 +17,7 @@ from testCase import get_testCaseData
 
 '''
 
-class Test_conferenceControl:
+class Test_conferenceControl_QueryMeetingStatus:
 
     def setup_class(self):
         #实例化log打印对象
@@ -41,7 +41,7 @@ class Test_conferenceControl:
             ExcelName='conferenceControl_casedate.xlsx', sheetName='base_url', apiName='Querymeetingstatus')
         #print('QueryMeetingStatus_base_url is: ', self.QueryMeetingStatus_base_url)
 
-        # 实例化获取case data实例化
+        # 实例化获取case data
         self.get_caseDataObj = get_testCaseData.Get_caseData()
 
         # 实例化断言对象
@@ -55,7 +55,9 @@ class Test_conferenceControl:
         print('test_QueryMeetingStatus001 start......')
         #获取云会议室callNumber
         callNumber = self.get_caseDataObj.get_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'test_data',testName = 'test_QueryMeetingStatus001',getdata = 'callNumber')
+        #获取期望返回码excepectCode
         excepectCode = self.get_caseDataObj.get_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'result',testName = 'test_QueryMeetingStatus001',getdata = 'expected_code')
+        #获取期望的比对信息excepectMsg
         excepectMsg = self.get_caseDataObj.get_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'result',testName = 'test_QueryMeetingStatus001',getdata = 'expected_msg')
 
 
