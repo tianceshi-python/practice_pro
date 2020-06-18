@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-8HDD4PN",
+    "children" : [ {
+      "name" : "1584-MainThread",
+      "children" : [ {
+        "name" : "test_QueryMeetingStatus001",
+        "uid" : "9ccfd7a3e2f189a",
+        "parentUid" : "1ab747147699fb8362e9f88f92145ac9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1592452486986,
+          "stop" : 1592452492222,
+          "duration" : 5236
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1ab747147699fb8362e9f88f92145ac9"
+    } ],
+    "uid" : "5e90d95d170bbd74d3293ee762255f2a"
+  } ]
+}

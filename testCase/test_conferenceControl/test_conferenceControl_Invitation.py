@@ -10,10 +10,11 @@ import readConfig
 from testCase import get_testCaseData
 
 import pytest
+import allure
+import time
 
 
-
-
+@allure.feature('Test_conferenceControl_Invitation')
 class Test_conferenceControl_Invitation():
 
     def setup_class(self):
@@ -50,8 +51,18 @@ class Test_conferenceControl_Invitation():
         # 实例化断言对象
         self.assertObj = Assert.Assertions()
 
+    @pytest.mark.run(order=2)         #调整测试用例的执行顺序，放在第二位执行
+    @pytest.mark.conferenceControl_test
+    @allure.story('test_Invitation001')
+    @allure.title('test_Invitation001')
     def test_Invitation001(self,setup_function):
 
+
+        '''
+        用例描述：邀请入会，同时邀请硬件和软终端入会
+        :param setup_function:
+        :return:
+        '''
         self.log.debug('test_Invitation001 start......')
         print('test_Invitation001 start......')
 
@@ -79,6 +90,13 @@ class Test_conferenceControl_Invitation():
 
         self.log.debug('test_Invitation001 requsts callNumber data is:' + callNumber)
         self.log.debug('test_Invitation001 requsts device_number is:' + device_number)
+
+        # 向测试报告中输入请求参数和基本url
+        allure.attach('callNumber is: ', callNumber)
+        allure.attach('device_numberlist is: ',device_numberlist)
+        allure.attach('Invitation_base_url is: ', self.Invitation_base_url)
+
+
         code, body = self.conferenceControlObj.Invitation(self.Invitation_base_url, callNumber,device_numberlist)
         print('code is: ', code)
         print('body is', body)
@@ -87,6 +105,11 @@ class Test_conferenceControl_Invitation():
         # 判断请求返回码是否与预期的一致
         self.assertObj.assert_code(code, excepectCode)
 
+        # 向测试报告中输入请求返回状态码和消息体
+        allure.attach('请求返回状态码code is:', code)
+
+
+        time.sleep(5)
         self.log.debug('test_Invitation001 end......')
         print('test_Invitation001 end......')
 

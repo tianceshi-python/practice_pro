@@ -18,6 +18,10 @@ config_path = os.path.join(path, 'config.ini')   #在path路径下再加一级�
 
 class ReadConfig():
 
+    def __init__(self):
+        self.xml_report_path = path + '/report_dic/xml'
+        self.html_report_path = path + '/report_dic/html'
+
     # 实例化ConfigParser对象
     config = configparser.ConfigParser()
     # 读取配置文件

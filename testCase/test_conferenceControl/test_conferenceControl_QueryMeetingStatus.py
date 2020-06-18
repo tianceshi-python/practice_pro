@@ -4,19 +4,32 @@
 # @Author  : xueyan
 # @File    : test_conferenceControl_Querymeetingstatus.py
 
+'''
+setup和teardown操作
+
+setup，在测试函数或类之前执行，完成准备工作，例如数据库链接、测试数据、打开文件等
+teardown，在测试函数或类之后执行，完成收尾工作，例如断开数据库链接、回收内存资源等
+备注：也可以通过在fixture函数中通过yield实现setup和teardown功能
+
+'''
+
+
 from CloudVideoClass import conferenceControlClass
 import pytest
 from common import Assert,logPrintClass,get_parameter
 import readConfig
 from testCase import get_testCaseData
 
-
+import allure
+import json
+import time
 
 '''
 主持会议--根据云会议室号查看当前会议全体成员的会议状态接口测试
 
 '''
 
+@allure.feature('Test_conferenceControl_QueryMeetingStatus')     #Feature: 主要功能模块--一级标签
 class Test_conferenceControl_QueryMeetingStatus:
 
     def setup_class(self):
@@ -48,9 +61,17 @@ class Test_conferenceControl_QueryMeetingStatus:
         self.assertObj = Assert.Assertions()
 
 
+    @pytest.mark.run(order=1)       #调整测试用例的执行顺序，放在第一个位置执行
+    @pytest.mark.conferenceControl_test
+    @allure.story('test_QueryMeetingStatus001')         #story:子功能模块--二级标签
+    @allure.title('test_QueryMeetingStatus001')     #title:标注用例标题
     def test_QueryMeetingStatus001(self,setup_function):
 
-
+        '''
+        用例描述：根据云会议室号查看当前会议全体成员的会议状态，查询的室企业云会议室号
+        :param setup_function:
+        :return:
+        '''
         self.log.debug('test_QueryMeetingStatus001 start......')
         print('test_QueryMeetingStatus001 start......')
         #获取云会议室callNumber
@@ -66,6 +87,11 @@ class Test_conferenceControl_QueryMeetingStatus:
         print('excepectCode is: ',excepectCode)
         print('excepectMsg is:',excepectMsg)
 
+
+        # 向测试报告中输入请求参数和基本url
+        allure.attach('callNumber is: ',callNumber)
+        allure.attach('QueryMeetingStatus_base_url is: ',self.QueryMeetingStatus_base_url)
+
         code,body = self.conferenceControlObj.QueryMeetingStatus(self.QueryMeetingStatus_base_url,callNumber)
         print('code is: ',code)
         print('body is',body)
@@ -76,9 +102,20 @@ class Test_conferenceControl_QueryMeetingStatus:
         #判断预期的云会议室名称是否在返回的body中
         self.assertObj.assert_in_text(body,excepectMsg)
 
+        # 向测试报告中输入请求返回状态码和消息体
+        allure.attach('请求返回状态码code is:',code)
+        allure.attach('查询的会议全体成员状态',json.dumps(body))
+
+        time.sleep(5)
+
         self.log.debug('test_QueryMeetingStatus001 end......')
         print('test_QueryMeetingStatus001 end......')
 
+
+
+
+if __name__ == "__main__":
+    pytest.main(["testCase\test_conferenceControl\test_conferenceControl_QueryMeetingStatus.py", "-s", r"--alluredir", r"C:\python_project\practice_pro\report_dic/"])
 
 
 

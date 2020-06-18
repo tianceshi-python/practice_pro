@@ -1,0 +1,11 @@
+[ {
+  "uid" : "9ccfd7a3e2f189a",
+  "name" : "test_QueryMeetingStatus001",
+  "time" : {
+    "start" : 1592452486986,
+    "stop" : 1592452492222,
+    "duration" : 5236
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

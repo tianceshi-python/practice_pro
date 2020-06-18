@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testCase.test_conferenceControl",
+    "children" : [ {
+      "name" : "test_conferenceControl_QueryMeetingStatus",
+      "children" : [ {
+        "name" : "Test_conferenceControl_QueryMeetingStatus",
+        "children" : [ {
+          "name" : "test_QueryMeetingStatus001",
+          "uid" : "9ccfd7a3e2f189a",
+          "parentUid" : "6de9f0194ae88ce339bc6a5f534db09a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1592452486986,
+            "stop" : 1592452492222,
+            "duration" : 5236
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "6de9f0194ae88ce339bc6a5f534db09a"
+      } ],
+      "uid" : "7e5a7d541cc35e1e100c1254fccacad5"
+    } ],
+    "uid" : "e921f7118022bb76e29de0a0f0924c13"
+  } ]
+}
