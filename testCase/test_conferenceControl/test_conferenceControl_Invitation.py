@@ -14,7 +14,7 @@ import allure
 import time
 
 
-@allure.feature('Test_conferenceControl_Invitation')
+@allure.feature('邀请入会：Test_conferenceControl_Invitation')           #Allure特性-feature：每一个大的功能模块可以定义为一个feature,代码如下
 class Test_conferenceControl_Invitation():
 
     def setup_class(self):
@@ -53,7 +53,7 @@ class Test_conferenceControl_Invitation():
 
     @pytest.mark.run(order=2)         #调整测试用例的执行顺序，放在第二位执行
     @pytest.mark.conferenceControl_test
-    @allure.story('test_Invitation001')
+    @allure.story('test_Invitation001')           #Allure特性-story：大功能下的一个子功能
     @allure.title('test_Invitation001')
     def test_Invitation001(self,setup_function):
 
@@ -78,7 +78,7 @@ class Test_conferenceControl_Invitation():
         device_numberlist = []
         for i in device_number_list:
             if i != ' ':
-                i = "{'number':'" + str(i) + "'}"
+                i ={"number":i}
                 device_numberlist.append(i)
         print('device_numberlist is: ',device_numberlist)
 
@@ -91,6 +91,7 @@ class Test_conferenceControl_Invitation():
         self.log.debug('test_Invitation001 requsts callNumber data is:' + callNumber)
         self.log.debug('test_Invitation001 requsts device_number is:' + device_number)
 
+        #Allure特性 - attach：增加附加信息或图片
         # 向测试报告中输入请求参数和基本url
         allure.attach('callNumber is: ', callNumber)
         allure.attach('device_numberlist is: ',device_numberlist)
