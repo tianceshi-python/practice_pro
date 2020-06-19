@@ -30,24 +30,11 @@ class ReadConfig():
     def get_enterprise(self, name):
         value = self.config.get('ENTERPRISE', name)
         return value
-    def get_device(self, name):
-        value = self.config.get('DEVICE', name)
-        return value
-    def get_metting_room(self, name):
-        value = self.config.get('METTING_ROOM', name)
-        return value
+
     def get_requstes(self,name):
         value = self.config.get('REQUEST', name)
         return value
-    def get_apiClassification(self,name):
-        value = self.config.get('APICLASSIFICATION', name)
-        return value
-    def get_email(self, name):
-        value = self.config.get('EMAIL', name)
-        return value
-    def get_LogPath(self,name):
-        value = self.config.get('LOGPATH', name)
-        return value
+
     def get_header(self,name):
         value = self.config.get('HEADER',name)
         #value是str类型，需要转换成dict类型
@@ -59,7 +46,7 @@ class ReadConfig():
 
 
 if __name__ == '__main__':
-    #print ('企业的token信息为',ReadConfig().get_enterprise('token'))
-    #print('EMAIL中的开关on_off值为：', ReadConfig().get_email('on_off'))
-    #print('header is:',ReadConfig().get_header('header'))
-    print('LogPath is:',ReadConfig().get_LogPath('LogPath'))
+    print ('企业的token信息为',ReadConfig().get_enterprise('token'))
+
+    print('header is:',ReadConfig().get_header('header'))
+
