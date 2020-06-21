@@ -9,13 +9,13 @@
         "name" : "Test_conferenceControl_QueryMeetingStatus",
         "children" : [ {
           "name" : "test_QueryMeetingStatus001",
-          "uid" : "9ccfd7a3e2f189a",
+          "uid" : "72fd04a04953d8a0",
           "parentUid" : "6de9f0194ae88ce339bc6a5f534db09a",
           "status" : "passed",
           "time" : {
-            "start" : 1592452486986,
-            "stop" : 1592452492222,
-            "duration" : 5236
+            "start" : 1592724480083,
+            "stop" : 1592724485314,
+            "duration" : 5231
           },
           "flaky" : false,
           "newFailed" : false,

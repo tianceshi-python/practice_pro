@@ -38,5 +38,5 @@ if __name__ == "__main__":
         log.error('执行用例失败，请检查环境配置')
         raise
 
-    report_addr = EmailSend.acquire_report_address(reports_address,report_name)
-    EmailSend.send_email(report_addr)
+    #report_addr = EmailSend.acquire_report_address(reports_address,report_name)
+    #EmailSend.send_email(report_addr)
