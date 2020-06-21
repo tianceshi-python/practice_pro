@@ -54,7 +54,7 @@ class Test_conferenceControl_Invitation():
     @pytest.mark.run(order=2)         #调整测试用例的执行顺序，放在第二位执行
     @pytest.mark.conferenceControl_test
     @allure.story('test_Invitation001')           #Allure特性-story：大功能下的一个子功能
-    @allure.title('test_Invitation001')
+    #@allure.title('test_Invitation001')
     def test_Invitation001(self,setup_function):
 
 
