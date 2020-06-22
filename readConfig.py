@@ -31,10 +31,6 @@ class ReadConfig():
         value = self.config.get('ENTERPRISE', name)
         return value
 
-    def get_requstes(self,name):
-        value = self.config.get('REQUEST', name)
-        return value
-
     def get_header(self,name):
         value = self.config.get('HEADER',name)
         #value是str类型，需要转换成dict类型
@@ -44,9 +40,14 @@ class ReadConfig():
         value_dict[value_list[1]] = value_list[-2]
         return value_dict
 
+    def get_mail(self,name):
+        value = self.config.get('MAIL', name)
+        return value
+
 
 if __name__ == '__main__':
-    print ('企业的token信息为',ReadConfig().get_enterprise('token'))
-
-    print('header is:',ReadConfig().get_header('header'))
+    obj = ReadConfig()
+    print ('企业的token信息为',obj.get_enterprise('token'))
+    print('header is:',obj.get_header('header'))
+    print('mail meg is:',obj.get_mail('from_name'))
 
