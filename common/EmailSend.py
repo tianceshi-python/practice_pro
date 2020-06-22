@@ -14,7 +14,7 @@ import readConfig
 def send_email(mail_body):
 
     mailObj = readConfig.ReadConfig()
-    print('mail meg is: ', mailObj.get_mail('from_name'))
+    #print('mail meg is: ', mailObj.get_mail('from_name'))
 
     #发件人地址
     from_addr = mailObj.get_mail('from_addr')
