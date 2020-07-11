@@ -1,5 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Jun 21 15:28:00 CST 2020","Sun Jun 21 15:28:05 CST 2020","5231","testCase.test_conferenceControl","test_conferenceControl_QueryMeetingStatus","Test_conferenceControl_QueryMeetingStatus","","","test_QueryMeetingStatus001","
+"passed","Tue Jun 23 10:13:12 CST 2020","Tue Jun 23 10:13:18 CST 2020","5214","testCase.test_conferenceControl","test_conferenceControl_QueryMeetingStatus","Test_conferenceControl_QueryMeetingStatus","","","test_QueryMeetingStatus001","
         用例描述：根据云会议室号查看当前会议全体成员的会议状态，查询的室企业云会议室号
         :param setup_function:
         :return:

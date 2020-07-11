@@ -16,30 +16,35 @@ teardown，在测试函数或类之后执行，完成收尾工作，例如断开
 
 from CloudVideoClass import conferenceControlClass
 import pytest
-from common import Assert,logPrintClass,get_parameter
+from common import Assert,get_parameter,logPrintClass
 import readConfig
 from testCase import get_testCaseData
 
 import allure
 import json
 import time
+import re
 
 '''
 主持会议--根据云会议室号查看当前会议全体成员的会议状态接口测试
 
 '''
 
+
 @allure.feature('Test_conferenceControl_QueryMeetingStatus')     #Feature: 主要功能模块--一级标签
 class Test_conferenceControl_QueryMeetingStatus:
 
-    def setup_class(self):
-        #实例化log打印对象
-        self.log = logPrintClass.Log()
+    @classmethod  # 类中所有的用例只会执行一次
+    def setup_class(cls):
+        # 实例化log打印对象
+        cls.log = logPrintClass.Log()
         print('类前面打印！！')
 
-    @pytest.fixture(scope = 'function')
-    def setup_function(self):
+    #@pytest.fixture(scope = 'function')
+    def setup_method(self,methond):
+
         print('函数前打印！！！！')
+
         # 获取基本数据header，enterpriseId，token
         self.header = readConfig.ReadConfig().get_header('header')
         self.enterpriseId = readConfig.ReadConfig().get_enterprise('enterpriseId')
@@ -61,11 +66,11 @@ class Test_conferenceControl_QueryMeetingStatus:
         self.assertObj = Assert.Assertions()
 
 
-    @pytest.mark.run(order=1)       #调整测试用例的执行顺序，放在第一个位置执行
+    @pytest.mark.run(order=2)       #调整测试用例的执行顺序，放在第一个位置执行
     @pytest.mark.conferenceControl_test
-    @allure.story('test_QueryMeetingStatus001')         #story:子功能模块--二级标签
+    @allure.story('test_QueryMeetingStatus')         #story:子功能模块--二级标签
     @allure.title('test_QueryMeetingStatus001')     #title:标注用例标题
-    def test_QueryMeetingStatus001(self,setup_function):
+    def test_QueryMeetingStatus001(self):
 
         '''
         用例描述：根据云会议室号查看当前会议全体成员的会议状态，查询的室企业云会议室号
@@ -114,8 +119,13 @@ class Test_conferenceControl_QueryMeetingStatus:
 
 
 
-if __name__ == "__main__":
-    pytest.main(["testCase\test_conferenceControl\test_conferenceControl_QueryMeetingStatus.py", "-s", r"--alluredir", r"C:\python_project\practice_pro\report_dic/"])
+
+
+if __name__ == '__main__':
+    obj = Test_conferenceControl_QueryMeetingStatus()
+    obj.test_QueryMeetingStatus001()
+
+
 
 
 

@@ -40,6 +40,7 @@ class conferenceControlClass():
         print('status_code is:\n', res.status_code)
         print('res_url is:\n', res.url)
         print('res.text is:\n', res.text)
+        #print('res.text type is: ',type(res.text))
         return res.status_code, res.text
 
     # 邀请入会
@@ -324,7 +325,7 @@ if __name__ == '__main__':
     deviceList.append(devicenumber2)
     deviceList.append(devicenumber3)
 
-    base_url_list = readExcel.readExcel().get_xls('testCase', 'casedata', 'conferenceControl_casedate.xlsx', 'base_urll')
+    base_url_list = readExcel.readExcel().get_xls('testCase', 'casedata', 'conferenceControl_casedate.xlsx', 'base_url')
     for i in base_url_list:
         if i[0] == 'Invitation':
             base_url = i[1]
@@ -336,7 +337,7 @@ if __name__ == '__main__':
 
     # 查询会议状态
     base_url_list = readExcel.readExcel().get_xls('testCase', 'casedata', 'conferenceControl_casedate.xlsx',
-                                                  'base_urll')
+                                                  'base_url')
     for i in base_url_list:
         if i[0] == 'Querymeetingstatus':
             base_url = i[1]
@@ -365,7 +366,7 @@ if __name__ == '__main__':
 
     # 踢出会议
     base_url_list = readExcel.readExcel().get_xls('testCase', 'casedata', 'conferenceControl_casedate.xlsx',
-                                                  'base_urll')
+                                                  'base_url')
     for i in base_url_list:
         if i[0] == 'Kickoutmeeting':
             base_url = i[1]
@@ -378,7 +379,7 @@ if __name__ == '__main__':
 
     # 设置主画面
     base_url_list = readExcel.readExcel().get_xls('testCase', 'casedata', 'conferenceControl_casedate.xlsx',
-                                                  'base_urll')
+                                                  'base_url')
     for i in base_url_list:
         if i[0] == 'Mainscreen':
             base_url = i[1]
@@ -391,7 +392,7 @@ if __name__ == '__main__':
 
     # 禁言
     base_url_list = readExcel.readExcel().get_xls('testCase', 'casedata', 'conferenceControl_casedate.xlsx',
-                                                  'base_urll')
+                                                  'base_url')
     for i in base_url_list:
         if i[0] == 'Nospeaking':
             base_url = i[1]
@@ -404,7 +405,7 @@ if __name__ == '__main__':
 
     # 解除禁言
     base_url_list = readExcel.readExcel().get_xls('testCase', 'casedata', 'conferenceControl_casedate.xlsx',
-                                                  'base_urll')
+                                                  'base_url')
     for i in base_url_list:
         if i[0] == 'Allowspeaking':
             base_url = i[1]
@@ -417,7 +418,7 @@ if __name__ == '__main__':
 
     # 向终端发送字幕
     base_url_list = readExcel.readExcel().get_xls('testCase', 'casedata', 'conferenceControl_casedate.xlsx',
-                                                  'base_urll')
+                                                  'base_url')
     for i in base_url_list:
         if i[0] == 'Sendsubtitles':
             base_url = i[1]

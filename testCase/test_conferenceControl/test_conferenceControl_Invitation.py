@@ -14,8 +14,8 @@ import allure
 import time
 
 
-@allure.feature('邀请入会：Test_conferenceControl_Invitation')           #Allure特性-feature：每一个大的功能模块可以定义为一个feature,代码如下
-class Test_conferenceControl_Invitation():
+@allure.feature('Test_conferenceControl_Invitation')     #Allure特性-feature：每一个大的功能模块可以定义为一个feature
+class Test_conferenceControl_Invitation:
 
     def setup_class(self):
         # 实例化log打印对象
@@ -32,12 +32,9 @@ class Test_conferenceControl_Invitation():
         self.header = readConfig.ReadConfig().get_header('header')
         self.enterpriseId = readConfig.ReadConfig().get_enterprise('enterpriseId')
         self.token = readConfig.ReadConfig().get_enterprise('token')
-        
-        
+
         # 实例化会控对象
         self.conferenceControlObj = conferenceControlClass.conferenceControlClass(self.header, self.enterpriseId,self.token)
-
-
 
 
         # 获取接口的基本base_url
@@ -51,10 +48,11 @@ class Test_conferenceControl_Invitation():
         # 实例化断言对象
         self.assertObj = Assert.Assertions()
 
-    @pytest.mark.run(order=2)         #调整测试用例的执行顺序，放在第二位执行
-    @pytest.mark.conferenceControl_test
-    @allure.story('test_Invitation001')           #Allure特性-story：大功能下的一个子功能
-    @allure.title('test_Invitation001')
+
+    @allure.story('test_Invitation')        # Allure特性-story：大功能下的一个子功能，story定义用户场景
+    @allure.title('test_Invitation001')      # allure测试用例名称
+    @pytest.mark.run(order=1)         #调整测试用例的执行顺序，放在第二位执行
+    @pytest.mark.Test_conferenceControl_Invitation
     def test_Invitation001(self,setup_function):
 
 
@@ -82,6 +80,12 @@ class Test_conferenceControl_Invitation():
                 device_numberlist.append(i)
         print('device_numberlist is: ',device_numberlist)
 
+        # Allure特性 - attach：增加附加信息或图片
+        # 向测试报告中输入请求参数和基本url
+        allure.attach('callNumber is:', callNumber)
+        allure.attach('device_numberlist is:', device_numberlist)
+        allure.attach('Invitation_base_url is:', self.Invitation_base_url)
+
 
         # 获取期望返回码excepectCode
         excepectCode = self.get_caseDataObj.get_data(ExcelName='conferenceControl_casedate.xlsx', sheetName='result',
@@ -90,13 +94,6 @@ class Test_conferenceControl_Invitation():
 
         self.log.debug('test_Invitation001 requsts callNumber data is:' + callNumber)
         self.log.debug('test_Invitation001 requsts device_number is:' + device_number)
-
-        #Allure特性 - attach：增加附加信息或图片
-        # 向测试报告中输入请求参数和基本url
-        allure.attach('callNumber is: ', callNumber)
-        allure.attach('device_numberlist is: ',device_numberlist)
-        allure.attach('Invitation_base_url is: ', self.Invitation_base_url)
-
 
         code, body = self.conferenceControlObj.Invitation(self.Invitation_base_url, callNumber,device_numberlist)
         print('code is: ', code)
@@ -117,8 +114,4 @@ class Test_conferenceControl_Invitation():
 
 
 
-if __name__ == "__main__":
-    try:
-        pytest.main(['-s', '-q',])#测试当前文件夹以test开头的py文件
-    except:
-        print('pytest运行失败')
+
