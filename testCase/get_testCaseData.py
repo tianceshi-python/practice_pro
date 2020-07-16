@@ -11,9 +11,10 @@
 
 import readExcel
 import readConfig
-import pytest
-import re
+import readExcel
 from common import logPrintClass
+import re
+import pytest
 
 class Get_caseData:
 
@@ -21,7 +22,6 @@ class Get_caseData:
         self.log = logPrintClass.Log()
 
     def get_data(self,ExcelName,sheetName,testName,getdata):
-
 
         # 从excel中读取参数
         caseData_List = readExcel.readExcel().get_xls('testCase', 'casedata', ExcelName,

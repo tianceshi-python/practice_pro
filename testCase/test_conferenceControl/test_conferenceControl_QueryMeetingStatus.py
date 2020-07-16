@@ -20,10 +20,12 @@ from common import Assert,get_parameter,logPrintClass
 import readConfig
 from testCase import get_testCaseData
 
+
 import allure
 import json
 import time
-import re
+import writeExcel
+
 
 '''
 主持会议--根据云会议室号查看当前会议全体成员的会议状态接口测试
@@ -64,6 +66,9 @@ class Test_conferenceControl_QueryMeetingStatus:
 
         # 实例化断言对象
         self.assertObj = Assert.Assertions()
+
+        #实例化writeExcel对象
+        self.writeExcelObj = writeExcel.writeExcel('testCase','casedata','conferenceControl_casedate.xlsx')
 
 
     @pytest.mark.run(order=2)       #调整测试用例的执行顺序，放在第一个位置执行
@@ -106,6 +111,8 @@ class Test_conferenceControl_QueryMeetingStatus:
         self.assertObj.assert_code(code,excepectCode)
         #判断预期的云会议室名称是否在返回的body中
         self.assertObj.assert_in_text(body,excepectMsg)
+
+        self.writeExcelObj.write_xml(sheet_name = 'responseData',case_name = 'test_QueryMeetingStatus001', message = body)
 
         # 向测试报告中输入请求返回状态码和消息体
         allure.attach('请求返回状态码code is:',code)
