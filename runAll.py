@@ -13,7 +13,10 @@ if __name__ == "__main__":
 
     log = logPrintClass.Log()
     shell = Shell.Shell()
+
+    # allure生成xml文件测试报告路径
     xml_report_path = readConfig.ReadConfig().xml_report_path
+    #allure将xml生成html测试报告路径
     html_report_path = readConfig.ReadConfig().html_report_path
     print('xml_report_path is: ',xml_report_path)
     print('html_report_path is:',html_report_path)

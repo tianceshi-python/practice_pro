@@ -87,9 +87,9 @@ class Test_conferenceControl_QueryMeetingStatus:
         #获取云会议室callNumber
         callNumber = self.get_caseDataObj.get_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'test_data',testName = 'test_QueryMeetingStatus001',getdata = 'callNumber')
         #获取期望返回码excepectCode
-        excepectCode = self.get_caseDataObj.get_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'result',testName = 'test_QueryMeetingStatus001',getdata = 'expected_code')
+        excepectCode = self.get_caseDataObj.get_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'ExpectedResult',testName = 'test_QueryMeetingStatus001',getdata = 'expected_code')
         #获取期望的比对信息excepectMsg
-        excepectMsg = self.get_caseDataObj.get_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'result',testName = 'test_QueryMeetingStatus001',getdata = 'expected_msg')
+        excepectMsg = self.get_caseDataObj.get_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'ExpectedResult',testName = 'test_QueryMeetingStatus001',getdata = 'expected_msg')
 
 
         self.log.debug('test_QueryMeetingStatus001 requsts data is:' + callNumber)
@@ -118,7 +118,7 @@ class Test_conferenceControl_QueryMeetingStatus:
         allure.attach('请求返回状态码code is:',code)
         allure.attach('查询的会议全体成员状态',json.dumps(body))
 
-        time.sleep(5)
+        #time.sleep(5)
 
         self.log.debug('test_QueryMeetingStatus001 end......')
         print('test_QueryMeetingStatus001 end......')

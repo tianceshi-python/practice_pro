@@ -19,8 +19,8 @@ config_path = os.path.join(path, 'config.ini')   #在path路径下再加一级�
 class ReadConfig():
 
     def __init__(self):
-        self.xml_report_path = path + '/report_dic/xml'
-        self.html_report_path = path + '/report_dic/html'
+        self.xml_report_path = path + '/report_dic/xml'        # allure生成xml文件测试报告路径
+        self.html_report_path = path + '/report_dic/html'      #allure将xml生成html测试报告路径
 
     # 实例化ConfigParser对象
     config = configparser.ConfigParser()

@@ -53,7 +53,7 @@ class Test_conferenceControl_Invitation:
     @allure.title('test_Invitation001')      # allure测试用例名称
     @pytest.mark.run(order=1)         #调整测试用例的执行顺序，放在第二位执行
     @pytest.mark.Test_conferenceControl_Invitation
-    def test_Invitation001(self,setup_function):
+    def test_Invitation001(self):
 
 
         '''
@@ -88,7 +88,7 @@ class Test_conferenceControl_Invitation:
 
 
         # 获取期望返回码excepectCode
-        excepectCode = self.get_caseDataObj.get_data(ExcelName='conferenceControl_casedate.xlsx', sheetName='result',
+        excepectCode = self.get_caseDataObj.get_data(ExcelName='conferenceControl_casedate.xlsx', sheetName='ExpectedResult',
                                                      testName='test_Invitation001', getdata='expected_code')
         print('excepectCode is: ',excepectCode)
 
