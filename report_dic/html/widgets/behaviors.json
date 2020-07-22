@@ -1,6 +1,17 @@
 {
-  "total" : 1,
+  "total" : 2,
   "items" : [ {
+    "uid" : "70a5759749c4571bce816c21516dbdf0",
+    "name" : "Test_conferenceControl_Kickoutmeeting",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
     "uid" : "9476edff5bbc911e1ccf797f375e3759",
     "name" : "Test_conferenceControl_QueryMeetingStatus",
     "statistic" : {

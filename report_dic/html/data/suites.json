@@ -4,18 +4,39 @@
   "children" : [ {
     "name" : "testCase.test_conferenceControl",
     "children" : [ {
+      "name" : "test_conferenceControl_Kickoutmeeting",
+      "children" : [ {
+        "name" : "Test_conferenceControl_Kickoutmeeting",
+        "children" : [ {
+          "name" : "test_Kickoutmeeting001",
+          "uid" : "ea9d0705c731885",
+          "parentUid" : "c6462aceb4c460f58b2f575a87daee9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1595412807108,
+            "stop" : 1595412807136,
+            "duration" : 28
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "c6462aceb4c460f58b2f575a87daee9b"
+      } ],
+      "uid" : "551b743542fc71d81188d8a721a09d4e"
+    }, {
       "name" : "test_conferenceControl_QueryMeetingStatus",
       "children" : [ {
         "name" : "Test_conferenceControl_QueryMeetingStatus",
         "children" : [ {
           "name" : "test_QueryMeetingStatus001",
-          "uid" : "4d7162f468a38aff",
+          "uid" : "dfeb412d99f5a5ed",
           "parentUid" : "6de9f0194ae88ce339bc6a5f534db09a",
           "status" : "passed",
           "time" : {
-            "start" : 1592878392885,
-            "stop" : 1592878398099,
-            "duration" : 5214
+            "start" : 1595419057243,
+            "stop" : 1595419057498,
+            "duration" : 255
           },
           "flaky" : false,
           "newFailed" : false,

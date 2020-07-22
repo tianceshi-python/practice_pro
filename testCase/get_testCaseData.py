@@ -5,7 +5,7 @@
 
 
 '''
-获取case执行需要的data数据
+从xls中获取case执行需要的data数据,即case运行的输入数据
 '''
 
 

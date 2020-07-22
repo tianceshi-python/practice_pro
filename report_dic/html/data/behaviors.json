@@ -2,24 +2,45 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "Test_conferenceControl_QueryMeetingStatus",
+    "name" : "Test_conferenceControl_Kickoutmeeting",
     "children" : [ {
-      "name" : "test_QueryMeetingStatus001",
+      "name" : "test_Kickoutmeeting",
       "children" : [ {
-        "name" : "test_QueryMeetingStatus001",
-        "uid" : "4d7162f468a38aff",
-        "parentUid" : "29b7fc1acefbbd1fb352797679c40022",
+        "name" : "test_Kickoutmeeting001",
+        "uid" : "ea9d0705c731885",
+        "parentUid" : "471e2d73c6de962a29e702c314cd4325",
         "status" : "passed",
         "time" : {
-          "start" : 1592878392885,
-          "stop" : 1592878398099,
-          "duration" : 5214
+          "start" : 1595412807108,
+          "stop" : 1595412807136,
+          "duration" : 28
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "29b7fc1acefbbd1fb352797679c40022"
+      "uid" : "471e2d73c6de962a29e702c314cd4325"
+    } ],
+    "uid" : "70a5759749c4571bce816c21516dbdf0"
+  }, {
+    "name" : "Test_conferenceControl_QueryMeetingStatus",
+    "children" : [ {
+      "name" : "test_QueryMeetingStatus",
+      "children" : [ {
+        "name" : "test_QueryMeetingStatus001",
+        "uid" : "dfeb412d99f5a5ed",
+        "parentUid" : "3090fbe33a7953b2df40bac7d4d29193",
+        "status" : "passed",
+        "time" : {
+          "start" : 1595419057243,
+          "stop" : 1595419057498,
+          "duration" : 255
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3090fbe33a7953b2df40bac7d4d29193"
     } ],
     "uid" : "9476edff5bbc911e1ccf797f375e3759"
   } ]

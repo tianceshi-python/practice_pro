@@ -17,7 +17,7 @@ import allure
 import json
 import time
 
-@allure.feature('Test_conferenceControl_Kickoutmeeting')     #Feature: 主要功能模块--一级标签
+@allure.feature('Test_conferenceControl_Kickoutmeeting')     #allure.Feature: 主要功能模块--一级标签
 class Test_conferenceControl_Kickoutmeeting:
 
     @classmethod  # 类中所有的用例只会执行一次
@@ -26,7 +26,6 @@ class Test_conferenceControl_Kickoutmeeting:
         cls.log = logPrintClass.Log()
         print('类前面打印！！')
 
-    #@pytest.fixture(scope = 'function')
     def setup_method(self,methond):
 
         print('函数前打印！！！！')
@@ -43,7 +42,7 @@ class Test_conferenceControl_Kickoutmeeting:
         # 获取接口的基本base_url
         self.kickoutmeeting_base_url = get_parameter.get_parameter().get_baseUrl(
             ExcelName='conferenceControl_casedate.xlsx', sheetName='base_url', apiName='kickoutmeeting_url')
-        print('kickoutmeeting_base_url is: ', self.kickoutmeeting_base_url)
+        #print('kickoutmeeting_base_url is: ', self.kickoutmeeting_base_url)
 
         # 实例化获取case data
         self.get_caseDataObj = get_testCaseData.Get_caseData()
@@ -52,7 +51,7 @@ class Test_conferenceControl_Kickoutmeeting:
         self.assertObj = Assert.Assertions()
 
     @pytest.mark.run(order=3)  # 调整测试用例的执行顺序，放在第一个位置执行
-    @pytest.mark.conferenceControl_Kickoutmeeting
+    @pytest.mark.conferenceControl_test
     @allure.story('test_Kickoutmeeting')  # story:子功能模块--二级标签
     @allure.title('test_Kickoutmeeting001')  # title:标注用例标题
     def test_Kickoutmeeting001(self):
@@ -69,27 +68,45 @@ class Test_conferenceControl_Kickoutmeeting:
         # 获取期望返回码excepectCode
         excepectCode = self.get_caseDataObj.get_data(ExcelName= 'conferenceControl_casedate.xlsx',sheetName = 'ExpectedResult',testName = 'test_Kickoutmeeting001',getdata = 'expected_code')
 
-        #获取body消息体
-        bodyList = bodyDataDeal.get_Kickoutmeeting_requstData('testCase','casedata','conferenceControl_casedate.xlsx','responseData','test_QueryMeetingStatus001')
-        bodyList = json.loads(bodyList)
-        print('bodyList is: ', bodyList)
+        #获取请求的body消息体bodystr
+        bodystr,participantNumberList = bodyDataDeal.deal_QueryMeetingStatusReaponseData('testCase','casedata','conferenceControl_casedate.xlsx','responseData','test_QueryMeetingStatus001')
 
-        request_bodyList = bodyList[0]      #将查询会议信息中的第一个参会人员提出会议
-        print('request_bodyList type is:', type(request_bodyList))
-        print('callNumber is: ', callNumber)
-        print('excepectCode is: ', excepectCode)
+        # 将字符串类型转换成json格式
+        bodyList = json.loads(bodystr)
+        #print('bodyList is: ', bodyList)
+        if len(bodyList) != 0:
+            request_bodyList = bodyList[0]      #将查询会议信息中的第一个参会人员踢出会议
+            #print('request_bodyList type is:', type(request_bodyList))
 
-        #request_bodyList = request_bodyList
-        print('request_bodyList type is: ', type(request_bodyList))
-        print('request_bodyList  is: ', request_bodyList)
+            print('callNumber is: ', callNumber)
+            print('excepectCode is: ', excepectCode)
+            print('request_bodyList  is: ', [request_bodyList])
 
-        code,body= self.conferenceControlObj.Kickoutmeeting(self.kickoutmeeting_base_url,callNumber,[request_bodyList])
-        print('code is: ', code)
-        #print('body is', body)
+            # 将请求信息在报告中展示
+            allure.attach('excepectCode is: ',excepectCode)
+            allure.attach('callNumber is: ',callNumber)
+            allure.attach('excepectCode is: ',excepectCode)
+            allure.attach('kickoutmeeting_base_url is: ',self.kickoutmeeting_base_url)
+            allure.attach('request_bodyList is: ',[request_bodyList])
 
-        # 断言
-        # 判断请求返回码是否与预期的一致
-        self.assertObj.assert_code(code, excepectCode)
+            self.log.debug('test_Kickoutmeeting001excepectCode is: ' + excepectCode)
+            self.log.debug('test_Kickoutmeeting001 callNumber is: ' + callNumber)
+            self.log.debug('test_Kickoutmeeting001 excepectCode is: ' + excepectCode)
+            self.log.debug('test_Kickoutmeeting001 kickoutmeeting_base_url is: ' + self.kickoutmeeting_base_url)
+            self.log.debug('test_Kickoutmeeting001 request_bodyList is: '+ str([request_bodyList]))
+
+            #调取踢出会议接口，将指定的参会人员踢出会议
+            code,body= self.conferenceControlObj.Kickoutmeeting(self.kickoutmeeting_base_url,callNumber,[request_bodyList])
+            print('code is: ', code)
+            #print('body is', body)
+
+            allure.attach('请求返回的状态码 is: ',code)
+
+            # 断言
+            # 判断请求返回码是否与预期的一致
+            self.assertObj.assert_code(code, excepectCode)
+        else:
+            print('会议已经结束，没有参会人员，无法执行踢人接口，请重新组会！！！！')
 
         self.log.debug('test_Kickoutmeeting001 end......')
         print('test_Kickoutmeeting001 end......')

@@ -1,11 +1,16 @@
 # encoding:utf-8
 
+'''
+处理上个case运行返回的body体，作为下个case运行的输入body体
+'''
+
+
 import readExcel
 import json
 
 
 #从查询会议接口返回body中获取踢出会议的请求消息体
-def get_Kickoutmeeting_requstData(caseDirName1,caseDirName2,xls_name,sheet_name,case_name):
+def deal_QueryMeetingStatusReaponseData(caseDirName1,caseDirName2,xls_name,sheet_name,case_name):
 
     caseBodyList = readExcel.readExcel().get_xls(caseDirName1,caseDirName2,xls_name,sheet_name)
     #print('caseBodyList is:',caseBodyList)
@@ -16,18 +21,26 @@ def get_Kickoutmeeting_requstData(caseDirName1,caseDirName2,xls_name,sheet_name,
 
     deviceStatusList = json.loads(body)['deviceStatusList']
     #print('deviceStatusList is: ', deviceStatusList)
-    data = []
-    for i in deviceStatusList:
-        value = (i['device'])
-        del value['participantId']
-        del value['externalUserId']
-        data.append(value)
-        #print('value is: ', value)
+    participantNumberList = []
+    dive_data = []
+    if deviceStatusList is None:
+        pass
+    else:
+        for i in deviceStatusList:
+            value = (i['device'])
+            participantNumber = i['device']["participantNumber"]
+            del value['participantId']
+            del value['externalUserId']
+            dive_data.append(value)
+            #print('value is: ', value)
+            participantNumberList.append(participantNumber)
 
-    data = json.dumps(data)
+
+    data = json.dumps(dive_data)
     #print('data is: ', data)
-    return data
+    #print('participantNumberList is: ',participantNumberList)
+    return data,participantNumberList
 
 
 
-get_Kickoutmeeting_requstData('testCase','casedata','conferenceControl_casedate.xlsx','responseData','test_QueryMeetingStatus001')
+deal_QueryMeetingStatusReaponseData('testCase','casedata','conferenceControl_casedate.xlsx','responseData','test_QueryMeetingStatus001')

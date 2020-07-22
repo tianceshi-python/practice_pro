@@ -1,0 +1,12 @@
+DEBUG    mylogger:logPrintClass.py:69 test_Invitation001 start......
+DEBUG    mylogger:logPrintClass.py:69 test_Invitation001callNumberis: 9005853980
+DEBUG    mylogger:logPrintClass.py:69 test_Invitation001expected_codeis: 200
+DEBUG    mylogger:logPrintClass.py:69 test_Invitation001device_numberis: 17010881111
+DEBUG    mylogger:logPrintClass.py:69 test_Invitation001 requsts callNumber data is:9005853980
+DEBUG    mylogger:logPrintClass.py:69 test_Invitation001 requsts device_number is:[{'number': '17010881111'}]
+DEBUG    mylogger:logPrintClass.py:69 Invitation_base_url is:https://sdk.xylink.com/api/rest/external/v1/conferenceControl/invitation?enterpriseId=
+INFO     mylogger:logPrintClass.py:67 邀请入会请求 start....
+DEBUG    mylogger:logPrintClass.py:69 res_url is:https://sdk.xylink.com/api/rest/external/v1/conferenceControl/invitation?enterpriseId=2bc382f16515877abf19ba8bbf9d5e215fe7bf12&signature=nV7GxxLAYoyyVOlBpOslcCKVLqqzs%2FSYb0PnAgebcEE%3D
+DEBUG    mylogger:logPrintClass.py:69 status_code is:200
+DEBUG    mylogger:logPrintClass.py:69 res.text is:
+DEBUG    mylogger:logPrintClass.py:69 test_Invitation001 end......

@@ -42,7 +42,7 @@ class Test_conferenceControl_QueryMeetingStatus:
         cls.log = logPrintClass.Log()
         print('类前面打印！！')
 
-    #@pytest.fixture(scope = 'function')
+
     def setup_method(self,methond):
 
         print('函数前打印！！！！')
@@ -71,7 +71,7 @@ class Test_conferenceControl_QueryMeetingStatus:
         self.writeExcelObj = writeExcel.writeExcel('testCase','casedata','conferenceControl_casedate.xlsx')
 
 
-    @pytest.mark.run(order=2)       #调整测试用例的执行顺序，放在第一个位置执行
+    @pytest.mark.run(order=1)       #调整测试用例的执行顺序，放在第一个位置执行
     @pytest.mark.conferenceControl_test
     @allure.story('test_QueryMeetingStatus')         #story:子功能模块--二级标签
     @allure.title('test_QueryMeetingStatus001')     #title:标注用例标题

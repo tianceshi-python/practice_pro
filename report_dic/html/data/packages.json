@@ -2,21 +2,42 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "testCase.test_conferenceControl.test_conferenceControl_QueryMeetingStatus",
+    "name" : "testCase.test_conferenceControl",
     "children" : [ {
-      "name" : "test_QueryMeetingStatus001",
-      "uid" : "4d7162f468a38aff",
-      "parentUid" : "f56dca7c9ab657eba6b414fc53c9300e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1592878392885,
-        "stop" : 1592878398099,
-        "duration" : 5214
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
+      "name" : "test_conferenceControl_Kickoutmeeting",
+      "children" : [ {
+        "name" : "test_Kickoutmeeting001",
+        "uid" : "ea9d0705c731885",
+        "parentUid" : "d553d32abaccff5467a25b0edf700050",
+        "status" : "passed",
+        "time" : {
+          "start" : 1595412807108,
+          "stop" : 1595412807136,
+          "duration" : 28
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d553d32abaccff5467a25b0edf700050"
+    }, {
+      "name" : "test_conferenceControl_QueryMeetingStatus",
+      "children" : [ {
+        "name" : "test_QueryMeetingStatus001",
+        "uid" : "dfeb412d99f5a5ed",
+        "parentUid" : "f56dca7c9ab657eba6b414fc53c9300e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1595419057243,
+          "stop" : 1595419057498,
+          "duration" : 255
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f56dca7c9ab657eba6b414fc53c9300e"
     } ],
-    "uid" : "testCase.test_conferenceControl.test_conferenceControl_QueryMeetingStatus"
+    "uid" : "testCase.test_conferenceControl"
   } ]
 }

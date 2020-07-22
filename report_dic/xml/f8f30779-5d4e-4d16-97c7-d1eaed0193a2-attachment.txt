@@ -1,0 +1,12 @@
+DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001 start......
+DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001callNumberis: 9005853980
+DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001expected_codeis: 200
+DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001excepectCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001 callNumber is: 9005853980
+DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001 excepectCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001 request_bodyList is: [{'id': 221656395, 'type': 5, 'participantNumber': '18290000004'}]
+INFO     mylogger:logPrintClass.py:67 踢出会议请求 start....
+DEBUG    mylogger:logPrintClass.py:69 res_url is:https://sdk.xylink.com/api/rest/external/v1/conferenceControl/9005853980/disconnect?enterpriseId=2bc382f16515877abf19ba8bbf9d5e215fe7bf12&signature=PjLb2oWGHrxKVOHueVCWijy%2BwvRm9Ry8m5V1p%2BmjUWY%3D
+DEBUG    mylogger:logPrintClass.py:69 status_code is:200
+DEBUG    mylogger:logPrintClass.py:69 res.text is:
+DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001 end......

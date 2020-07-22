@@ -1,6 +1,10 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Jun 23 10:13:12 CST 2020","Tue Jun 23 10:13:18 CST 2020","5214","testCase.test_conferenceControl","test_conferenceControl_QueryMeetingStatus","Test_conferenceControl_QueryMeetingStatus","","","test_QueryMeetingStatus001","
+"passed","Wed Jul 22 19:57:37 CST 2020","Wed Jul 22 19:57:37 CST 2020","255","testCase.test_conferenceControl","test_conferenceControl_QueryMeetingStatus","Test_conferenceControl_QueryMeetingStatus","","","test_QueryMeetingStatus001","
         用例描述：根据云会议室号查看当前会议全体成员的会议状态，查询的室企业云会议室号
         :param setup_function:
+        :return:
+        "
+"passed","Wed Jul 22 18:13:27 CST 2020","Wed Jul 22 18:13:27 CST 2020","28","testCase.test_conferenceControl","test_conferenceControl_Kickoutmeeting","Test_conferenceControl_Kickoutmeeting","","","test_Kickoutmeeting001","
+        :param setup_method: 在会议过程中，从会议中删除一个或多个与会人员
         :return:
         "

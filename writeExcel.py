@@ -1,5 +1,10 @@
 # encoding:utf-8
 
+'''
+将case运行所得的返回信息写入xls中，供下个case运行时使用
+'''
+
+
 import os
 import getpathInfo   #导入自已定义的内部类，该类返回项目的绝对路径
 #调用读取Excel的第三方库
