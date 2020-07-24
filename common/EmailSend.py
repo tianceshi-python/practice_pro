@@ -3,6 +3,7 @@ import os
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from email.mime.application import MIMEApplication
 from email.header import Header
 from datetime import datetime
 import time
@@ -11,7 +12,7 @@ import readConfig
 
 
 #自动发送邮件
-def send_email(mail_body):
+def send_email(mail_body,attachfile_1,attachfile_2,attachfile_3):
 
     mailObj = readConfig.ReadConfig()
     #print('mail meg is: ', mailObj.get_mail('from_name'))
@@ -44,6 +45,25 @@ def send_email(mail_body):
     msg['From'] = Header(from_name, 'utf-8')    #发件人名称转码
     msg['To'] = Header(to_name, 'utf-8')             #收件人名称转码
     msg['Subject'] = Header(subject,'utf-8')         #邮件标题转码
+
+    # 加入附件内容
+    #附件1
+    file_1 = attachfile_1
+    html_1 = MIMEApplication(open(file_1, 'rb').read())  # 把附件的内容读进来:
+    html_1.add_header('Content-Disposition', 'attachment', filename=os.path.basename(file_1))  # 加上必要的头信息:
+    msg.attach(html_1)
+    # 附件2
+    file_2 = attachfile_2
+    html_2 = MIMEApplication(open(file_2, 'rb').read())  # 把附件的内容读进来:
+    html_2.add_header('Content-Disposition', 'attachment', filename=os.path.basename(file_2))  # 加上必要的头信息:
+    msg.attach(html_2)
+    # 附件3
+    file_3 = attachfile_3
+    html_3 = MIMEApplication(open(file_3, 'rb').read())  # 把附件的内容读进来:
+    html_3.add_header('Content-Disposition', 'attachment', filename=os.path.basename(file_3))  # 加上必要的头信息:
+    msg.attach(html_3)
+
+
     #发送邮件
     smtp = smtplib.SMTP()
     smtp.connect(mail_server,'25')      # 25 为 SMTP 端口号
@@ -67,9 +87,12 @@ def acquire_report_ToMailbody(reports_address,report_name):
     return mail_body
 
 if __name__ == '__main__':
-    reports_address = r'C:\python_project\practice_pro\report_dic\html'
-    report_name = 'address.html'
-    mail_body = acquire_report_ToMailbody(reports_address,report_name)
+    #reports_address = r'C:\python_project\practice_pro\result_html'
+    #report_name = 'reportname.html'
+    #mail_body = acquire_report_ToMailbody(reports_address,report_name)
     #print('mail_body is: ', mail_body)
-
-    send_email(mail_body)
+    mail_body = '测试已经执行完毕，结果请见附件'
+    attachfile_1 = u'C:\python_project/practice_pro/result_html/reportname.html --self-contained-html'
+    attachfile_2 = u'C:\python_project\practice_pro/result_html/assets/style.css'
+    attachfile_3 = u'C:\python_project\practice_pro/result_html/reportname.html'
+    send_email(mail_body,attachfile_1,attachfile_2,attachfile_3)

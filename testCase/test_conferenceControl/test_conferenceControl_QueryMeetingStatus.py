@@ -70,7 +70,6 @@ class Test_conferenceControl_QueryMeetingStatus:
         #实例化writeExcel对象
         self.writeExcelObj = writeExcel.writeExcel('testCase','casedata','conferenceControl_casedate.xlsx')
 
-
     @pytest.mark.run(order=1)       #调整测试用例的执行顺序，放在第一个位置执行
     @pytest.mark.conferenceControl_test
     @allure.story('test_QueryMeetingStatus')         #story:子功能模块--二级标签
@@ -79,8 +78,6 @@ class Test_conferenceControl_QueryMeetingStatus:
 
         '''
         用例描述：根据云会议室号查看当前会议全体成员的会议状态，查询的室企业云会议室号
-        :param setup_function:
-        :return:
         '''
         self.log.debug('test_QueryMeetingStatus001 start......')
         print('test_QueryMeetingStatus001 start......')

@@ -48,8 +48,7 @@ class Test_conferenceControl_Invitation:
 
     def get_device_numberlist(self):
         '''
-        function描述：从xsl中获取被邀请入会的终端列表
-        :return:
+       function描述：从xsl中获取被邀请入会的终端列表
         '''
 
         # 获取被邀请的终端或者软终端号码device_number
@@ -81,9 +80,7 @@ class Test_conferenceControl_Invitation:
 
 
         '''
-        用例描述：邀请入会，同时邀请硬件和软终端入会
-        :param setup_function:
-        :return:
+        用例描述：邀请入会，邀请指定的终端入会
         '''
         self.log.debug('test_Invitation001 start......')
         print('test_Invitation001 start......')

@@ -57,8 +57,7 @@ class Test_conferenceControl_Kickoutmeeting:
     def test_Kickoutmeeting001(self):
 
         '''
-        :param setup_method: 在会议过程中，从会议中删除一个或多个与会人员
-        :return:
+        用例描述： 在会议过程中，从会议中删除一个或多个与会人员
         '''
         self.log.debug('test_Kickoutmeeting001 start......')
         print('test_Kickoutmeeting001 start......')
