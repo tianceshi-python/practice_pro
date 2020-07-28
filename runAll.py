@@ -26,7 +26,7 @@ if __name__ == "__main__":
     report_name = 'index.html'
 
     #定义测试集
-    args = ['-s', '-q','-m=conferenceControl_test', '--alluredir', xml_report_path]
+    args = ['-s', '-q','-m=RecordingAndVods', '--alluredir', xml_report_path]
     pytest.main(args)
 
     #cmd1 = 'cd %s'%xml_report_path

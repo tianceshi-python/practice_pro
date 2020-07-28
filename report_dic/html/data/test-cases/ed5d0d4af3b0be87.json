@@ -1,0 +1,163 @@
+{
+  "uid" : "ed5d0d4af3b0be87",
+  "name" : "test_StopRecording001",
+  "fullName" : "testCase.test_RecordingAndVods.test_StopRecording.Test_StopRecording#test_StopRecording001",
+  "historyId" : "acbb70e9ef96d256d1b6808b7c15de02",
+  "time" : {
+    "start" : 1595584114809,
+    "stop" : 1595584114967,
+    "duration" : 158
+  },
+  "description" : "\n        用例描述： 开始录制视频\n        ",
+  "descriptionHtml" : "<pre><code>    用例描述： 开始录制视频\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_method",
+    "time" : {
+      "start" : 1595584114805,
+      "stop" : 1595584114809,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1595584114804,
+      "stop" : 1595584114805,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        用例描述： 开始录制视频\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "35cf81b8afa832aa",
+      "name" : "9005853980",
+      "source" : "35cf81b8afa832aa.attach",
+      "type" : "text/plain",
+      "size" : 22
+    }, {
+      "uid" : "3b5ff8fdc418a01d",
+      "name" : "200",
+      "source" : "3b5ff8fdc418a01d.attach",
+      "type" : "text/plain",
+      "size" : 17
+    }, {
+      "uid" : "4eca5d3033eb796",
+      "name" : "https://sdk.xylink.com/api/rest/external/v2/meeting/recording/",
+      "source" : "4eca5d3033eb796.attach",
+      "type" : "text/plain",
+      "size" : 29
+    }, {
+      "uid" : "ffac7441377f1912",
+      "name" : "log",
+      "source" : "ffac7441377f1912.txt",
+      "type" : "text/plain",
+      "size" : 1115
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_method::0",
+    "time" : {
+      "start" : 1595584114968,
+      "stop" : 1595584114968,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1595584114970,
+      "stop" : 1595584114970,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Test_StopRecording"
+  }, {
+    "name" : "story",
+    "value" : "test_StopRecording"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "tag",
+    "value" : "RecordingAndVods"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.test_RecordingAndVods"
+  }, {
+    "name" : "suite",
+    "value" : "test_StopRecording"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_StopRecording"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-8HDD4PN"
+  }, {
+    "name" : "thread",
+    "value" : "11544-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.test_RecordingAndVods.test_StopRecording"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=2)", "RecordingAndVods" ]
+  },
+  "source" : "ed5d0d4af3b0be87.json",
+  "parameterValues" : [ ]
+}

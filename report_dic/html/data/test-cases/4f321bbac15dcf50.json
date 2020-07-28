@@ -1,0 +1,180 @@
+{
+  "uid" : "4f321bbac15dcf50",
+  "name" : "test_StartRecording001",
+  "fullName" : "testCase.test_RecordingAndVods.test_start_recording.Test_StartRecording#test_StartRecording001",
+  "historyId" : "8f53c13445375f6007a653226b774746",
+  "time" : {
+    "start" : 1595584237306,
+    "stop" : 1595584242619,
+    "duration" : 5313
+  },
+  "description" : "\n        用例描述： 开始录制视频\n        ",
+  "descriptionHtml" : "<pre><code>    用例描述： 开始录制视频\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1595584237300,
+      "stop" : 1595584237300,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_method",
+    "time" : {
+      "start" : 1595584237300,
+      "stop" : 1595584237305,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        用例描述： 开始录制视频\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "56da502c70998a5",
+      "name" : "9005853980",
+      "source" : "56da502c70998a5.attach",
+      "type" : "text/plain",
+      "size" : 22
+    }, {
+      "uid" : "7768ccb6b5592159",
+      "name" : "200",
+      "source" : "7768ccb6b5592159.attach",
+      "type" : "text/plain",
+      "size" : 17
+    }, {
+      "uid" : "6d40dad5cb07ba77",
+      "name" : "https://sdk.xylink.com/api/rest/external/v1/meeting/recording/",
+      "source" : "6d40dad5cb07ba77.attach",
+      "type" : "text/plain",
+      "size" : 29
+    }, {
+      "uid" : "cf00f3f969bf1946",
+      "name" : "200",
+      "source" : "cf00f3f969bf1946.attach",
+      "type" : "text/plain",
+      "size" : 17
+    }, {
+      "uid" : "f0fe8eaa27489d47",
+      "name" : "log",
+      "source" : "f0fe8eaa27489d47.txt",
+      "type" : "text/plain",
+      "size" : 1054
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1595584242622,
+      "stop" : 1595584242622,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_method::0",
+    "time" : {
+      "start" : 1595584242620,
+      "stop" : 1595584242621,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Test_StartRecording"
+  }, {
+    "name" : "story",
+    "value" : "test_StartRecording"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "tag",
+    "value" : "RecordingAndVods"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.test_RecordingAndVods"
+  }, {
+    "name" : "suite",
+    "value" : "test_start_recording"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_StartRecording"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-8HDD4PN"
+  }, {
+    "name" : "thread",
+    "value" : "18300-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.test_RecordingAndVods.test_start_recording"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7d3539c44c2e0b27",
+      "status" : "broken",
+      "statusDetails" : "TypeError: can only concatenate str (not \"int\") to str",
+      "time" : {
+        "start" : 1595584114294,
+        "stop" : 1595584114597,
+        "duration" : 303
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "run(order=1)", "RecordingAndVods" ]
+  },
+  "source" : "4f321bbac15dcf50.json",
+  "parameterValues" : [ ]
+}

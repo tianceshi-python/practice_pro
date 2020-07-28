@@ -1,5 +1,5 @@
 {
-  "uid" : "ea9d0705c731885",
+  "uid" : "c20622d3cd6d7ee",
   "name" : "test_Kickoutmeeting001",
   "fullName" : "testCase.test_conferenceControl.test_conferenceControl_Kickoutmeeting.Test_conferenceControl_Kickoutmeeting#test_Kickoutmeeting001",
   "historyId" : "0233320192b58c0d92a371145abe1cff",
@@ -24,8 +24,8 @@
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
     "hasContent" : false,
     "stepsCount" : 0
   }, {
@@ -39,8 +39,8 @@
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
     "hasContent" : false,
     "stepsCount" : 0
   } ],
@@ -49,15 +49,15 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "9756f4a29214665d",
+      "uid" : "4e90038038dd37a0",
       "name" : "log",
-      "source" : "9756f4a29214665d.txt",
+      "source" : "4e90038038dd37a0.txt",
       "type" : "text/plain",
-      "size" : 309
+      "size" : 312
     } ],
     "parameters" : [ ],
-    "shouldDisplayMessage" : false,
     "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
     "hasContent" : true,
     "stepsCount" : 0
   },
@@ -72,8 +72,8 @@
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
     "hasContent" : false,
     "stepsCount" : 0
   }, {
@@ -87,8 +87,8 @@
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
     "hasContent" : false,
     "stepsCount" : 0
   } ],
@@ -142,6 +142,6 @@
     "categories" : [ ],
     "tags" : [ "run(order=3)", "conferenceControl_test" ]
   },
-  "source" : "ea9d0705c731885.json",
+  "source" : "c20622d3cd6d7ee.json",
   "parameterValues" : [ ]
 }

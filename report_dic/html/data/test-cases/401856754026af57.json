@@ -1,5 +1,5 @@
 {
-  "uid" : "374db32bcb163b0d",
+  "uid" : "401856754026af57",
   "name" : "test_QueryMeetingStatus001",
   "fullName" : "testCase.test_conferenceControl.test_conferenceControl_QueryMeetingStatus.Test_conferenceControl_QueryMeetingStatus#test_QueryMeetingStatus001",
   "historyId" : "940051e6f4d4defdbbb0855f2b2db59a",
@@ -24,8 +24,8 @@
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
     "hasContent" : false,
     "stepsCount" : 0
   }, {
@@ -39,8 +39,8 @@
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
     "hasContent" : false,
     "stepsCount" : 0
   } ],
@@ -49,39 +49,39 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "7da28291c92f40d5",
+      "uid" : "1c68db93603631fc",
       "name" : "9005853980",
-      "source" : "7da28291c92f40d5.attach",
+      "source" : "1c68db93603631fc.attach",
       "type" : "text/plain",
       "size" : 15
     }, {
-      "uid" : "85f6095a55fd2ba0",
+      "uid" : "2f0c5b0b2521c500",
       "name" : "https://sdk.xylink.com/api/rest/external/v1/conferenceControl/",
-      "source" : "85f6095a55fd2ba0.attach",
+      "source" : "2f0c5b0b2521c500.attach",
       "type" : "text/plain",
       "size" : 32
     }, {
-      "uid" : "57ef1f3fa0c4f73e",
+      "uid" : "645f88a1b373377d",
       "name" : "200",
-      "source" : "57ef1f3fa0c4f73e.attach",
+      "source" : "645f88a1b373377d.attach",
       "type" : "text/plain",
       "size" : 29
     }, {
-      "uid" : "810c660030af5556",
+      "uid" : "d4b141dfaff3d32d",
       "name" : "\"{\\\"meetingRoomNumber\\\":\\\"9005853980@CONFNO\\\",\\\"meetingId\\\":null,\\\"meetingName\\\":\\\"zhangmingyue\\u7684\\u4e91\\u4f1a\\u8bae\\u5ba4\\\",\\\"mode\\\":0,\\\"mainVenue\\\":null,\\\"mainImage\\\":null,\\\"deviceStatusList\\\":null,\\\"handUpList\\\":null,\\\"recordingDevice\\\":null,\\\"contentDevice\\\":null,\\\"whiteBoardDevice\\\":null}\"",
-      "source" : "810c660030af5556.attach",
+      "source" : "d4b141dfaff3d32d.attach",
       "type" : "text/plain",
       "size" : 33
     }, {
-      "uid" : "4081569be984148a",
+      "uid" : "572510e547d912b0",
       "name" : "log",
-      "source" : "4081569be984148a.txt",
+      "source" : "572510e547d912b0.txt",
       "type" : "text/plain",
-      "size" : 1404
+      "size" : 1415
     } ],
     "parameters" : [ ],
-    "shouldDisplayMessage" : false,
     "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false,
     "hasContent" : true,
     "stepsCount" : 0
   },
@@ -96,8 +96,8 @@
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
     "hasContent" : false,
     "stepsCount" : 0
   }, {
@@ -111,8 +111,8 @@
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
     "hasContent" : false,
     "stepsCount" : 0
   } ],
@@ -164,6 +164,6 @@
     "categories" : [ ],
     "tags" : [ "conferenceControl_test", "run(order=1)" ]
   },
-  "source" : "374db32bcb163b0d.json",
+  "source" : "401856754026af57.json",
   "parameterValues" : [ ]
 }

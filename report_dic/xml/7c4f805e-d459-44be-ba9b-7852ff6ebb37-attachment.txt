@@ -1,0 +1,12 @@
+DEBUG    mylogger:logPrintClass.py:69 test_StopRecording001 starting......
+DEBUG    mylogger:logPrintClass.py:69 test_StopRecording001meetingRoomNumberis: 9005853980
+DEBUG    mylogger:logPrintClass.py:69 test_StopRecording001expected_codeis: 200
+DEBUG    mylogger:logPrintClass.py:69 meetingRoomNumber is: 9005853980
+DEBUG    mylogger:logPrintClass.py:69 excepectCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 stop_recording_base_url is: https://sdk.xylink.com/api/rest/external/v2/meeting/recording/
+INFO     mylogger:logPrintClass.py:67 结束录制请求 start....
+DEBUG    mylogger:logPrintClass.py:69 res_url is:https://sdk.xylink.com/api/rest/external/v2/meeting/recording/9005853980/stopWithSessionId?enterpriseId=2bc382f16515877abf19ba8bbf9d5e215fe7bf12&signature=iZHU51tgi8G9xI7bCTCSIPzknKhAgSomEWmdTgGiA3c%3D
+DEBUG    mylogger:logPrintClass.py:69 status_code is:200
+DEBUG    mylogger:logPrintClass.py:69 res.text is:{"recordingStatusResponse":"OK","sessionId":"9005853980@CONFNO_1156074196094_1156074196094_0_normal_984501433228"}
+DEBUG    mylogger:logPrintClass.py:69 responseCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 test_StopRecording001 end......
