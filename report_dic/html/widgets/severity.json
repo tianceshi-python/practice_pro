@@ -1,5 +1,15 @@
 [ {
-  "uid" : "8e2a1557005ae612",
+  "uid" : "ad0d891ca24644c4",
+  "name" : "test_StopRecording001",
+  "time" : {
+    "start" : 1595921260910,
+    "stop" : 1595921261152,
+    "duration" : 242
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c239a9a0d0b9e156",
   "name" : "test_QueryMeetingStatus001",
   "time" : {
     "start" : 1595419057243,
@@ -9,32 +19,22 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4f321bbac15dcf50",
+  "uid" : "5cd3d1a647007da3",
   "name" : "test_StartRecording001",
   "time" : {
-    "start" : 1595584237306,
-    "stop" : 1595584242619,
-    "duration" : 5313
+    "start" : 1595921255635,
+    "stop" : 1595921260878,
+    "duration" : 5243
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c20622d3cd6d7ee",
+  "uid" : "de196d046fc054ae",
   "name" : "test_Kickoutmeeting001",
   "time" : {
     "start" : 1595412807108,
     "stop" : 1595412807136,
     "duration" : 28
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "59411bd9f846e56d",
-  "name" : "test_StopRecording001",
-  "time" : {
-    "start" : 1595584242644,
-    "stop" : 1595584242819,
-    "duration" : 175
   },
   "status" : "passed",
   "severity" : "normal"

@@ -4,7 +4,7 @@
 from CloudVideoClass import recordingVodsClass
 import pytest
 from common import Assert,get_parameter,logPrintClass
-import readConfig
+import readConfig,writeExcel
 from testCase import get_testCaseData
 
 
@@ -41,6 +41,10 @@ class Test_StopRecording:
 
         # 实例化断言对象
         self.assertObj = Assert.Assertions()
+
+
+        #实例化writeExcel对象
+        self.writeExcelObj = writeExcel.writeExcel('testCase','casedata','recordingVods_casedata.xlsx')
 
 
 
@@ -80,7 +84,9 @@ class Test_StopRecording:
         # 调取踢出会议接口，将指定的参会人员踢出会议
         code, body = self.recordingVodsObj.stop_recording(self.stop_recording_base_url, meetingRoomNumber)
         print('code is: ', code)
-        #print('body is', body)
+        print('body is', body)
+
+        self.writeExcelObj.write_xml(sheet_name = 'responseData',case_name = 'test_StopRecording001', message = body)
 
         allure.attach('responseCode is: ', str(code))
         self.log.debug('responseCode is: ' + str(code))
