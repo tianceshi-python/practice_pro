@@ -64,7 +64,7 @@ class Test_get_vodsDownloadurl:
         sessionId = RecordingAndVods_BodyDataDeal.deal_StopRecordingReaponseData('testCase','casedata','recordingVods_casedata.xlsx','responseData','test_StopRecording001')
         # 获取期望返回码excepectCode
         excepectCode = self.get_caseDataObj.get_data(ExcelName='recordingVods_casedata.xlsx',
-                                                     sheetName='ExpectedResult', testName='test_StopRecording001',
+                                                     sheetName='ExpectedResult', testName='test_get_vodsDownloadurl001',
                                                      getdata='expected_code')
 
 
@@ -80,7 +80,7 @@ class Test_get_vodsDownloadurl:
         self.log.debug('excepectCode is: ' + excepectCode)
         self.log.debug('stop_recording_base_url is: ' + self.get_vodsDownloadurl_base_url)
 
-        # 调取踢出会议接口，将指定的参会人员踢出会议
+        # 调取根据sessionId获取视频的下载链接接口
         code, body = self.recordingVodsObj.get_vodsDownloadurl(self.get_vodsDownloadurl_base_url, sessionId)
         print('code is: ', code)
         print('body is', body)
