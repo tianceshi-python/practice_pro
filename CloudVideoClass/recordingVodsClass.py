@@ -109,7 +109,7 @@ class recordingVodsClass():
 
         # 获取数字签名的url
         get_vodsList_accordMeetingroom_base_url = base_url + meetingRoomNumber + '/vods/page?enterpriseId=' + self.enterpriseId + '&startTime=' + str(startTime) + '&endTime=' + str(endTime) + '&pageIndex=' + str(pageIndex) + '&pageSize=' + str(pageSize)
-        print('get_vodsList_accordMeetingroom_base_url is:',get_vodsList_accordMeetingroom_base_url)
+        #print('get_vodsList_accordMeetingroom_base_url is:',get_vodsList_accordMeetingroom_base_url)
         jdata = ''
 
         # 获取数字签名
