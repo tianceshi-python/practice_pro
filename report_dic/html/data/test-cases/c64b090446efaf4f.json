@@ -1,0 +1,201 @@
+{
+  "uid" : "c64b090446efaf4f",
+  "name" : "test_get_vodsListEnterpriseOneDay",
+  "fullName" : "testCase.test_RecordingAndVods.test_get_vodsListEnterpriseOneDay.Test_get_vodsListEnterpriseOneDay#test_get_vodsListEnterpriseOneDay001",
+  "historyId" : "93625cb092d0ece978cd2889577dea1c",
+  "time" : {
+    "start" : 1597140340974,
+    "stop" : 1597140341301,
+    "duration" : 327
+  },
+  "description" : "\n        function:分页查询企业一天内的视频列表\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    function:分页查询企业一天内的视频列表\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_method",
+    "time" : {
+      "start" : 1597140340960,
+      "stop" : 1597140340974,
+      "duration" : 14
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1597140340960,
+      "stop" : 1597140340960,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        function:分页查询企业一天内的视频列表\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9a75c6046ac3f1f5",
+      "name" : "1587746105000",
+      "source" : "9a75c6046ac3f1f5.attach",
+      "type" : "text/plain",
+      "size" : 14
+    }, {
+      "uid" : "93af77a3da3636e",
+      "name" : "1587828905000",
+      "source" : "93af77a3da3636e.attach",
+      "type" : "text/plain",
+      "size" : 12
+    }, {
+      "uid" : "9fcaae828e0070bc",
+      "name" : "0",
+      "source" : "9fcaae828e0070bc.attach",
+      "type" : "text/plain",
+      "size" : 14
+    }, {
+      "uid" : "29fa72183f89ceeb",
+      "name" : "20",
+      "source" : "29fa72183f89ceeb.attach",
+      "type" : "text/plain",
+      "size" : 13
+    }, {
+      "uid" : "604b2aaf57f3617a",
+      "name" : "200",
+      "source" : "604b2aaf57f3617a.attach",
+      "type" : "text/plain",
+      "size" : 17
+    }, {
+      "uid" : "8822c54de5228644",
+      "name" : "pageTotal",
+      "source" : "8822c54de5228644.attach",
+      "type" : "text/plain",
+      "size" : 20
+    }, {
+      "uid" : "f8947219707fe89f",
+      "name" : "https://sdk.xylink.com/api/rest/external/v1/vods/page",
+      "source" : "f8947219707fe89f.attach",
+      "type" : "text/plain",
+      "size" : 43
+    }, {
+      "uid" : "38ef501d008e219c",
+      "name" : "200",
+      "source" : "38ef501d008e219c.attach",
+      "type" : "text/plain",
+      "size" : 17
+    }, {
+      "uid" : "7de22b34e7948f4c",
+      "name" : "{\"page\":0,\"pageTotal\":1,\"rowsTotal\":11,\"rows\":11,\"list\":[{\"vodId\":4327171,\"displayName\":\"mingyue的会议(无密码)_20/04/25 04:08:50\",\"startTime\":1587758930394,\"endTime\":1587758935791,\"fileSize\":2396127,\"meetingRoomNumber\":\"9005853980\",\"nemoNumber\":null,\"vodMetadataType\":\"SERVER_RECORD\"},{\"vodId\":4327140,\"displayName\":\"测试_20/04/25 03:43:00\",\"startTime\":1587757380487,\"endTime\":1587757465543,\"fileSize\":8944345,\"meetingRoomNumber\":\"9016934130\",\"nemoNumber\":null,\"vodMetadataType\":\"SERVER_RECORD\"},{\"vodId\":4327131,\"displayName\":\"mingyue的会议(无密码)_20/04/25 03:28:53\",\"startTime\":1587756533547,\"endTime\":1587756646848,\"fileSize\":54444104,\"meetingRoomNumber\":\"9005853980\",\"nemoNumber\":null,\"vodMetadataType\":\"SERVER_RECORD\"},{\"vodId\":4327128,\"displayName\":\"mingyue的会议(无密码)_20/04/25 03:06:51\",\"startTime\":1587755211931,\"endTime\":1587756517958,\"fileSize\":611826653,\"meetingRoomNumber\":\"9005853980\",\"nemoNumber\":null,\"vodMetadataType\":\"SERVER_RECORD\"},{\"vodId\":4327106,\"displayName\":\"mingyue的会议（有密码）_20/04/25 03:06:30\",\"startTime\":1587755190641,\"endTime\":1587755300337,\"fileSize\":24773211,\"meetingRoomNumber\":\"9005023651\",\"nemoNumber\":null,\"vodMetadataType\":\"SERVER_RECORD\"},{\"vodId\":4327103,\"displayName\":\"mingyue的会议（有密码）_20/04/25 03:06:19\",\"startTime\":1587755179039,\"endTime\":1587755190687,\"fileSize\":2506833,\"meetingRoomNumber\":\"9005023651\",\"nemoNumber\":null,\"vodMetadataType\":\"LIVE_RECORD\"},{\"vodId\":4327095,\"displayName\":\"mingyue的会议(无密码)_20/04/25 03:00:00\",\"startTime\":1587754800349,\"endTime\":1587754864178,\"fileSize\":31265999,\"meetingRoomNumber\":\"9005853980\",\"nemoNumber\":null,\"vodMetadataType\":\"SERVER_RECORD\"},{\"vodId\":4327068,\"displayName\":\"20/04/25 02:38:06\",\"startTime\":1587753486107,\"endTime\":1587753493744,\"fileSize\":3463754,\"meetingRoomNumber\":\"9005853980\",\"nemoNumber\":null,\"vodMetadataType\":\"SERVER_RECORD\"},{\"vodId\":4327102,\"displayName\":\"mingyue的会议（有密码）_20/04/25 02:28:18\",\"startTime\":1587752898328,\"endTime\":1587755179117,\"fileSize\":501549357,\"meetingRoomNumber\":\"9005023651\",\"nemoNumber\":null,\"vodMetadataType\":\"SERVER_RECORD\"},{\"vodId\":4327057,\"displayName\":\"mingyue的会议（有密码）_20/04/25 02:26:43\",\"startTime\":1587752803210,\"endTime\":1587752898378,\"fileSize\":21425597,\"meetingRoomNumber\":\"9005023651\",\"nemoNumber\":null,\"vodMetadataType\":\"LIVE_RECORD\"},{\"vodId\":4327055,\"displayName\":\"mingyue的会议（有密码）_20/04/25 02:07:18\",\"startTime\":1587751638122,\"endTime\":1587752804138,\"fileSize\":258459235,\"meetingRoomNumber\":\"9005023651\",\"nemoNumber\":null,\"vodMetadataType\":\"SERVER_RECORD\"}]}",
+      "source" : "7de22b34e7948f4c.attach",
+      "type" : "text/plain",
+      "size" : 17
+    }, {
+      "uid" : "6be515fec18cc9bc",
+      "name" : "log",
+      "source" : "6be515fec18cc9bc.txt",
+      "type" : "text/plain",
+      "size" : 7358
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 10,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_method::0",
+    "time" : {
+      "start" : 1597140341302,
+      "stop" : 1597140341302,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1597140341303,
+      "stop" : 1597140341303,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Test_get_vodsListEnterpriseOneDay"
+  }, {
+    "name" : "story",
+    "value" : "test_get_vodsListEnterpriseOneDay001"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=6)"
+  }, {
+    "name" : "tag",
+    "value" : "RecordingAndVods"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.test_RecordingAndVods"
+  }, {
+    "name" : "suite",
+    "value" : "test_get_vodsListEnterpriseOneDay"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_get_vodsListEnterpriseOneDay"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-8HDD4PN"
+  }, {
+    "name" : "thread",
+    "value" : "10224-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.test_RecordingAndVods.test_get_vodsListEnterpriseOneDay"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "RecordingAndVods", "run(order=6)" ]
+  },
+  "source" : "c64b090446efaf4f.json",
+  "parameterValues" : [ ]
+}

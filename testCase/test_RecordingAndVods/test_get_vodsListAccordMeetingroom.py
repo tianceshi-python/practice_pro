@@ -61,27 +61,27 @@ class Test_get_vodsListAccordMeetingroom:
         #获取接口请求输入数据
         startTime = self.get_caseDataObj.get_data(ExcelName='recordingVods_casedata.xlsx',
                                                           sheetName='test_data',
-                                                          testName='get_vodsListAccordMeetingroom001', getdata='startTime')
+                                                          testName='test_get_vodsListAccordMeetingroom001', getdata='startTime')
 
         endTime = self.get_caseDataObj.get_data(ExcelName='recordingVods_casedata.xlsx',
                                                           sheetName='test_data',
-                                                          testName='get_vodsListAccordMeetingroom001', getdata='endTime')
+                                                          testName='test_get_vodsListAccordMeetingroom001', getdata='endTime')
 
         meetingRoomNumber = self.get_caseDataObj.get_data(ExcelName='recordingVods_casedata.xlsx',
                                                           sheetName='test_data',
-                                                          testName='get_vodsListAccordMeetingroom001', getdata='meetingRoomNumber')
+                                                          testName='test_get_vodsListAccordMeetingroom001', getdata='meetingRoomNumber')
 
         pageIndex = self.get_caseDataObj.get_data(ExcelName='recordingVods_casedata.xlsx',
                                                           sheetName='test_data',
-                                                          testName='get_vodsListAccordMeetingroom001', getdata='pageIndex')
+                                                          testName='test_get_vodsListAccordMeetingroom001', getdata='pageIndex')
 
         pageSize = self.get_caseDataObj.get_data(ExcelName='recordingVods_casedata.xlsx',
                                                           sheetName='test_data',
-                                                          testName='get_vodsListAccordMeetingroom001', getdata='pageSize')
+                                                          testName='test_get_vodsListAccordMeetingroom001', getdata='pageSize')
 
         # 获取期望返回码excepectCode
         excepectCode = self.get_caseDataObj.get_data(ExcelName='recordingVods_casedata.xlsx',
-                                                     sheetName='ExpectedResult', testName='get_vodsListAccordMeetingroom001',
+                                                     sheetName='ExpectedResult', testName='test_get_vodsListAccordMeetingroom001',
                                                      getdata='expected_code')
 
         print('startTime is: ',startTime)

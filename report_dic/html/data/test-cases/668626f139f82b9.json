@@ -1,0 +1,201 @@
+{
+  "uid" : "668626f139f82b9",
+  "name" : "test_get_vodsListAccordDeviceNum001",
+  "fullName" : "testCase.test_RecordingAndVods.test_vodsListAccordDeviceNum.Test_get_vodsListAccordDeviceNum#test_get_vodsListAccordDeviceNum001",
+  "historyId" : "69fad18e3b3ca769106815ba6d9d105a",
+  "time" : {
+    "start" : 1597140340649,
+    "stop" : 1597140340952,
+    "duration" : 303
+  },
+  "description" : "\n        function:按小鱼号分页获取视频列表\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    function:按小鱼号分页获取视频列表\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1597140340637,
+      "stop" : 1597140340637,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_method",
+    "time" : {
+      "start" : 1597140340637,
+      "stop" : 1597140340648,
+      "duration" : 11
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        function:按小鱼号分页获取视频列表\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c2fb59e0dde34496",
+      "name" : "1593431421000",
+      "source" : "c2fb59e0dde34496.attach",
+      "type" : "text/plain",
+      "size" : 14
+    }, {
+      "uid" : "8647e5e9ca5a27ea",
+      "name" : "1596023421000",
+      "source" : "8647e5e9ca5a27ea.attach",
+      "type" : "text/plain",
+      "size" : 12
+    }, {
+      "uid" : "798d2b95cbc96f53",
+      "name" : "20502153",
+      "source" : "798d2b95cbc96f53.attach",
+      "type" : "text/plain",
+      "size" : 15
+    }, {
+      "uid" : "49f81bf1ffd8d554",
+      "name" : "0",
+      "source" : "49f81bf1ffd8d554.attach",
+      "type" : "text/plain",
+      "size" : 14
+    }, {
+      "uid" : "a2cf38aaafbc69d5",
+      "name" : "20",
+      "source" : "a2cf38aaafbc69d5.attach",
+      "type" : "text/plain",
+      "size" : 13
+    }, {
+      "uid" : "897ce54918d05e7c",
+      "name" : "200",
+      "source" : "897ce54918d05e7c.attach",
+      "type" : "text/plain",
+      "size" : 17
+    }, {
+      "uid" : "3946e8b3d396130",
+      "name" : "rowsTotal",
+      "source" : "3946e8b3d396130.attach",
+      "type" : "text/plain",
+      "size" : 20
+    }, {
+      "uid" : "a525839bf7c4d8bc",
+      "name" : "200",
+      "source" : "a525839bf7c4d8bc.attach",
+      "type" : "text/plain",
+      "size" : 17
+    }, {
+      "uid" : "c77772482973eb4a",
+      "name" : "{\"page\":0,\"pageTotal\":0,\"rowsTotal\":0,\"rows\":0,\"list\":null}",
+      "source" : "c77772482973eb4a.attach",
+      "type" : "text/plain",
+      "size" : 17
+    }, {
+      "uid" : "1e74d381eba75f16",
+      "name" : "log",
+      "source" : "1e74d381eba75f16.txt",
+      "type" : "text/plain",
+      "size" : 2277
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 10,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1597140340954,
+      "stop" : 1597140340954,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_method::0",
+    "time" : {
+      "start" : 1597140340953,
+      "stop" : 1597140340953,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Test_get_vodsListAccordDeviceNum"
+  }, {
+    "name" : "story",
+    "value" : "test_get_vodsListAccordDeviceNum"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=5)"
+  }, {
+    "name" : "tag",
+    "value" : "RecordingAndVods"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCase.test_RecordingAndVods"
+  }, {
+    "name" : "suite",
+    "value" : "test_vodsListAccordDeviceNum"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_get_vodsListAccordDeviceNum"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-8HDD4PN"
+  }, {
+    "name" : "thread",
+    "value" : "10224-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase.test_RecordingAndVods.test_vodsListAccordDeviceNum"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=5)", "RecordingAndVods" ]
+  },
+  "source" : "668626f139f82b9.json",
+  "parameterValues" : [ ]
+}

@@ -243,7 +243,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>reportname.html</h1>
-    <p>Report generated on 24-Jul-2020 at 11:38:40 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 11-Aug-2020 at 18:04:38 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -262,8 +262,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.3</td></tr></table>
     <h2>Summary</h2>
-    <p>3 tests ran in 2.86 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>6 tests ran in 9.82 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">6 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -279,69 +279,177 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td>
-        用例描述：根据云会议室号查看当前会议全体成员的会议状态，查询的室企业云会议室号
+        用例描述： 开始录制视频
         </td>
-          <td class="col-name">testCase/test_conferenceControl/test_conferenceControl_QueryMeetingStatus.py::Test_conferenceControl_QueryMeetingStatus::test_QueryMeetingStatus001</td>
-          <td class="col-duration">0.30</td>
+          <td class="col-name">testCase/test_RecordingAndVods/test_start_recording.py::Test_StartRecording::test_StartRecording001</td>
+          <td class="col-duration">5.35</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="5">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>DEBUG    mylogger:logPrintClass.py:69 test_QueryMeetingStatus001 start......
-DEBUG    mylogger:logPrintClass.py:69 test_QueryMeetingStatus001callNumberis: 9005853980
-DEBUG    mylogger:logPrintClass.py:69 test_QueryMeetingStatus001expected_codeis: 200
-DEBUG    mylogger:logPrintClass.py:69 test_QueryMeetingStatus001expected_msgis: zhangmingyue的云会议室
-DEBUG    mylogger:logPrintClass.py:69 test_QueryMeetingStatus001 requsts data is:9005853980
-INFO     mylogger:logPrintClass.py:67 根据云会议室号查看当前会议全体成员的会议状态 start....
-DEBUG    mylogger:logPrintClass.py:69 res_url is:https://sdk.xylink.com/api/rest/external/v1/conferenceControl/9005853980/meetingStatus?enterpriseId=2bc382f16515877abf19ba8bbf9d5e215fe7bf12&amp;signature=X8a4coe33rTCXwwo%2F8EjufR%2FZz1jfQpZ4kycnUz8XoA%3D
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>DEBUG    mylogger:logPrintClass.py:69 test_StartRecording001 starting......
+DEBUG    mylogger:logPrintClass.py:69 test_StartRecording001meetingRoomNumberis: 9005853980
+DEBUG    mylogger:logPrintClass.py:69 test_StartRecording001expected_codeis: 200
+DEBUG    mylogger:logPrintClass.py:69 meetingRoomNumber is: 9005853980
+DEBUG    mylogger:logPrintClass.py:69 excepectCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 start_recording_base_url is: https://sdk.xylink.com/api/rest/external/v1/meeting/recording/
+INFO     mylogger:logPrintClass.py:67 开始录制请求 start....
+DEBUG    mylogger:logPrintClass.py:69 res_url is:https://sdk.xylink.com/api/rest/external/v1/meeting/recording/9005853980/start?enterpriseId=2bc382f16515877abf19ba8bbf9d5e215fe7bf12&amp;signature=8jtQN%2B0ImSvRgBEmogetJ19uG2oup9zhfvfYuUzVHLI%3D
 DEBUG    mylogger:logPrintClass.py:69 status_code is:200
-DEBUG    mylogger:logPrintClass.py:69 res.text is:{&quot;meetingRoomNumber&quot;:&quot;9005853980@CONFNO&quot;,&quot;meetingId&quot;:&quot;1156074031784&quot;,&quot;meetingName&quot;:&quot;zhangmingyue的云会议室&quot;,&quot;mode&quot;:1,&quot;mainVenue&quot;:null,&quot;mainImage&quot;:null,&quot;deviceStatusList&quot;:[{&quot;name&quot;:&quot;怀玉prd18290000004&quot;,&quot;muteStatus&quot;:1,&quot;device&quot;:{&quot;id&quot;:221656395,&quot;type&quot;:5,&quot;participantId&quot;:&quot;70720&quot;,&quot;externalUserId&quot;:null,&quot;participantNumber&quot;:&quot;18290000004&quot;}},{&quot;name&quot;:&quot;视频会议终端20198942aa&quot;,&quot;muteStatus&quot;:1,&quot;device&quot;:{&quot;id&quot;:28089523,&quot;type&quot;:8,&quot;participantId&quot;:&quot;70336&quot;,&quot;externalUserId&quot;:null,&quot;participantNumber&quot;:&quot;20198942&quot;}},{&quot;name&quot;:&quot;薛萍&quot;,&quot;muteStatus&quot;:1,&quot;device&quot;:{&quot;id&quot;:30676188,&quot;type&quot;:2,&quot;participantId&quot;:&quot;70272&quot;,&quot;externalUserId&quot;:null,&quot;participantNumber&quot;:&quot;129170&quot;}},{&quot;name&quot;:&quot;xueyanME90-prd&quot;,&quot;muteStatus&quot;:1,&quot;device&quot;:{&quot;id&quot;:60139173,&quot;type&quot;:7,&quot;participantId&quot;:&quot;65664&quot;,&quot;externalUserId&quot;:null,&quot;participantNumber&quot;:&quot;60139173&quot;}}],&quot;handUpList&quot;:[],&quot;recordingDevice&quot;:null,&quot;contentDevice&quot;:null,&quot;whiteBoardDevice&quot;:null}
+DEBUG    mylogger:logPrintClass.py:69 res.text is:
+DEBUG    mylogger:logPrintClass.py:69 responseCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 test_StartRecording001 end......<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td>
+        用例描述： 开始录制视频
+        </td>
+          <td class="col-name">testCase/test_RecordingAndVods/test_StopRecording.py::Test_StopRecording::test_StopRecording001</td>
+          <td class="col-duration">0.27</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="5">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>DEBUG    mylogger:logPrintClass.py:69 test_StopRecording001 starting......
+DEBUG    mylogger:logPrintClass.py:69 test_StopRecording001meetingRoomNumberis: 9005853980
+DEBUG    mylogger:logPrintClass.py:69 test_StopRecording001expected_codeis: 200
+DEBUG    mylogger:logPrintClass.py:69 meetingRoomNumber is: 9005853980
+DEBUG    mylogger:logPrintClass.py:69 excepectCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 stop_recording_base_url is: https://sdk.xylink.com/api/rest/external/v2/meeting/recording/
+INFO     mylogger:logPrintClass.py:67 结束录制请求 start....
+DEBUG    mylogger:logPrintClass.py:69 res_url is:https://sdk.xylink.com/api/rest/external/v2/meeting/recording/9005853980/stopWithSessionId?enterpriseId=2bc382f16515877abf19ba8bbf9d5e215fe7bf12&amp;signature=iZHU51tgi8G9xI7bCTCSIPzknKhAgSomEWmdTgGiA3c%3D
+DEBUG    mylogger:logPrintClass.py:69 status_code is:200
+DEBUG    mylogger:logPrintClass.py:69 res.text is:{&quot;recordingStatusResponse&quot;:&quot;OK&quot;,&quot;sessionId&quot;:&quot;NORMAL_101-bj1-prdSig1-1156581890448_101-bj1-prdSig1-1156581890448&quot;}
 DEBUG    mylogger:logPrintClass.py:69 write_xml: data write into xls start.....
 DEBUG    mylogger:logPrintClass.py:69 write_xml: update body data....
-DEBUG    mylogger:logPrintClass.py:69 test_QueryMeetingStatus001 end......<br/></div></td></tr></tbody>
+DEBUG    mylogger:logPrintClass.py:69 responseCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 test_StopRecording001 end......<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td>
-        用例描述：邀请入会，邀请指定的终端入会
+        用例描述： 开始录制视频
         </td>
-          <td class="col-name">testCase/test_conferenceControl/test_conferenceControl_Invitation.py::Test_conferenceControl_Invitation::test_Invitation001</td>
-          <td class="col-duration">0.23</td>
+          <td class="col-name">testCase/test_RecordingAndVods/test_get_vodsDownloadurl.py::Test_get_vodsDownloadurl::test_get_vodsDownloadurl001</td>
+          <td class="col-duration">0.28</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="5">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>DEBUG    mylogger:logPrintClass.py:69 test_Invitation001 start......
-DEBUG    mylogger:logPrintClass.py:69 test_Invitation001callNumberis: 9005853980
-DEBUG    mylogger:logPrintClass.py:69 test_Invitation001expected_codeis: 200
-DEBUG    mylogger:logPrintClass.py:69 test_Invitation001device_numberis: 17010881111
-DEBUG    mylogger:logPrintClass.py:69 test_Invitation001 requsts callNumber data is:9005853980
-DEBUG    mylogger:logPrintClass.py:69 test_Invitation001 requsts device_number is:[{&#x27;number&#x27;: &#x27;17010881111&#x27;}]
-DEBUG    mylogger:logPrintClass.py:69 Invitation_base_url is:https://sdk.xylink.com/api/rest/external/v1/conferenceControl/invitation?enterpriseId=
-INFO     mylogger:logPrintClass.py:67 邀请入会请求 start....
-DEBUG    mylogger:logPrintClass.py:69 res_url is:https://sdk.xylink.com/api/rest/external/v1/conferenceControl/invitation?enterpriseId=2bc382f16515877abf19ba8bbf9d5e215fe7bf12&amp;signature=nV7GxxLAYoyyVOlBpOslcCKVLqqzs%2FSYb0PnAgebcEE%3D
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>DEBUG    mylogger:logPrintClass.py:69 test_StopRecording001 starting......
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsDownloadurl001expected_codeis: 200
+DEBUG    mylogger:logPrintClass.py:69 sessionId is: NORMAL_101-bj1-prdSig1-1156581890448_101-bj1-prdSig1-1156581890448
+DEBUG    mylogger:logPrintClass.py:69 excepectCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 stop_recording_base_url is: https://sdk.xylink.com/api/rest/external/v1/vods/session/
+INFO     mylogger:logPrintClass.py:67 根据sessionId获取视频的下载链接请求 start....
+DEBUG    mylogger:logPrintClass.py:69 res_url is:https://sdk.xylink.com/api/rest/external/v1/vods/session/NORMAL_101-bj1-prdSig1-1156581890448_101-bj1-prdSig1-1156581890448/downloadurl?enterpriseId=2bc382f16515877abf19ba8bbf9d5e215fe7bf12&amp;signature=qzNn54WH1m6SmCbdXhNfWnld%2B6kUC%2BpX6%2Faw2I8KKGA%3D
 DEBUG    mylogger:logPrintClass.py:69 status_code is:200
-DEBUG    mylogger:logPrintClass.py:69 res.text is:
-DEBUG    mylogger:logPrintClass.py:69 test_Invitation001 end......<br/></div></td></tr></tbody>
+DEBUG    mylogger:logPrintClass.py:69 res.text is:{&quot;downloadUrl&quot;:&quot;http://prdvoddownload.xylink.com/vodfiles/downloadfiles/202008/11175626/20_08_11_17_55_40_1597139786835.mp4?auth_key=1597142076-0-0-99c981cb01e1d606a650c3b65d98ad69&quot;,&quot;status&quot;:777000,&quot;vodUrlItems&quot;:[{&quot;downloadUrl&quot;:&quot;http://prdvoddownload.xylink.com/vodfiles/downloadfiles/202008/11175626/20_08_11_17_55_40_1597139786835.mp4?auth_key=1597142076-0-0-99c981cb01e1d606a650c3b65d98ad69&quot;,&quot;innerDownloadUrl&quot;:null}]}
+DEBUG    mylogger:logPrintClass.py:69 write_xml: data write into xls start.....
+DEBUG    mylogger:logPrintClass.py:69 write_xml: update body data....
+DEBUG    mylogger:logPrintClass.py:69 responseCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsDownloadurl001 end......<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td>
-        用例描述： 在会议过程中，从会议中删除一个或多个与会人员
+        function:按云会议号分页获取视频列表
+        :return:
         </td>
-          <td class="col-name">testCase/test_conferenceControl/test_conferenceControl_Kickoutmeeting.py::Test_conferenceControl_Kickoutmeeting::test_Kickoutmeeting001</td>
-          <td class="col-duration">0.25</td>
+          <td class="col-name">testCase/test_RecordingAndVods/test_get_vodsListAccordMeetingroom.py::Test_get_vodsListAccordMeetingroom::test_get_vodsListAccordMeetingroom001</td>
+          <td class="col-duration">0.52</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="5">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001 start......
-DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001callNumberis: 9005853980
-DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001expected_codeis: 200
-DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001excepectCode is: 200
-DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001 callNumber is: 9005853980
-DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001 excepectCode is: 200
-DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001 kickoutmeeting_base_url is: https://sdk.xylink.com/api/rest/external/v1/conferenceControl/
-DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001 request_bodyList is: [{&#x27;id&#x27;: 221656395, &#x27;type&#x27;: 5, &#x27;participantNumber&#x27;: &#x27;18290000004&#x27;}]
-INFO     mylogger:logPrintClass.py:67 踢出会议请求 start....
-DEBUG    mylogger:logPrintClass.py:69 res_url is:https://sdk.xylink.com/api/rest/external/v1/conferenceControl/9005853980/disconnect?enterpriseId=2bc382f16515877abf19ba8bbf9d5e215fe7bf12&amp;signature=PjLb2oWGHrxKVOHueVCWijy%2BwvRm9Ry8m5V1p%2BmjUWY%3D
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordMeetingroom001 starting......
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordMeetingroom001startTimeis: 1593431421000
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordMeetingroom001endTimeis: 1596023421000
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordMeetingroom001meetingRoomNumberis: 9005853980
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordMeetingroom001pageIndexis: 0
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordMeetingroom001pageSizeis: 20
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordMeetingroom001expected_codeis: 200
+DEBUG    mylogger:logPrintClass.py:69 startTime is: 1593431421000
+DEBUG    mylogger:logPrintClass.py:69 endTime is: 1596023421000
+DEBUG    mylogger:logPrintClass.py:69 meetingRoomNumber is: 9005853980
+DEBUG    mylogger:logPrintClass.py:69 pageIndex is: 0
+DEBUG    mylogger:logPrintClass.py:69 pageSize is: 20
+DEBUG    mylogger:logPrintClass.py:69 get_vodsList_accordMeetingroom_base_url is: https://sdk.xylink.com/api/rest/external/v1/meetingroom/
+DEBUG    mylogger:logPrintClass.py:69 excepectCode is: 200
+INFO     mylogger:logPrintClass.py:67 按云会议号分页获取视频列表请求 start....
+DEBUG    mylogger:logPrintClass.py:69 res_url is:https://sdk.xylink.com/api/rest/external/v1/meetingroom/9005853980/vods/page?enterpriseId=2bc382f16515877abf19ba8bbf9d5e215fe7bf12&amp;startTime=1593431421000&amp;endTime=1596023421000&amp;pageIndex=0&amp;pageSize=20&amp;signature=lSYg9xdfKX0jQxSTQfp%2FNL1fB%2FBVOUj37JV8WtUqv5U%3D
 DEBUG    mylogger:logPrintClass.py:69 status_code is:200
-DEBUG    mylogger:logPrintClass.py:69 res.text is:
-DEBUG    mylogger:logPrintClass.py:69 test_Kickoutmeeting001 end......<br/></div></td></tr></tbody></table></body></html>
+DEBUG    mylogger:logPrintClass.py:69 res.text is:{&quot;page&quot;:0,&quot;pageTotal&quot;:24,&quot;rowsTotal&quot;:462,&quot;rows&quot;:20,&quot;list&quot;:[{&quot;vodId&quot;:5231695,&quot;displayName&quot;:&quot;20/07/28 10:12:28&quot;,&quot;startTime&quot;:1595902348774,&quot;endTime&quot;:1595902354321,&quot;fileSize&quot;:2015330,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231643,&quot;displayName&quot;:&quot;20/07/28 10:11:25&quot;,&quot;startTime&quot;:1595902285906,&quot;endTime&quot;:1595902291879,&quot;fileSize&quot;:2642301,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231620,&quot;displayName&quot;:&quot;20/07/28 10:10:19&quot;,&quot;startTime&quot;:1595902219147,&quot;endTime&quot;:1595902224992,&quot;fileSize&quot;:2469896,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231574,&quot;displayName&quot;:&quot;20/07/28 10:08:13&quot;,&quot;startTime&quot;:1595902093707,&quot;endTime&quot;:1595902103008,&quot;fileSize&quot;:4282239,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231622,&quot;displayName&quot;:&quot;20/07/28 10:07:05&quot;,&quot;startTime&quot;:1595902025352,&quot;endTime&quot;:1595902032115,&quot;fileSize&quot;:3216916,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231493,&quot;displayName&quot;:&quot;20/07/28 10:06:02&quot;,&quot;startTime&quot;:1595901962891,&quot;endTime&quot;:1595901968160,&quot;fileSize&quot;:2220689,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231304,&quot;displayName&quot;:&quot;20/07/28 09:58:08&quot;,&quot;startTime&quot;:1595901488651,&quot;endTime&quot;:1595901494219,&quot;fileSize&quot;:2448500,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231258,&quot;displayName&quot;:&quot;20/07/28 09:55:31&quot;,&quot;startTime&quot;:1595901331055,&quot;endTime&quot;:1595901336602,&quot;fileSize&quot;:2445533,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231238,&quot;displayName&quot;:&quot;20/07/28 09:54:30&quot;,&quot;startTime&quot;:1595901270165,&quot;endTime&quot;:1595901275712,&quot;fileSize&quot;:2432551,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231216,&quot;displayName&quot;:&quot;20/07/28 09:53:29&quot;,&quot;startTime&quot;:1595901209261,&quot;endTime&quot;:1595901214808,&quot;fileSize&quot;:2446541,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231174,&quot;displayName&quot;:&quot;20/07/28 09:51:32&quot;,&quot;startTime&quot;:1595901092484,&quot;endTime&quot;:1595901097988,&quot;fileSize&quot;:2427265,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231152,&quot;displayName&quot;:&quot;20/07/28 09:50:31&quot;,&quot;startTime&quot;:1595901031578,&quot;endTime&quot;:1595901037125,&quot;fileSize&quot;:2427332,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231062,&quot;displayName&quot;:&quot;20/07/28 09:45:55&quot;,&quot;startTime&quot;:1595900755917,&quot;endTime&quot;:1595900761464,&quot;fileSize&quot;:2439131,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5230960,&quot;displayName&quot;:&quot;20/07/28 09:41:11&quot;,&quot;startTime&quot;:1595900471026,&quot;endTime&quot;:1595900476594,&quot;fileSize&quot;:2456673,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5230909,&quot;displayName&quot;:&quot;20/07/28 09:38:18&quot;,&quot;startTime&quot;:1595900298027,&quot;endTime&quot;:1595900303574,&quot;fileSize&quot;:2429961,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5230794,&quot;displayName&quot;:&quot;20/07/28 09:32:55&quot;,&quot;startTime&quot;:1595899975517,&quot;endTime&quot;:1595899982194,&quot;fileSize&quot;:3152279,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5230732,&quot;displayName&quot;:&quot;20/07/28 09:29:36&quot;,&quot;startTime&quot;:1595899776133,&quot;endTime&quot;:1595899781914,&quot;fileSize&quot;:2569443,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5230710,&quot;displayName&quot;:&quot;20/07/28 09:28:34&quot;,&quot;startTime&quot;:1595899714955,&quot;endTime&quot;:1595899720758,&quot;fileSize&quot;:2557861,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5230715,&quot;displayName&quot;:&quot;20/07/28 09:26:43&quot;,&quot;startTime&quot;:1595899603010,&quot;endTime&quot;:1595899608514,&quot;fileSize&quot;:2428529,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5230587,&quot;displayName&quot;:&quot;20/07/28 09:21:06&quot;,&quot;startTime&quot;:1595899266313,&quot;endTime&quot;:1595899271881,&quot;fileSize&quot;:2435641,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;}]}
+DEBUG    mylogger:logPrintClass.py:69 responseCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 responseBody is: {&quot;page&quot;:0,&quot;pageTotal&quot;:24,&quot;rowsTotal&quot;:462,&quot;rows&quot;:20,&quot;list&quot;:[{&quot;vodId&quot;:5231695,&quot;displayName&quot;:&quot;20/07/28 10:12:28&quot;,&quot;startTime&quot;:1595902348774,&quot;endTime&quot;:1595902354321,&quot;fileSize&quot;:2015330,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231643,&quot;displayName&quot;:&quot;20/07/28 10:11:25&quot;,&quot;startTime&quot;:1595902285906,&quot;endTime&quot;:1595902291879,&quot;fileSize&quot;:2642301,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231620,&quot;displayName&quot;:&quot;20/07/28 10:10:19&quot;,&quot;startTime&quot;:1595902219147,&quot;endTime&quot;:1595902224992,&quot;fileSize&quot;:2469896,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231574,&quot;displayName&quot;:&quot;20/07/28 10:08:13&quot;,&quot;startTime&quot;:1595902093707,&quot;endTime&quot;:1595902103008,&quot;fileSize&quot;:4282239,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231622,&quot;displayName&quot;:&quot;20/07/28 10:07:05&quot;,&quot;startTime&quot;:1595902025352,&quot;endTime&quot;:1595902032115,&quot;fileSize&quot;:3216916,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231493,&quot;displayName&quot;:&quot;20/07/28 10:06:02&quot;,&quot;startTime&quot;:1595901962891,&quot;endTime&quot;:1595901968160,&quot;fileSize&quot;:2220689,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231304,&quot;displayName&quot;:&quot;20/07/28 09:58:08&quot;,&quot;startTime&quot;:1595901488651,&quot;endTime&quot;:1595901494219,&quot;fileSize&quot;:2448500,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231258,&quot;displayName&quot;:&quot;20/07/28 09:55:31&quot;,&quot;startTime&quot;:1595901331055,&quot;endTime&quot;:1595901336602,&quot;fileSize&quot;:2445533,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231238,&quot;displayName&quot;:&quot;20/07/28 09:54:30&quot;,&quot;startTime&quot;:1595901270165,&quot;endTime&quot;:1595901275712,&quot;fileSize&quot;:2432551,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231216,&quot;displayName&quot;:&quot;20/07/28 09:53:29&quot;,&quot;startTime&quot;:1595901209261,&quot;endTime&quot;:1595901214808,&quot;fileSize&quot;:2446541,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231174,&quot;displayName&quot;:&quot;20/07/28 09:51:32&quot;,&quot;startTime&quot;:1595901092484,&quot;endTime&quot;:1595901097988,&quot;fileSize&quot;:2427265,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231152,&quot;displayName&quot;:&quot;20/07/28 09:50:31&quot;,&quot;startTime&quot;:1595901031578,&quot;endTime&quot;:1595901037125,&quot;fileSize&quot;:2427332,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5231062,&quot;displayName&quot;:&quot;20/07/28 09:45:55&quot;,&quot;startTime&quot;:1595900755917,&quot;endTime&quot;:1595900761464,&quot;fileSize&quot;:2439131,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5230960,&quot;displayName&quot;:&quot;20/07/28 09:41:11&quot;,&quot;startTime&quot;:1595900471026,&quot;endTime&quot;:1595900476594,&quot;fileSize&quot;:2456673,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5230909,&quot;displayName&quot;:&quot;20/07/28 09:38:18&quot;,&quot;startTime&quot;:1595900298027,&quot;endTime&quot;:1595900303574,&quot;fileSize&quot;:2429961,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5230794,&quot;displayName&quot;:&quot;20/07/28 09:32:55&quot;,&quot;startTime&quot;:1595899975517,&quot;endTime&quot;:1595899982194,&quot;fileSize&quot;:3152279,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5230732,&quot;displayName&quot;:&quot;20/07/28 09:29:36&quot;,&quot;startTime&quot;:1595899776133,&quot;endTime&quot;:1595899781914,&quot;fileSize&quot;:2569443,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5230710,&quot;displayName&quot;:&quot;20/07/28 09:28:34&quot;,&quot;startTime&quot;:1595899714955,&quot;endTime&quot;:1595899720758,&quot;fileSize&quot;:2557861,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5230715,&quot;displayName&quot;:&quot;20/07/28 09:26:43&quot;,&quot;startTime&quot;:1595899603010,&quot;endTime&quot;:1595899608514,&quot;fileSize&quot;:2428529,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:5230587,&quot;displayName&quot;:&quot;20/07/28 09:21:06&quot;,&quot;startTime&quot;:1595899266313,&quot;endTime&quot;:1595899271881,&quot;fileSize&quot;:2435641,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;}]}
+DEBUG    mylogger:logPrintClass.py:69 write_xml: data write into xls start.....
+DEBUG    mylogger:logPrintClass.py:69 write_xml: update body data....
+DEBUG    mylogger:logPrintClass.py:69 get_vodsListAccordMeetingroom001 end......<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td>
+        function:按小鱼号分页获取视频列表
+        :return:
+        </td>
+          <td class="col-name">testCase/test_RecordingAndVods/test_vodsListAccordDeviceNum.py::Test_get_vodsListAccordDeviceNum::test_get_vodsListAccordDeviceNum001</td>
+          <td class="col-duration">1.26</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="5">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>DEBUG    mylogger:logPrintClass.py:69 get_vodsList_accordDeviceNum_base_url is: https://sdk.xylink.com/api/rest/external/v1/nemo/<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001 starting ......
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001startTimeis: 1593431421000
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001endTimeis: 1596023421000
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001nemoNumberis: 20502153
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001pageIndexis: 0
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001pageSizeis: 20
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001expected_codeis: 200
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001excepect_messageis: rowsTotal
+DEBUG    mylogger:logPrintClass.py:69 startTime is: 1593431421000
+DEBUG    mylogger:logPrintClass.py:69 endTime is: 1596023421000
+DEBUG    mylogger:logPrintClass.py:69 nemoNumber is: 20502153
+DEBUG    mylogger:logPrintClass.py:69 pageIndex is: 0
+DEBUG    mylogger:logPrintClass.py:69 pageSize is: 20
+DEBUG    mylogger:logPrintClass.py:69 excepectCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 excepectMessage is: rowsTotal
+INFO     mylogger:logPrintClass.py:67 按小鱼号分页获取视频列表 API start......
+DEBUG    mylogger:logPrintClass.py:69 res_url is:https://sdk.xylink.com/api/rest/external/v1/nemo/20502153/vods/page?enterpriseId=2bc382f16515877abf19ba8bbf9d5e215fe7bf12&amp;startTime=1593431421000&amp;endTime=1596023421000&amp;pageIndex=0&amp;pageSize=20&amp;signature=hRZDA1qUYqIWgZVrNYNCA4O643Q1XwpEADJRpHiH22Y%3D
+DEBUG    mylogger:logPrintClass.py:69 status_code is:200
+DEBUG    mylogger:logPrintClass.py:69 res.text is:{&quot;page&quot;:0,&quot;pageTotal&quot;:0,&quot;rowsTotal&quot;:0,&quot;rows&quot;:0,&quot;list&quot;:null}
+DEBUG    mylogger:logPrintClass.py:69 responseCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 responseBody is: {&quot;page&quot;:0,&quot;pageTotal&quot;:0,&quot;rowsTotal&quot;:0,&quot;rows&quot;:0,&quot;list&quot;:null}
+DEBUG    mylogger:logPrintClass.py:69 write_xml: data write into xls start.....
+DEBUG    mylogger:logPrintClass.py:69 write_xml: update body data....
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001 end......<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td>
+        function:分页查询企业一天内的视频列表
+        :return:
+        </td>
+          <td class="col-name">testCase/test_RecordingAndVods/test_get_vodsListEnterpriseOneDay.py::Test_get_vodsListEnterpriseOneDay::test_get_vodsListEnterpriseOneDay001</td>
+          <td class="col-duration">0.33</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="5">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>DEBUG    mylogger:logPrintClass.py:69 get_vodsList_enterpriseOneDay_base_url is: https://sdk.xylink.com/api/rest/external/v1/vods/page<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListEnterpriseOneDay001   starting......
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListEnterpriseOneDay001startTimeis: 1587746105000
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListEnterpriseOneDay001endTimeis: 1587828905000
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListEnterpriseOneDay001pageIndexis: 0
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListEnterpriseOneDay001pageSizeis: 20
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListEnterpriseOneDay001expected_codeis: 200
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListEnterpriseOneDay001excepect_messageis: pageTotal
+DEBUG    mylogger:logPrintClass.py:69 startTime is: 1587746105000
+DEBUG    mylogger:logPrintClass.py:69 endTime is: 1587828905000
+DEBUG    mylogger:logPrintClass.py:69 pageIndex is: 0
+DEBUG    mylogger:logPrintClass.py:69 pageSize is: 20
+DEBUG    mylogger:logPrintClass.py:69 excepectCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 excepectMessage is: pageTotal
+DEBUG    mylogger:logPrintClass.py:69 get_vodsList_enterpriseOneDay_base_url is: https://sdk.xylink.com/api/rest/external/v1/vods/page
+INFO     mylogger:logPrintClass.py:67 分页查询企业一天内的视频列表 PAI start....
+DEBUG    mylogger:logPrintClass.py:69 res_url is:https://sdk.xylink.com/api/rest/external/v1/vods/page?enterpriseId=2bc382f16515877abf19ba8bbf9d5e215fe7bf12&amp;startTime=1587746105000&amp;endTime=1587828905000&amp;pageIndex=0&amp;pageSize=20&amp;signature=PK5m5c9sidGwJIr6YhuP3FGHLTtqeb7m0NXePqlIiHo%3D
+DEBUG    mylogger:logPrintClass.py:69 status_code is:200
+DEBUG    mylogger:logPrintClass.py:69 res.text is:{&quot;page&quot;:0,&quot;pageTotal&quot;:1,&quot;rowsTotal&quot;:11,&quot;rows&quot;:11,&quot;list&quot;:[{&quot;vodId&quot;:4327171,&quot;displayName&quot;:&quot;mingyue的会议(无密码)_20/04/25 04:08:50&quot;,&quot;startTime&quot;:1587758930394,&quot;endTime&quot;:1587758935791,&quot;fileSize&quot;:2396127,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327140,&quot;displayName&quot;:&quot;测试_20/04/25 03:43:00&quot;,&quot;startTime&quot;:1587757380487,&quot;endTime&quot;:1587757465543,&quot;fileSize&quot;:8944345,&quot;meetingRoomNumber&quot;:&quot;9016934130&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327131,&quot;displayName&quot;:&quot;mingyue的会议(无密码)_20/04/25 03:28:53&quot;,&quot;startTime&quot;:1587756533547,&quot;endTime&quot;:1587756646848,&quot;fileSize&quot;:54444104,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327128,&quot;displayName&quot;:&quot;mingyue的会议(无密码)_20/04/25 03:06:51&quot;,&quot;startTime&quot;:1587755211931,&quot;endTime&quot;:1587756517958,&quot;fileSize&quot;:611826653,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327106,&quot;displayName&quot;:&quot;mingyue的会议（有密码）_20/04/25 03:06:30&quot;,&quot;startTime&quot;:1587755190641,&quot;endTime&quot;:1587755300337,&quot;fileSize&quot;:24773211,&quot;meetingRoomNumber&quot;:&quot;9005023651&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327103,&quot;displayName&quot;:&quot;mingyue的会议（有密码）_20/04/25 03:06:19&quot;,&quot;startTime&quot;:1587755179039,&quot;endTime&quot;:1587755190687,&quot;fileSize&quot;:2506833,&quot;meetingRoomNumber&quot;:&quot;9005023651&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;LIVE_RECORD&quot;},{&quot;vodId&quot;:4327095,&quot;displayName&quot;:&quot;mingyue的会议(无密码)_20/04/25 03:00:00&quot;,&quot;startTime&quot;:1587754800349,&quot;endTime&quot;:1587754864178,&quot;fileSize&quot;:31265999,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327068,&quot;displayName&quot;:&quot;20/04/25 02:38:06&quot;,&quot;startTime&quot;:1587753486107,&quot;endTime&quot;:1587753493744,&quot;fileSize&quot;:3463754,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327102,&quot;displayName&quot;:&quot;mingyue的会议（有密码）_20/04/25 02:28:18&quot;,&quot;startTime&quot;:1587752898328,&quot;endTime&quot;:1587755179117,&quot;fileSize&quot;:501549357,&quot;meetingRoomNumber&quot;:&quot;9005023651&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327057,&quot;displayName&quot;:&quot;mingyue的会议（有密码）_20/04/25 02:26:43&quot;,&quot;startTime&quot;:1587752803210,&quot;endTime&quot;:1587752898378,&quot;fileSize&quot;:21425597,&quot;meetingRoomNumber&quot;:&quot;9005023651&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;LIVE_RECORD&quot;},{&quot;vodId&quot;:4327055,&quot;displayName&quot;:&quot;mingyue的会议（有密码）_20/04/25 02:07:18&quot;,&quot;startTime&quot;:1587751638122,&quot;endTime&quot;:1587752804138,&quot;fileSize&quot;:258459235,&quot;meetingRoomNumber&quot;:&quot;9005023651&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;}]}
+DEBUG    mylogger:logPrintClass.py:69 ResponseCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 ResponseBody is: {&quot;page&quot;:0,&quot;pageTotal&quot;:1,&quot;rowsTotal&quot;:11,&quot;rows&quot;:11,&quot;list&quot;:[{&quot;vodId&quot;:4327171,&quot;displayName&quot;:&quot;mingyue的会议(无密码)_20/04/25 04:08:50&quot;,&quot;startTime&quot;:1587758930394,&quot;endTime&quot;:1587758935791,&quot;fileSize&quot;:2396127,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327140,&quot;displayName&quot;:&quot;测试_20/04/25 03:43:00&quot;,&quot;startTime&quot;:1587757380487,&quot;endTime&quot;:1587757465543,&quot;fileSize&quot;:8944345,&quot;meetingRoomNumber&quot;:&quot;9016934130&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327131,&quot;displayName&quot;:&quot;mingyue的会议(无密码)_20/04/25 03:28:53&quot;,&quot;startTime&quot;:1587756533547,&quot;endTime&quot;:1587756646848,&quot;fileSize&quot;:54444104,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327128,&quot;displayName&quot;:&quot;mingyue的会议(无密码)_20/04/25 03:06:51&quot;,&quot;startTime&quot;:1587755211931,&quot;endTime&quot;:1587756517958,&quot;fileSize&quot;:611826653,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327106,&quot;displayName&quot;:&quot;mingyue的会议（有密码）_20/04/25 03:06:30&quot;,&quot;startTime&quot;:1587755190641,&quot;endTime&quot;:1587755300337,&quot;fileSize&quot;:24773211,&quot;meetingRoomNumber&quot;:&quot;9005023651&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327103,&quot;displayName&quot;:&quot;mingyue的会议（有密码）_20/04/25 03:06:19&quot;,&quot;startTime&quot;:1587755179039,&quot;endTime&quot;:1587755190687,&quot;fileSize&quot;:2506833,&quot;meetingRoomNumber&quot;:&quot;9005023651&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;LIVE_RECORD&quot;},{&quot;vodId&quot;:4327095,&quot;displayName&quot;:&quot;mingyue的会议(无密码)_20/04/25 03:00:00&quot;,&quot;startTime&quot;:1587754800349,&quot;endTime&quot;:1587754864178,&quot;fileSize&quot;:31265999,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327068,&quot;displayName&quot;:&quot;20/04/25 02:38:06&quot;,&quot;startTime&quot;:1587753486107,&quot;endTime&quot;:1587753493744,&quot;fileSize&quot;:3463754,&quot;meetingRoomNumber&quot;:&quot;9005853980&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327102,&quot;displayName&quot;:&quot;mingyue的会议（有密码）_20/04/25 02:28:18&quot;,&quot;startTime&quot;:1587752898328,&quot;endTime&quot;:1587755179117,&quot;fileSize&quot;:501549357,&quot;meetingRoomNumber&quot;:&quot;9005023651&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;},{&quot;vodId&quot;:4327057,&quot;displayName&quot;:&quot;mingyue的会议（有密码）_20/04/25 02:26:43&quot;,&quot;startTime&quot;:1587752803210,&quot;endTime&quot;:1587752898378,&quot;fileSize&quot;:21425597,&quot;meetingRoomNumber&quot;:&quot;9005023651&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;LIVE_RECORD&quot;},{&quot;vodId&quot;:4327055,&quot;displayName&quot;:&quot;mingyue的会议（有密码）_20/04/25 02:07:18&quot;,&quot;startTime&quot;:1587751638122,&quot;endTime&quot;:1587752804138,&quot;fileSize&quot;:258459235,&quot;meetingRoomNumber&quot;:&quot;9005023651&quot;,&quot;nemoNumber&quot;:null,&quot;vodMetadataType&quot;:&quot;SERVER_RECORD&quot;}]}
+DEBUG    mylogger:logPrintClass.py:69 write_xml: data write into xls start.....
+DEBUG    mylogger:logPrintClass.py:69 write_xml: update body data....
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListEnterpriseOneDay001 end......<br/></div></td></tr></tbody></table></body></html>

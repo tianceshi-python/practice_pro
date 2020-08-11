@@ -1,5 +1,5 @@
 {
-  "total" : 4,
+  "total" : 8,
   "items" : [ {
     "uid" : "70a5759749c4571bce816c21516dbdf0",
     "name" : "Test_conferenceControl_Kickoutmeeting",
@@ -36,6 +36,50 @@
   }, {
     "uid" : "f2199513cd2e2c9bec0ab46cfff3b0c0",
     "name" : "Test_StopRecording",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "dbf576e3643cab608d1f26556282dbe9",
+    "name" : "Test_get_vodsDownloadurl",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "045c845fdf6e5ad1eba62ba794e0b9fc",
+    "name" : "test_get_vodsListAccordMeetingroom",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "6a2a0cdd665ae8a7693f67a06da03631",
+    "name" : "Test_get_vodsListAccordDeviceNum",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "572aa36461794bf98d0d34a4be8f2417",
+    "name" : "Test_get_vodsListEnterpriseOneDay",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

@@ -4,4 +4,4 @@
 import pytest
 
 if __name__ == '__main__':
-    pytest.main(['-s', '-q','-m=conferenceControl_test', "--html=./result_html/reportname.html "])
+    pytest.main(['-s', '-q','-m=RecordingAndVods', "--html=./result_html/reportname.html "])

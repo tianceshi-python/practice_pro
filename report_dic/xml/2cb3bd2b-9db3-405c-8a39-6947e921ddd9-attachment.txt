@@ -1,0 +1,25 @@
+DEBUG    mylogger:logPrintClass.py:69 get_vodsList_accordDeviceNum_base_url is: https://sdk.xylink.com/api/rest/external/v1/nemo/
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001 starting ......
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001startTimeis: 1593431421000
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001endTimeis: 1596023421000
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001nemoNumberis: 20502153
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001pageIndexis: 0
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001pageSizeis: 20
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001expected_codeis: 200
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001excepect_messageis: rowsTotal
+DEBUG    mylogger:logPrintClass.py:69 startTime is: 1593431421000
+DEBUG    mylogger:logPrintClass.py:69 endTime is: 1596023421000
+DEBUG    mylogger:logPrintClass.py:69 nemoNumber is: 20502153
+DEBUG    mylogger:logPrintClass.py:69 pageIndex is: 0
+DEBUG    mylogger:logPrintClass.py:69 pageSize is: 20
+DEBUG    mylogger:logPrintClass.py:69 excepectCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 excepectMessage is: rowsTotal
+INFO     mylogger:logPrintClass.py:67 按小鱼号分页获取视频列表 API start......
+DEBUG    mylogger:logPrintClass.py:69 res_url is:https://sdk.xylink.com/api/rest/external/v1/nemo/20502153/vods/page?enterpriseId=2bc382f16515877abf19ba8bbf9d5e215fe7bf12&startTime=1593431421000&endTime=1596023421000&pageIndex=0&pageSize=20&signature=hRZDA1qUYqIWgZVrNYNCA4O643Q1XwpEADJRpHiH22Y%3D
+DEBUG    mylogger:logPrintClass.py:69 status_code is:200
+DEBUG    mylogger:logPrintClass.py:69 res.text is:{"page":0,"pageTotal":0,"rowsTotal":0,"rows":0,"list":null}
+DEBUG    mylogger:logPrintClass.py:69 responseCode is: 200
+DEBUG    mylogger:logPrintClass.py:69 responseBody is: {"page":0,"pageTotal":0,"rowsTotal":0,"rows":0,"list":null}
+DEBUG    mylogger:logPrintClass.py:69 write_xml: data write into xls start.....
+DEBUG    mylogger:logPrintClass.py:69 write_xml: update body data....
+DEBUG    mylogger:logPrintClass.py:69 test_get_vodsListAccordDeviceNum001 end......
